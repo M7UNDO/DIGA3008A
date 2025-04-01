@@ -1,0 +1,21 @@
+h1{
+    color:#262538
+}
+
+
+ul{
+    list-style:square
+}
+
+.navlinks{
+  background-color: rgb(132, 161, 167);
+  list-style: none;
+}
+
+.navlinks a{
+   color: rgb(139, 94, 149);
+   font-size: 14px;
+   font-weight: 5px;
+   border: 2px solid rgb(190, 115, 130);
+   border-radius: 5%;
+}

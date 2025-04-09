@@ -1,21 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  font-family: "Montserrat", sans-serif;
+  /*box-sizing: border-box;*/
+}
+
 h1{
-    color:#262538
+  color:#000000
+}
+
+.navcontainer{
+  height: 60px;
+  background-color: rgb(25, 16, 45);
+  display: flex;
+  flex-direction: row;
+  /*position: sticky; top: 0; */
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  
 }
 
 
-ul{
-    list-style:square
+/*
+nav{
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(6px);
+  height: 50px;
+  width: 100%;
+  
+}
+*/
+.logo{
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: bold;
+  
 }
 
 .navlinks{
-  background-color: rgb(132, 161, 167);
   list-style: none;
 }
 
-.navlinks a{
-   color: rgb(139, 94, 149);
-   font-size: 14px;
-   font-weight: 5px;
-   border: 2px solid rgb(190, 115, 130);
-   border-radius: 5%;
+nav ul li{
+  display: inline-block;
+  padding: 10px;
 }
+
+nav ul li a{
+  
+  color:rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight:600;
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+}
+
+nav ul li a:hover{
+  
+  transition: all 0.3s ease 0s;
+  color: rgb(255, 196, 0);
+}
+
+a.active{
+  background:rgb(255, 255, 255);
+  color: rgb(25, 16, 45);
+  padding: 10px 30px;
+  border-radius: 20px;
+}
+
+

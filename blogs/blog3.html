@@ -1,122 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Mfundo Dhlamini">
     <meta name="description" content="A collection of Mfundo Dhlamini's projects">
     <title>Blog 3</title>
-</head>
-<body>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/normalise.css">
+  </head>
+  <body>
     <header>
-        <nav>
-           <a href="../index.html">Home</a>
-           <a href="index.html">Blogs</a>
-           <a href="../essays/index.html">Essays</a>
-           <a href="../portfolio/index.html">Portfolio</a>
-           <a href="../designs/index.html">Design</a>
-           <a href="../about/index.html">About</a>
-        </nav>
+      <nav class="navcontainer">
+        <label for="logo" class="logo">M7UNDO</label>
+        <ul class="navlinks">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="index.html">Blogs</a></li>
+          <li><a href="../essays/index.html">Essays</a></li>
+          <li><a href="../portfolio/index.html">Portfolio</a></li>
+          <li><a href="../designs/index.html">Design</a></li>
+          <li><a href="../about/index.html">About</a></li>
+        </ul>
+      </nav>
     </header>
-    
+
     <main>
-        <article class="h-entry">
-            <h1 class="p-name">Blog Post 3</h1>
-            <p>
-                Published on:
-                <time class="dt-published" datetime="2025-03-01">01 March 2025</time>
-                by <a class="p-author h-card" href="../about/index.html">Mfundo Dhlamini</a>
-            </p>
-            <h2>Blog 3 Title</h2>
-            <h3>User Alignment:</h3>
-                <p>
-                    My goal for this website is to showcase my game development and art projects in an engaging 
-                    and intuitive way that allows my potential employers and fellow developers to easily navigate
-                    through my website and understand who I am, my skills, and my experience. This means I need 
-                    to ensure that my site is easily accessible, clear, and well-structured, with a good interaction
-                    flow that allows users to seamlessly explore my work. I also want my interface to immediately 
-                    communicate the purpose of my website so users can learn more about me and get in touch if they
-                    are interested. My target audience is people within the game and web development industries who 
-                    are on the website to engage with my past projects and learn about me in order to consider me for
-                    professional positions.
-                </p>
-    
-                <h3>Content, experience, and interface mapping</h3>
-                <ol>
-                    <li>Interface elements</li>
-                    <li>Site Content</li>
-                    <li>User Experience</li>
-                </ol>
-    
-                <h3>Interface elements</h3>
-                <ul>
-                    <li>Navigation Bar: A navigation bar should be present on every page, ensuring quick access to different
-                     pages such as Home, Blogs, Essays, Portfolio, Design, and About.
-                    </li>
-    
-                    <li>CTA (Call to Action) Buttons: Buttons that prompt user actions like “Read more” will be used on my blog
-                        and essay pages below a preview of the writing piece, and buttons like explore will be used on my home
-                         page to encourage users to explore the pages.
-                    </li>
-    
-                    <li>Slider: On every scrollable page (Blog, Essay, Portfolio, and Design Page), a slider will be present, 
-                        allowing users to navigate through the content dynamically without overwhelming the user with too much
-                         information on a page.
-                    </li>
-                </ul>
-    
-                <h3>Site Content</h3>
-                <p>
-                    The content of my website will be structured in a way that ensures users find the information that they need
-                    quickly and efficiently. My home page would function as the landing page, welcoming the user, introducing me,
-                    and guiding users to explore either my blogs, essays, design process, or my portfolio page. I will also include
-                    an about me page that details my skills and my experience, giving users some insight into my background. 
-                    My blog page would consist of a collection of my weekly blogs with short previews of the blog to draw
-                    the attention of the users. My portfolio page would showcase a collection of my game development projects, 
-                    each with a cover image, a short description of the game, and a link to play the game, whereas the art section
-                    would display some of my artworks in a grid fashion, enabling users to view the works.
-                </p>
-    
-                <h3>User Experience</h3>
-                <p>
-                    The user experience on my website should feel engaging, seamless, and intuitive. Users should naturally be guided
-                    from one section to the next. When users visit my website, they should immediately understand it's purpose and
-                    have clear options to explore. Throughout the experience of exploring my website, elements like smooth 
-                    transitions and responsive design will ensure that the process of navigation feels fluid and accessible across 
-                    all devices
-                </p>
-    
-                <h3>Reflect on how the exercise above relates to what you know about your structure and URL scheme and how it relates to semantic markup:</h3>
-                <p>
-                    Through working on this exercise, I started to see how my website's structure and URL scheme are essential for 
-                    ensuring accessibility, clarity, and easy use. By organising my website's content into defined sections, such
-                    as Home, Blog, Portfolio, Essays, and Design, I am able to maintain a logical flow that makes the process of
-                    navigation seamless. This feeds into my URL scheme, which needs to be clean and hierarchal to ensure usability.
-                    For example, a game development project should be accessed via mywebsite.com/portfolio/project1.html,
-                    making it clear what content will be on that page. This goes hand in hand with semantic markup, which enhances
-                    the meaning of my website's content, ensuring my website is structured in a way that is easy for search engines
-                    to interpret. Using tags like &lt;nav&gt; for navigation links and &lt;section&gt; to for different areas of my content
-                    improves my search engine optimization and my user experience.
-                </p>
-    
-                <h3>Reflecting on this week's progress</h3>
-                <p>
-                    This week my goal was to refine my folder structure and add navigation to my site, as I previously didn't have 
-                    a way for users to navigate through different pages. In order to implement this, I added a navigation bar that 
-                    remains consistent on all my pages, ensuring that users can access different areas of the website without 
-                    feeling lost. On the technical side, I also focused on my semantic markup, ensuring that tags like &lt;nav&gt;
-                    and &lt;section&gt; are used correctly to improve accessibility and optimisation for search engines.
-                </p>
-    
-                  
-           
-        </article>
+      <article class="h-entry">
+        <h1 class="p-name">Blog Post 3</h1>
+        <p>
+          Published on:
+          <time class="dt-published" datetime="2025-03-01">01 March 2025</time>
+          by
+          <a class="p-author h-card" href="../about/index.html"
+            >Mfundo Dhlamini</a
+          >
+        </p>
+        <h2>Blog 3 Title</h2>
+        <h3>User Alignment:</h3>
+        <p>
+          My goal for this website is to showcase my game development and art
+          projects in an engaging and intuitive way that allows my potential
+          employers and fellow developers to easily navigate through my website
+          and understand who I am, my skills, and my experience. This means I
+          need to ensure that my site is easily accessible, clear, and
+          well-structured, with a good interaction flow that allows users to
+          seamlessly explore my work. I also want my interface to immediately
+          communicate the purpose of my website so users can learn more about me
+          and get in touch if they are interested. My target audience is people
+          within the game and web development industries who are on the website
+          to engage with my past projects and learn about me in order to
+          consider me for professional positions.
+        </p>
+
+        <h3>Content, experience, and interface mapping</h3>
+        <ol>
+          <li>Interface elements</li>
+          <li>Site Content</li>
+          <li>User Experience</li>
+        </ol>
+
+        <h3>Interface elements</h3>
+        <ul>
+          <li>
+            Navigation Bar: A navigation bar should be present on every page,
+            ensuring quick access to different pages such as Home, Blogs,
+            Essays, Portfolio, Design, and About.
+          </li>
+
+          <li>
+            CTA (Call to Action) Buttons: Buttons that prompt user actions like
+            “Read more” will be used on my blog and essay pages below a preview
+            of the writing piece, and buttons like explore will be used on my
+            home page to encourage users to explore the pages.
+          </li>
+
+          <li>
+            Slider: On every scrollable page (Blog, Essay, Portfolio, and Design
+            Page), a slider will be present, allowing users to navigate through
+            the content dynamically without overwhelming the user with too much
+            information on a page.
+          </li>
+        </ul>
+
+        <h3>Site Content</h3>
+        <p>
+          The content of my website will be structured in a way that ensures
+          users find the information that they need quickly and efficiently. My
+          home page would function as the landing page, welcoming the user,
+          introducing me, and guiding users to explore either my blogs, essays,
+          design process, or my portfolio page. I will also include an about me
+          page that details my skills and my experience, giving users some
+          insight into my background. My blog page would consist of a collection
+          of my weekly blogs with short previews of the blog to draw the
+          attention of the users. My portfolio page would showcase a collection
+          of my game development projects, each with a cover image, a short
+          description of the game, and a link to play the game, whereas the art
+          section would display some of my artworks in a grid fashion, enabling
+          users to view the works.
+        </p>
+
+        <h3>User Experience</h3>
+        <p>
+          The user experience on my website should feel engaging, seamless, and
+          intuitive. Users should naturally be guided from one section to the
+          next. When users visit my website, they should immediately understand
+          it's purpose and have clear options to explore. Throughout the
+          experience of exploring my website, elements like smooth transitions
+          and responsive design will ensure that the process of navigation feels
+          fluid and accessible across all devices
+        </p>
+
+        <h3>
+          Reflect on how the exercise above relates to what you know about your
+          structure and URL scheme and how it relates to semantic markup:
+        </h3>
+        <p>
+          Through working on this exercise, I started to see how my website's
+          structure and URL scheme are essential for ensuring accessibility,
+          clarity, and easy use. By organising my website's content into defined
+          sections, such as Home, Blog, Portfolio, Essays, and Design, I am able
+          to maintain a logical flow that makes the process of navigation
+          seamless. This feeds into my URL scheme, which needs to be clean and
+          hierarchal to ensure usability. For example, a game development
+          project should be accessed via mywebsite.com/portfolio/project1.html,
+          making it clear what content will be on that page. This goes hand in
+          hand with semantic markup, which enhances the meaning of my website's
+          content, ensuring my website is structured in a way that is easy for
+          search engines to interpret. Using tags like &lt;nav&gt; for
+          navigation links and &lt;section&gt; to for different areas of my
+          content improves my search engine optimization and my user experience.
+        </p>
+
+        <h3>Reflecting on this week's progress</h3>
+        <p>
+          This week my goal was to refine my folder structure and add navigation
+          to my site, as I previously didn't have a way for users to navigate
+          through different pages. In order to implement this, I added a
+          navigation bar that remains consistent on all my pages, ensuring that
+          users can access different areas of the website without feeling lost.
+          On the technical side, I also focused on my semantic markup, ensuring
+          that tags like &lt;nav&gt; and &lt;section&gt; are used correctly to
+          improve accessibility and optimisation for search engines.
+        </p>
+      </article>
     </main>
-    
+
     <footer>
-        <p>&copy; 2025 Mfundo Dhlamini. All Rights Reserved</p>
-       </footer>
-
-
-</body>
+      <p>&copy; 2025 Mfundo Dhlamini. All Rights Reserved</p>
+    </footer>
+  </body>
 </html>

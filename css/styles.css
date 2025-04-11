@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
+:root{
   font-family: "Montserrat", sans-serif;
-  /*box-sizing: border-box;*/
+  --site-color-1: rgb(25, 16, 45);
+  --site-color-2: #ffd000;
 }
 
 h1{
-  color:#000000
+  color:#000000;
+  text-align: center;
+  background-color: var(--site-color-2);
+  
 }
 
 header{
@@ -15,35 +19,103 @@ header{
 }
 
 .navcontainer{
-
+  background-color: var(--site-color-1);
   height: 3.75em;
-  background-color: rgb(25, 16, 45);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 10px;
+  padding: 5px 20px;
   backdrop-filter: blur(6px);
   
+}
+
+.nav-menu{
+  width: fit-content;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navlinks{
+  list-style: none;
+}
+
+.navlinks li{
+  display: inline-block;
+  padding: 10px;
+}
+
+.navlinks li a{
+  
+  color:#ffffff;
+  font-size: 14px;
+  font-weight:500;
+  text-decoration: none;
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+
+}
+
+.navlinks li a:hover{
+  
+  transform: translateY(-10px);
+  color: var(--site-color-2);
+}
+
+.navlinks a.active{
+  background:#ffffff;
+  color: var(--site-color-1);
+  padding: 10px 30px;
+  border-radius: 20px;
+  font-weight: bold;
 }
 
 .logo{
   cursor: pointer;
   text-decoration: none;
+  
 }
 
 .logo a{
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   font-size: 16px;
   font-weight: bold;
+}
+
+.nav-sm{
+  height: 100%;
+  width: 5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.sm-linkedin{
+  height: 20px;
+  width: 20px;
+  background-image: url(../images/icons/InBug-White.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sm-github{
+  height: 20px;
+  width: 20px;
+  background-image: url(../images/icons/github-mark-white.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .burgerbutton{
   font-size: 28px;
   color: white;
-  float: right;
-  margin: 40px;
   line-height: 2em;
   cursor: pointer;
   display: none;
@@ -61,10 +133,10 @@ header{
   .navlinks{
     position: fixed;
     width: 100%;
-    background-color: rgba(25, 16, 45,1); ;
+    background-color: rgba(25, 16, 45,1);
     height: 100vh;
     text-align: center;
-    top: 60px;
+    top: 40px;
     left: -120%;
     transition: all 1s;
     
@@ -75,47 +147,24 @@ header{
      padding: 30px 0;
   }
 
-  .navlinks li a{
-    font-size: 25px;
-    color: white;
-    text-transform: uppercase;
+  a.active{
+    background:none;
+    color: #ffd000;
+    padding: 10px 30px;
+    border-radius: 20px;
+    text-decoration: underline;
+    
   }
 
-  #check:checked ~ ul{
+  .nav-sm{
+    display: none;
+  }
+
+  #check:checked ~ .navlinks{
     left: 0;
+    
   }
 }
-.navlinks{
-  list-style: none;
-}
-
-nav ul li{
-  display: inline-block;
-  padding: 10px;
-}
-
-nav ul li a{
-  
-  color:rgb(255, 255, 255);
-  font-size: 14px;
-  font-weight:600;
-  text-decoration: none;
-  transition: all 0.3s ease 0s;
-}
-
-nav ul li a:hover{
-  
-  transition: all 0.3s ease 0s;
-  color: rgb(255, 196, 0);
-}
-
-a.active{
-  background:rgb(255, 255, 255);
-  color: rgb(25, 16, 45);
-  padding: 10px 30px;
-  border-radius: 20px;
-}
-
 
 .intro{
   text-align: left;
@@ -123,5 +172,15 @@ a.active{
 }
 
 footer{
+  
+  bottom: 0;
+  padding: 0 0;
+  font-size: 14px;
+  line-height: 4.2em;
+  color:rgb(255, 255, 255);
+  background-color: rgba(25, 16, 45, 0.641);
+  height: 4.2em;
+  width: 100vw;
+  text-align: center;
   
 }

@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px var(--site-color-2);
+  border-radius: 20px;
+  margin: 2em 4em;
+  padding: 0 6em;
+
+}
+
+.portfolio-heading{
+    margin: 5em 0;
+}
+
+.subheading{
+    margin-top: -23px;
+    text-align: center;
+    font-size: 1.125rem;
+    line-height: 24px;
+
+}
+
+.game-dev-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+}
+
+.game-project{
+    height: 30px;
+    width: 60px;
+    box-shadow: 0 0 10px var(--site-color-2);
+    border-radius: 20px;
+    display:flex;
+    justify-content:flex-start;
+    align-items: center;
+    padding: 0em 1em;
+
+}
+
+h1{
+    text-align: center;
+    font-size: 35px;
+    line-height: 37px;;
+}

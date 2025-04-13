@@ -10,14 +10,25 @@ main{
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.378);
   border-radius: 20px;
   margin: 2em 4em;
-  padding: 0 3em;
+  padding: 0 6em;
 
+}
+
+p{
+    font-size: 17px;
+}
+
+.design-list{
+    list-style:square;
+}
+
+.design-list li{
+    margin: 10px 0;
+    font-size: 17px;
 }
 
 .design-heading{
     margin: 5em 0;
-    
-
 }
 
 .design-subheading{
@@ -38,9 +49,102 @@ main{
 }
 
 .initial-wireframe{
-    margin-left: -1em;
-    padding-bottom: 1em ;
+    margin-left: -0.5em;
+    padding: 0 1em 2em 2em ;
 }
+
+.first-wireframe{
+    width: 500px;
+
+}
+
+.flow-diagrams{
+    display: flex;
+    align-items: center;
+    margin-bottom: 9em;
+
+}
+
+.flow-diagrams figure figcaption{
+    margin: 1.5em 0;
+
+}
+
+.user-diagrams{
+    height: 540px;
+}
+
+.design-reference{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.design-reference figure figcaption{
+    margin: 1em 0;
+}
+
+.reference-site{
+    height: 260px;
+    border-radius: 20px;
+}
+
+.likes-dislikes{
+    margin-bottom: 5em;
+}
+
+.styleguide{
+    margin-top: 5em;
+    margin-bottom: 6em;;
+}
+
+
+.pallete-container{
+    margin-left: -0.5em;
+}
+
+.pallete{
+    width: 250px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.378);
+  border-radius: 20px;
+}
+
+.typography{
+    margin: 3em 7em -1em 0;
+    padding: 0.2em 0;
+}
+
+.font-choices{
+    width: 400px;
+}
+
+.design-elements{
+    margin-left: -0.5em;
+    margin: 5em 7em -1em 0;
+    padding: 0.2em 0;
+}
+
+.final-wireframe{
+    width: 900px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.378);
+    border-radius: 20px;
+}
+
+.design-elements{
+    padding: 1em 0;
+}
+
+.design-elements-box{
+    margin: 3em 0;
+}
+
+.visual-element-diagram{
+    text-align: left;
+    margin: 1em 0;
+    
+}
+
 
 h1{
     text-align: center;
@@ -52,6 +156,7 @@ h2{
     text-align: left;
     font-size: 25px;
     line-height: 31px;;
+    text-decoration: underline;
 }
 
 h3{

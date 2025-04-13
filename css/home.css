@@ -61,6 +61,8 @@ button:hover{
 /* category section*/
 
 .index-category{
+    margin-top: 3em;
+    margin-bottom: -0.5em;
     width: 100%;
     padding: 60px 0;
     background-color: white;
@@ -68,8 +70,6 @@ button:hover{
     justify-content: center;
     column-gap: 20px;
     flex-wrap: wrap;
-
-
 }
 
 .index-category p{
@@ -136,4 +136,17 @@ button:hover{
     text-shadow: -2px 2px 4px #000;
     z-index: 100;
 
+}
+
+footer{
+    bottom: 0;
+    padding: 0 0;
+    font-size: 14px;
+    line-height: 4.2em;
+    color:var(--site-color-1);
+    background-color: rgb(255, 255, 255);
+    height: 4.2em;
+    width: 100%;
+    text-align: center;
+    
 }

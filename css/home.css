@@ -1,0 +1,36 @@
+body{
+    background: radial-gradient(circle,rgba(63, 94, 251, 1) 0%, rgba(70, 252, 179, 1) 100%);
+    
+}
+
+main{
+    width: 100%;
+    height: calc(100vh-70px);
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    font-size: 60px;
+    line-height: 68px;
+    font-weight: 300;
+    margin: 0;
+    
+}
+
+.heading-intro{
+    font-weight: bold;
+}
+
+.subheading{
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    line-height: 25px;
+    margin: 0;
+    
+}

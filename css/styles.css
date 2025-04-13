@@ -4,14 +4,9 @@
   font-family: "Montserrat", sans-serif;
   --site-color-1: rgb(25, 16, 45);
   --site-color-2: #ffd000;
-}
-
-h1{
-  color:#000000;
-  text-align: center;
-  background-color: var(--site-color-2);
   
 }
+
 
 header{
   position: sticky;
@@ -166,13 +161,18 @@ header{
   }
 }
 
-.intro{
-  text-align: left;
-  background-color: aqua;
+.main-intro{
+  height: 20em;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
 }
 
+
 footer{
-  
   bottom: 0;
   padding: 0 0;
   font-size: 14px;
@@ -180,7 +180,7 @@ footer{
   color:rgb(255, 255, 255);
   background-color: rgba(25, 16, 45, 0.641);
   height: 4.2em;
-  width: 100vw;
+  width: 100%;
   text-align: center;
   
 }

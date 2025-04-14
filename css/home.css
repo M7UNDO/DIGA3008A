@@ -1,3 +1,15 @@
+*{
+    box-sizing: border-box;
+}
+
+header {
+    z-index: 2;
+    position: sticky;
+    top: 0;
+    
+    
+  }
+
 body{
     background: radial-gradient(circle,rgba(63, 94, 251, 1) 0%, rgba(70, 252, 179, 1) 100%);
     
@@ -145,10 +157,13 @@ button:hover{
 
     main{
         width: 100%;
+        height: 100%;;
         flex-wrap: wrap;
     }
 
     .index-category{
+        left: 0;
+        width: 100%;
         padding: 10px;
         flex-direction: column;
         justify-content: center;
@@ -159,17 +174,26 @@ button:hover{
 
     }
 
+
     .category-box{
-        width: 150px;
-        height: 150px;
+        width: 170px;
+        height: 170px;
     }
     h1{
         color: white;
         text-align: center;
-        font-size: 20px;
-        line-height: 24px;
+        font-size: 25px;
+        line-height: 28px;
         font-weight: 300;
         margin: 0;
+    }
+
+    .subheading{
+        color: white;
+        text-align: center;
+        font-size: 17px;
+        line-height: 23px;
+        margin-bottom: 30px;
         
     }
     

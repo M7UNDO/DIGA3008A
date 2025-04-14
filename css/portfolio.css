@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 
+
 header{
     z-index: 1;
 }
@@ -18,7 +19,7 @@ main{
   background-color: white;
   box-shadow: 0 0 10px var(--site-color-2);
   border-radius: 20px;
-  margin: 1em 4em;
+  margin: 0.5em 3em;
   padding: 0 0;
   height: 45em;
 
@@ -35,7 +36,7 @@ main{
     position: relative;
     margin-top: -18px;
     text-align: center;
-    font-size: 1.125rem;
+    font-size: 20px;
     line-height: 24px;
 
 }
@@ -47,7 +48,7 @@ main{
     height: 2.5px;
     width: 35%;
     left: 450px;
-    bottom: -50px;
+    bottom: -40px;
 }
 
 .game-dev-container{
@@ -136,17 +137,15 @@ button p{
 .game-dev-container a{
     color: var(--site-color-2);
     text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .game-dev-container a:hover{
-    color: red;
+    color: var(--site-color-2);
+    transform: translateY(-3px);
 }
 
-h1{
-    text-align: center;
-    font-size: 35px;
-    line-height: 37px;;
-}
+
 
 footer{
     bottom: 0;
@@ -159,4 +158,118 @@ footer{
     height: 4.2em;
     width: 100%;
     text-align: center;
+}
+
+@media (max-width:600px) {
+
+    main{
+        justify-self: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: white;
+        box-shadow: 0 0 10px var(--site-color-2);
+        border-radius: 20px;
+        margin: 1em 1em;
+        padding: 0 0;
+        height: 100%;
+        width: 500px;
+      
+    }
+
+    h1{
+        text-align: center;
+        font-size: 35px;
+        line-height: 37px;;
+    }
+
+    .subheading{
+        position: relative;
+        margin-top: -18px;
+        text-align: center;
+        font-size: 20px;
+        line-height: 24px;
+    
+    }
+
+    .subheading::after{
+        content: "";
+        position: absolute;
+        background-color: var(--site-color-2);
+        height: 2.5px;
+        width: 100%;
+        left: 0;
+        bottom: -40px;
+    }
+
+    .game-dev-container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(255, 255, 255);
+        flex-wrap: wrap;
+        gap: 1em 1em;
+    }
+    
+    .game-project{
+        width: 500px;
+        height: 100px;
+        box-shadow: 0 0 10px var(--site-color-2);
+        border-radius: 10px;
+        border:none;
+        display:flex;
+        justify-content:flex-start;
+        align-items: center;
+        padding: 0em 1em;
+    
+    }
+
+    .project-title-description{
+        justify-self: center;
+        width: 400px;
+        height: 100px;
+        margin-left: 5px;
+    }
+
+    .project-title-description p{
+        font-size: 12px;
+    }
+
+    button h2{
+        font-size: 12px;
+        font-weight: 400;
+    
+    }
+
+    .image-container{
+        width: 70px;
+        height: 70px;
+        background-color: var(--site-color-2);
+        border-radius: 10px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+    
+    .portfolio-heading{
+        margin: 10px 0;
+        padding-bottom: 3em;
+        
+    }
+    
+    footer{
+        bottom: 0;
+        padding: 0 0;
+        font-size: 14px;
+        line-height: 20px;
+        color:var(--site-color-1);
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0 0 10px var(--site-color-2);
+        height: 20px;
+        width: 100%;
+        text-align: center;
+    }
 }

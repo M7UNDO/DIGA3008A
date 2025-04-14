@@ -11,6 +11,7 @@
     border-radius: 20px;
     margin: 3em 10em;
     padding: 0 8em;
+    
   }
   
   p {
@@ -183,6 +184,7 @@
   }
 
   .web-image{
+    flex: 1;
     display: block;
     height: 300px;
     box-shadow: 0 0 10px var(--site-color-2);
@@ -222,6 +224,26 @@
     align-items: center;
     margin: 0 0;
     padding: 3px 13px;
+    overflow: hidden;
+    
+  }
+
+  .flow-diagrams {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 9em;
+  }
+
+  .web-image{
+    display: block;
+    width: 400px;
+    height: 200px;
+    box-shadow: 0 0 10px var(--site-color-2);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 
   h1,

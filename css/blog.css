@@ -1,3 +1,7 @@
+header{
+    z-index: 1;
+}
+
 main{
     display: flex;
     flex-direction: column;
@@ -23,7 +27,7 @@ p{
     font-size: 16px;
     line-height: 18px;
     padding: 0 10px;
-    z-index: -5;
+    z-index: -0.8;
     
 
 }
@@ -59,6 +63,18 @@ p{
     padding: 0.5em;
 }
 
+.blog-content p a{
+    color: var(--site-color-2);
+}
+
+.blog-content p a:hover{
+    color: darkblue
+}
+
+.blog-ixd{
+    margin-top: 3em;
+}
+
 .reference-list{
     list-style: square;
 
@@ -66,6 +82,7 @@ p{
 
 .reference-list li{
     padding: 5px 0;
+    font-size: 17px;
 }
 
 .reference-list li a{
@@ -75,11 +92,73 @@ p{
     color: darkblue;
 }
 
+.blog-content-folder{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px var(--site-color-2);
+    padding: 1em 1.5em;
+    border-radius: 20px;
+}
+
+.blog-list{
+    list-style:square;
+}
+
+.blog-list-1{
+    list-style:square;
+    margin-left: -20px;
+}
+
+.blog-list-1 li{
+    list-style:square;
+    margin-left: 0px;
+    font-size: 17px;
+}
+
+.blog-list li{
+    margin: 10px 0;
+    font-size: 17px;
+    line-height: 20px;
+}
+
+.blog-list li a{
+    color: var(--site-color-2);
+}
+
+.blog-list li a:hover{
+    color: darkblue;
+}
+
+
+
+.folder-main{
+    list-style: square;
+}
+
+.folder-main li{
+    padding: 7px 0;
+    font-size: 17px;
+    font-weight: 450;
+}
+
+.folder-sub{
+    list-style: square;
+}
+
+.folder-sub li{
+    padding: 5px 0;
+    font-size: 17px;
+}
+
 h1{
     text-align: left;
     font-size: 36px;
     font-weight: bold;
     line-height: 42px;;
+}
+
+.blog-title{
+    font-size: 32px;
+    line-height: 38px;;
 }
 
 .blog-heading span{

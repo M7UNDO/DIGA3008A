@@ -97,6 +97,10 @@ button:hover{
     font-weight: bold;
 }
 
+.index-category a{
+    text-decoration: none;
+}
+
 .category-box{
     width: 300px;
     height: 300px;

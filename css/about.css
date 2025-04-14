@@ -10,8 +10,8 @@ main {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  /*overflow-x: hidden;*/
 }
+
 .about-container {
   width: 970px;
   display: flex;

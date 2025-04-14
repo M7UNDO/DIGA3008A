@@ -1,0 +1,123 @@
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2em 4em;
+    padding: 0 8em;
+  
+}
+
+.blog-heading{
+    margin: 5em 3em 0 0;
+}
+
+p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.blog-heading p{
+    position: relative;
+    font-size: 16px;
+    line-height: 18px;
+    padding: 0 10px;
+    z-index: -5;
+    
+
+}
+
+.blog-heading p ::after{
+    content: "";
+    position: absolute;
+    background-color: var(--site-color-2);
+    height: 2.5px;
+    width: 100%;
+    left:0;
+    bottom: -50px;
+}
+
+.blog-heading p a{
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--site-color-2);
+    text-decoration: none;
+
+}
+
+.blog-heading p a:hover{
+    color: darkblue;
+
+}
+.content{
+    padding: 2em;
+}
+
+.blog-content{
+    margin: 0em 0;
+    padding: 0.5em;
+}
+
+.reference-list{
+    list-style: square;
+
+}
+
+.reference-list li{
+    padding: 5px 0;
+}
+
+.reference-list li a{
+    color: var(--site-color-2);
+}
+.reference-list li a:hover{
+    color: darkblue;
+}
+
+h1{
+    text-align: left;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 42px;;
+}
+
+.blog-heading span{
+    font-weight: 400;
+}
+
+h2{
+    text-align: left;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 35px;;
+    
+}
+
+h3{
+    text-align: left;
+    font-size: 24px;
+    line-height: 30px ;
+    font-weight: 450;
+    line-height: 26px;;
+}
+
+h4{
+    text-align: left;
+    font-size: 18px;
+    line-height: 24px;;
+}
+
+
+
+footer p{
+    font-size: 14px;
+    line-height: 4.2em;
+    color:var(--site-color-1);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px var(--site-color-2);
+    height: 4.2em;
+    width: 100%;
+    text-align: center;
+}
+

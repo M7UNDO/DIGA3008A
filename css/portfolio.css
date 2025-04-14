@@ -2,20 +2,26 @@
     box-sizing: border-box;
 }
 
+body{
+    background: radial-gradient(circle,rgba(63, 94, 251, 1) 0%, rgba(70, 252, 179, 1) 100%);
+}
+
 main{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: white;
   box-shadow: 0 0 10px var(--site-color-2);
   border-radius: 20px;
   margin: 2em 4em;
-  padding: 0 6em;
+  padding: 0 0;
 
 }
 
 .portfolio-heading{
-    margin: 5em 0;
+    margin: 4em 0;
+    
 }
 
 .subheading{
@@ -27,19 +33,20 @@ main{
 }
 
 .game-dev-container{
-    width: 100%;
-    height: 100%;
+    width: 400px;
+    height: 150px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    background-color: red;
+    background-color: rgb(255, 255, 255);
+    flex-wrap: wrap;
 }
 
 .game-project{
-    height: 30px;
-    width: 60px;
+    height: 50px;
+    width: 150px;
     box-shadow: 0 0 10px var(--site-color-2);
-    border-radius: 20px;
+    border-radius: 10px;
     display:flex;
     justify-content:flex-start;
     align-items: center;

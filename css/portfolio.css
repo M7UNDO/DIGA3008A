@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+header{
+    z-index: 1;
+}
+
 body{
     background: radial-gradient(circle,rgba(63, 94, 251, 1) 0%, rgba(70, 252, 179, 1) 100%);
 }
@@ -9,44 +13,63 @@ body{
 main{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   background-color: white;
   box-shadow: 0 0 10px var(--site-color-2);
   border-radius: 20px;
-  margin: 2em 4em;
+  margin: 1em 4em;
   padding: 0 0;
+  height: 45em;
 
+}
+
+.portfolio-section{
+    
 }
 
 .portfolio-heading{
     margin: 4em 0;
+    padding-bottom: 3em;
     
 }
 
 .subheading{
-    margin-top: -23px;
+    position: relative;
+    margin-top: -18px;
     text-align: center;
     font-size: 1.125rem;
     line-height: 24px;
 
 }
 
+.subheading::after{
+    content: "";
+    position: absolute;
+    background-color: var(--site-color-2);
+    height: 2.5px;
+    width: 35%;
+    left: 450px;
+    bottom: -50px;
+}
+
 .game-dev-container{
-    width: 400px;
-    height: 150px;
+    width: 1300;
+    height: 400px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     background-color: rgb(255, 255, 255);
     flex-wrap: wrap;
+    gap: 1em 1em;
 }
 
 .game-project{
-    height: 50px;
-    width: 150px;
+    width: 650px;
+    height: 200px;
     box-shadow: 0 0 10px var(--site-color-2);
     border-radius: 10px;
+    border:none;
     display:flex;
     justify-content:flex-start;
     align-items: center;
@@ -54,8 +77,89 @@ main{
 
 }
 
+button{
+    font-weight: bold;
+    color: var(--site-color-1);
+    text-decoration: none;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover{
+    background-color: rgba(192, 192, 192, 0.707);
+}
+
+button h2{
+    font-size: 1.5em;
+    font-weight: 550;
+
+}
+
+button p{
+    font-size: 0.9em;
+    font-weight:470;
+    width: 400px;
+}
+
+
+.image-container{
+    width: 180px;
+    height: 180px;
+    background-color: var(--site-color-2);
+    border-radius: 10px;
+    margin-left: -4px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+#game-1{
+    background-image: url(../portfolio/images/Mini-Golf.png);
+    
+}
+#game-2{
+    background-image: url(../portfolio/images/Staff\ of\ Elysium.png);
+}
+
+#game-3{
+    background-image: url(../portfolio/images/LostDays.png);
+}
+
+#game-4{
+    background-image: url(../portfolio/images/AirHockey.png);
+}
+
+.project-title-description{
+    width: 300px;
+    height: 210px;
+    margin-left: 25px;
+}
+
+.game-dev-container a{
+    color: var(--site-color-2);
+    text-decoration: none;
+}
+
+.game-dev-container a:hover{
+    color: red;
+}
+
 h1{
     text-align: center;
     font-size: 35px;
     line-height: 37px;;
+}
+
+footer{
+    bottom: 0;
+    padding: 0 0;
+    font-size: 14px;
+    line-height: 4.2em;
+    color:var(--site-color-1);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px var(--site-color-2);
+    height: 4.2em;
+    width: 100%;
+    text-align: center;
 }

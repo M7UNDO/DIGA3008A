@@ -1,0 +1,10 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px var(--site-color-2);
+    border-radius: 20px;
+    margin: 3em 8em;
+    padding: 0 8em;
+  }

@@ -191,7 +191,7 @@ h4{
 }
 
 
-/*footer*/
+
 footer p{
     font-size: 14px;
     line-height: 4.2em;
@@ -201,5 +201,10 @@ footer p{
     height: 4.2em;
     width: 100%;
     text-align: center;
+}
+
+@media (max-width:600px) {
+
+    
 }
 

@@ -1,20 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-:root{
+:root {
   font-family: "Montserrat", sans-serif;
   --site-color-1: rgb(25, 16, 45);
   --site-color-2: rgba(63, 94, 251, 1);
   --site-color-2: rgba(63, 94, 251, 0.711);
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
   
 }
 
-
-header{
-  position: sticky;
-  top: 0;
-}
-
-.navcontainer{
+.navcontainer {
   background-color: var(--site-color-1);
   height: 3.75em;
   display: flex;
@@ -23,10 +23,9 @@ header{
   align-items: center;
   padding: 5px 20px;
   backdrop-filter: blur(6px);
-  
 }
 
-.nav-menu{
+.nav-menu {
   width: fit-content;
   height: 100%;
   display: flex;
@@ -34,54 +33,50 @@ header{
   align-items: center;
 }
 
-.navlinks{
+.navlinks {
   list-style: none;
 }
 
-.navlinks li{
+.navlinks li {
   display: inline-block;
   padding: 10px;
 }
 
-.navlinks li a{
-  
+.navlinks li a {
   display: block;
-  color:#ffffff;
+  color: #ffffff;
   font-size: 14px;
-  font-weight:500;
+  font-weight: 500;
   text-decoration: none;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-
 }
 
-.navlinks li a:hover{
-  
+.navlinks li a:hover {
   transform: translateY(-2px);
   color: var(--site-color-2);
 }
 
-.navlinks a.active{
-  background:#ffffff;
+.navlinks a.active {
+  background: #ffffff;
   color: var(--site-color-1);
   padding: 10px 30px;
   border-radius: 20px;
   font-weight: bold;
 }
 
-.logo{
+.logo {
   cursor: pointer;
   text-decoration: none;
-  
 }
 
-.logo a{
+.logo a {
   text-decoration: none;
   color: #ffffff;
   font-size: 16px;
   font-weight: bold;
 }
 
-.nav-sm{
+.nav-sm {
   height: 100%;
   width: 5em;
   display: flex;
@@ -89,38 +84,37 @@ header{
   justify-content: center;
   align-items: center;
   column-gap: 10px;
+  margin-left: 30px;;
 }
 
-.sm-linkedin{
-  height: 20px;
-  width: 20px;
+.sm-linkedin {
+  height: 30px;
+  width: 30px;
   background-image: url(../images/icons/InBug-White.png);
   background-repeat: no-repeat;
   background-size: cover;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.sm-linkedin:hover{
-  
+.sm-linkedin:hover {
   transform: translateY(-2px);
   color: var(--site-color-2);
 }
-.sm-github{
-  height: 20px;
-  width: 20px;
+.sm-github {
+  height: 30px;
+  width: 30px;
   background-image: url(../images/icons/github-mark-white.png);
   background-repeat: no-repeat;
   background-size: cover;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.sm-github:hover{
-  
+.sm-github:hover {
   transform: translateY(-2px);
   color: var(--site-color-2);
 }
 
-.burgerbutton{
+.burgerbutton {
   font-size: 28px;
   color: white;
   line-height: 2em;
@@ -128,52 +122,65 @@ header{
   display: none;
 }
 
-#check{
+#check {
   display: none;
 }
 
-@media (max-width: 800px){
-  .burgerbutton{
+@media (max-width: 600px) {
+  main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .burgerbutton {
     display: block;
   }
-  
-  .navlinks{
+   
+  .navlinks {
     position: fixed;
-    width: 100%;
-    background-color: rgba(25, 16, 45,1);
+    width: 100vw;
     height: 100vh;
+    background-color: rgba(25, 16, 45, 1);
     text-align: center;
-    top: 40px;
-    left: -120%;
+    top: 30px;
+    left: -140%;
     transition: all 1s;
-    
   }
 
-  .navlinks li{
-     display: block;
-     padding: 30px 0;
+  .navlinks li {
+    width: 100px;
+    display: block;
+    padding: 30px 0;
+  }
+  .navlinks li a {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 
-  a.active{
-    background:none;
+  a.active {
+    background: none;
     color: #ffd000;
     padding: 10px 30px;
     border-radius: 20px;
     text-decoration: underline;
-    
   }
 
-  .nav-sm{
+  .nav-sm {
     display: none;
   }
 
-  #check:checked ~ .navlinks{
+  #check:checked ~ .navlinks {
     left: 0;
-    
   }
 }
 
-.main-intro{
+.main-intro {
   height: 20em;
   width: fit-content;
 
@@ -181,19 +188,15 @@ header{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 
-
-footer{
-  bottom: 0;
-  padding: 0 0;
+footer p{
   font-size: 14px;
   line-height: 4.2em;
-  color:rgb(255, 255, 255);
-  background-color: rgba(25, 16, 45, 0.641);
+  color:var(--site-color-1);
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 10px var(--site-color-2);
   height: 4.2em;
   width: 100%;
   text-align: center;
-  
 }

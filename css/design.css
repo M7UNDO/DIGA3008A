@@ -1,182 +1,171 @@
-*{
+* {
     box-sizing: border-box;
-}
-
-main{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.378);
-  border-radius: 20px;
-  margin: 2em 4em;
-  padding: 0 6em;
-
-}
-
-p{
-    font-size: 17px;
-    line-height: 20px;
-}
-
-.design-list{
-    list-style:square;
-}
-
-.design-list li{
-    margin: 10px 0;
-    font-size: 17px;
-}
-
-.design-list li a{
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.378);
+    border-radius: 1.25rem;
+    margin: 2em 4em;
+    padding: 0 8em;
+  }
+  
+  p {
+    font-size: 1.0625rem;
+    line-height: 1.25rem;
+  }
+  
+  .design-list {
+    list-style: square;
+  }
+  
+  .design-list li {
+    margin: 0.625rem 0;
+    font-size: 1.0625rem;
+  }
+  
+  .design-list li a {
     color: var(--site-color-2);
-}
-
-.design-list li a:hover{
+  }
+  
+  .design-list li a:hover {
     color: darkblue;
-}
-
-
-.design-heading{
+  }
+  
+  .design-heading {
     margin: 5em 0;
-}
-
-.design-subheading{
+  }
+  
+  .design-subheading {
     position: relative;
-    margin-top: -23px;
+    margin-top: -1.4375rem;
     text-align: center;
-    font-size: 20px;
-    line-height: 24px;
-
-}
-
-
-
-.initial-wireframe{
-    margin-left: -0.5em;
-    padding: 0 1em 2em 2em ;
-}
-
-.first-wireframe{
-    width: 500px;
-
-}
-
-.flow-diagrams{
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+  
+  .ixd-container {
+    padding: 3em 0;
+  }
+  
+  .initial-wireframe {
+    margin-left: -2.1em;
+    padding: 0 1em 2em 2em;
+  }
+  
+  .first-wireframe {
+    width: 31.25rem;
+  }
+  
+  .flow-diagrams {
     display: flex;
     align-items: center;
     margin-bottom: 9em;
-
-}
-
-.flow-diagrams figure figcaption{
+  }
+  
+  .flow-diagrams figure figcaption {
     margin: 1.5em 0;
-
-}
-
-.user-diagrams{
-    height: 540px;
-}
-
-.design-reference{
-    margin-top: 10px;
+  }
+  
+  .user-diagrams {
+    height: 33.75rem;
+  }
+  
+  .design-reference {
+    margin-top: 0.625rem;
     display: flex;
     flex-direction: row;
-    
-}
-
-.design-reference figure figcaption{
+  }
+  
+  .design-reference figure figcaption {
     margin: 1em 0;
-}
-
-.reference-site{
-    height: 260px;
-    border-radius: 20px;
-}
-
-
-
-.likes-dislikes{
+  }
+  
+  .reference-site {
+    height: 16.25rem;
+    border-radius: 1.25rem;
+  }
+  
+  .likes-dislikes {
     margin-bottom: 5em;
-}
-
-.styleguide{
+  }
+  
+  .styleguide {
     margin-top: 5em;
-    margin-bottom: 6em;;
-}
-
-
-.pallete-container{
+    margin-bottom: 6em;
+  }
+  
+  .pallete-container {
     margin-left: -0.5em;
-}
-
-.pallete{
-    width: 250px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.378);
-    border-radius: 20px;
-}
-
-.typography{
+  }
+  
+  .pallete {
+    width: 15.625rem;
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.378);
+    border-radius: 1.25rem;
+  }
+  
+  .typography {
     margin: 3em 7em -1em 0;
     padding: 0.2em 0;
-}
-
-.font-choices{
-    width: 400px;
-    border-radius: 20px;
-    box-shadow: 0 0 10px var(--site-color-2);
-}
-
-.design-elements{
+  }
+  
+  .font-choices {
+    width: 25rem;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 0.625rem var(--site-color-2);
+  }
+  
+  .design-elements {
     margin-left: -0.5em;
     margin: 5em 7em -1em 0;
-    padding: 0.2em 0;
-}
-
-.final-wireframe{
-    width: 900px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.378);
-    border-radius: 20px;
-}
-
-.design-elements{
     padding: 1em 0;
-}
-
-.design-elements-box{
+  }
+  
+  .final-wireframe {
+    width: 56.25rem;
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.378);
+    border-radius: 1.25rem;
+  }
+  
+  .design-elements-box {
     margin: 3em 0;
-}
-
-.visual-element-diagram{
+  }
+  
+  .visual-element-diagram {
     text-align: left;
     margin: 1em 0;
-    
-}
-
-
-h1{
+  }
+  
+  h1 {
     text-align: center;
-    font-size: 35px;
-    line-height: 37px;;
-}
-
-h2{
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 2.8125rem;
+  }
+  
+  h2 {
     text-align: left;
-    font-size: 25px;
-    line-height: 31px;;
+    font-size: 1.625rem;
+    font-weight: 500;
+    line-height: 2rem;
     text-decoration: underline;
-}
-
-h3{
+  }
+  
+  h3 {
     text-align: left;
-    font-size: 20px;
-    line-height: 26px;;
-}
-
-h4{
+    font-size: 1.375rem;
+    font-weight: 450;
+    line-height: 1.625rem;
+  }
+  
+  h4 {
     text-align: left;
-    font-size: 18px;
-    line-height: 24px;;
-}
-
-
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.4375rem;
+  }
+  

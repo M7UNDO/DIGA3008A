@@ -3,8 +3,8 @@
 }
 
 main {
+  padding-top: 0rem;
   display: block;
-  unicode-bidi: isolate;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13,16 +13,15 @@ main {
 }
 
 .about-container {
-  width: 970px;
+  width: 120rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
-  padding: 20px;
-  margin: 40px auto;
-  box-shadow: 0 0 10px var(--site-color-2);
-  border-radius: 20px;
+  padding: 5rem 2rem;
+  border-radius: 2rem;
+  box-shadow: 0 0 1rem var(--site-color-2);
 }
 
 .about-heading {
@@ -35,55 +34,55 @@ main {
 
 .about-heading h1 {
   position: relative;
-  font-size: 40px;
-  margin-bottom: 25px;
-  z-index: -5;
+  font-size: 4rem;
+  line-height: 4.4rem;
+  margin-bottom: 2.5rem;
 }
 
 .about-heading h1::after {
   content: "";
   position: absolute;
   background-color: var(--site-color-2);
-  height: 3px;
+  height: 0.3rem;
   width: 100%;
   left: 0;
-  bottom: -10px;
+  bottom: -1rem;
 }
 
 .about-content {
   width: 62%;
-  height: 550px;
+  height: 55rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 10px 20px;
+  padding: 1rem 2rem;
 }
 
 h2 {
-  font-size: 20px;
-}
-
-.about-background,
-span {
-  text-align: left;
-  font-size: 1em;
+  font-size: 2rem;
+  line-height: 2.4rem;
 }
 
 .about-skills {
-  list-style: none;
+  list-style: disc;
 }
 
 .about-skills li {
-  margin-left: -40px;
+  margin-left: -4rem;
+  font-size: 1.9rem;
+  font-weight: 450;
+  line-height: 2rem;
 }
 
 .profile-photo {
-  width: 350px;
+  flex: 3;
+  width: 40rem;
+  height: 40rem;
 }
 
 .aboout-image-container {
-  flex: 1;
+  flex: 3;
 }
 
 a {
@@ -92,322 +91,157 @@ a {
 
 a:hover {
   color: var(--site-color-2);
+  font-weight: 600;
 }
 
-@media only screen and (max-width: 600px) {
+.about-background,
+span,
+.email {
+  text-align: left;
+  font-size: 1.9rem;
+  font-weight: 450;
+  line-height: 2rem;
+}
+
+/* Responsive media queries converted */
+/*
+@media only screen and (max-width: 60rem) {
   main {
-    margin-top: 10px;
-    width: 100%;
-    font-size: 16px;
-  }
-
-  .about-container {
-    width: 400px;
-    flex-direction: column-reverse;
-    row-gap: 2px;
-    margin: 20px 0;
-  }
-
-  .about-heading h1 {
-    position: relative;
-    font-size: 30px;
-    line-height: 32px;
-    margin-bottom: 10px;
-    z-index: -5;
-  }
-
-  .about-heading h1::after {
-    content: "";
-    position: absolute;
-    background-color: var(--site-color-2);
-    height: 3px;
-    width: 100%;
-    left: 0;
-    bottom: -10px;
-  }
-
-  .about-content {
     width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    margin: 1% 1%;
+    box-shadow:none
   }
 
+  h2{
+    font-family: 'Satoshi', sans-serif;
+    font-size: 30rem;;
+  }
   .profile-photo {
-    width: 200px;
-    height: 200px;
-    box-shadow: 0 0 10px var(--site-color-2);
-    border-radius: 50%;
-  }
-
-  h2 {
-    font-size: 20px;
-    line-height: 24px;
+    width: 35rem;
+    height: 35rem;
   }
 
   .about-skills li {
-    margin-left: -45px;
-  }
-
-  footer {
-    bottom: 0;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 20px;
-    color: var(--site-color-1);
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0 0 10px var(--site-color-2);
-    height: 20px;
-    width: 100%;
-    text-align: center;
-  }
-}
-
-@media (min-width: 601px) {
-  main {
-    margin-top: 10px;
-    width: 100%;
-    font-size: 16px;
-  }
-
-  .about-container {
-    width: 550px;
-    flex-direction: column-reverse;
-    row-gap: 2px;
-    margin: 0;
-  }
-
-  .about-heading h1 {
-    position: relative;
-    font-size: 30px;
-    line-height: 32px;
-    margin-bottom: 10px;
-    z-index: -5;
-  }
-
-  .about-heading h1::after {
-    content: "";
-    position: absolute;
-    background-color: var(--site-color-2);
-    height: 3px;
-    width: 100%;
-    left: 0;
-    bottom: -10px;
-  }
-
-  .about-content {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 0px 0;
-  }
-
-  .profile-photo {
-    width: 300px;
-    height: 300px;
-    box-shadow: 0 0 10px var(--site-color-2);
-    border-radius: 50%;
-  }
-
-  h2 {
-    font-size: 20px;
-    line-height: 24px;
-  }
-
-  .about-skills {
-    margin-top: -3px;
-  }
-
-  .about-skills li {
-    margin-left: -45px;
-  }
-
-  footer {
-    bottom: 0;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 30px;
-    color: var(--site-color-1);
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0 0 10px var(--site-color-2);
-    height: 30px;
-    width: 100%;
-    text-align: center;
-  }
-}
-
-@media (min-width: 768px) {
-  main {
-    margin-top: 15px;
-    width: 100%;
-    font-size: 16px;
-  }
-
-  .about-container {
-    width: 700px;
-    flex-direction: column-reverse;
-    row-gap: 1px;
-    margin: 0;
-  }
-
-  .about-heading h1 {
-    position: relative;
-    font-size: 30px;
-    line-height: 32px;
-    margin-bottom: 10px;
-    z-index: -5;
-  }
-
-  .about-heading h1::after {
-    content: "";
-    position: absolute;
-    background-color: var(--site-color-2);
-    height: 3px;
-    width: 100%;
-    left: 0;
-    bottom: -10px;
-  }
-
-  .about-content {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 0px 0;
-  }
-
-  .profile-photo {
-    width: 310px;
-    height: 310px;
-    box-shadow: 0 0 10px var(--site-color-2);
-    border-radius: 50%;
-  }
-
-  h2 {
-    font-size: 20px;
-    line-height: 24px;
-  }
-
-  .about-skills {
-    margin-top: -3px;
-  }
-
-  .about-skills li {
-    margin-left: -45px;
-  }
-
-  footer {
-    bottom: 0;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 30px;
-    color: var(--site-color-1);
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0 0 10px var(--site-color-2);
-    height: 30px;
-    width: 100%;
-    text-align: center;
-  }
-}
-
-@media (min-width: 992px) {
-  main {
-    display: block;
-    unicode-bidi: isolate;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    /*overflow-x: hidden;*/
-  }
-  .about-container {
-    width: 970px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 20px;
-    margin: 40px auto;
-    box-shadow: 0 0 10px var(--site-color-2);
-    border-radius: 20px;
-  }
-
-  .about-heading {
-    width: fit-content;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-
-  .about-heading h1 {
-    position: relative;
-    font-size: 40px;
-    margin-bottom: 25px;
-    z-index: -5;
-  }
-
-  .about-heading h1::after {
-    content: "";
-    position: absolute;
-    background-color: var(--site-color-2);
-    height: 3px;
-    width: 100%;
-    left: 0;
-    bottom: -10px;
-  }
-
-  .about-content {
-    width: 62%;
-    height: 550px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 10px 20px;
-  }
-
-  h2 {
-    font-size: 20px;
+    margin-left: -4rem;
+    font-size: 1.6rem;
   }
 
   .about-background,
-  span {
+  span,
+  .email {
     text-align: left;
-    font-size: 1em;
+    font-size: 1.6rem;
+    
   }
 
-  .about-skills {
-    list-style: none;
+  .about-container {
+    width: 100%;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+    margin: 1rem 0;
+  }
+
+  .about-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1rem 1rem;
+  }
+
+  .about-heading h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 2rem;
+    line-height: 2.4rem;
   }
 
   .about-skills li {
-    margin-left: -40px;
+    margin-left: -4.5rem;
+  }
+}
+
+@media (min-width: 60.1rem) {
+  main {
+    margin-top: 1rem;
+    font-size: 1.6rem;
+  }
+
+  .about-container {
+    width: 55rem;
+    margin: 0;
+  }
+
+  .about-content{
+
+  }
+
+  .about-heading h1 {
+    font-size: 3rem;
+    line-height: 3.2rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (min-width: 76.8rem) {
+  main {
+    margin-top: 1.5rem;
+    font-size: 1.6rem;
+  }
+
+  .about-container {
+    width: 70rem;
+    row-gap: 0.1rem;
   }
 
   .profile-photo {
-    width: 350px;
-    height: 350px;
+    width: 31rem;
+    height: 31rem;
+  }
+}
+
+@media (min-width: 99.2rem) {
+  .about-container {
+    width: 97rem;
+    padding: 2rem;
+    margin: 4rem auto;
+    box-shadow: 0 0 1rem var(--site-color-2);
+    border-radius: 2rem;
+  }
+
+  .about-heading h1 {
+    font-size: 4rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .about-heading h1::after {
+    height: 0.3rem;
+    bottom: -1rem;
+  }
+
+  .about-content {
+    height: 55rem;
+    padding: 1rem 2rem;
+  }
+
+  .profile-photo {
+    width: 35rem;
+    height: 35rem;
   }
 
   footer {
-    bottom: 0;
-    padding: 0 0;
-    font-size: 14px;
-    line-height: 4.2em;
-    color: var(--site-color-1);
-    background-color: rgb(255, 255, 255);
-    height: 4.2em;
-    width: 100%;
-    text-align: center;
+    font-size: 1.4rem;
+    line-height: 4.2rem;
+    height: 4.2rem;
   }
 }

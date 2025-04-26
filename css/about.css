@@ -3,15 +3,23 @@
 }
 
 main {
+  height: 100%;
+  width: 100%;
   padding-top: 0rem;
-  display: block;
+  margin: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  background-color: green;
 }
 
+.about-info{
+  width: 100%;
+  height: 100%;
+  background-color: red;
+}
 .about-container {
   width: 120rem;
   display: flex;
@@ -21,10 +29,12 @@ main {
   align-items: center;
   padding: 5rem 2rem;
   border-radius: 2rem;
-  box-shadow: 0 0 1rem var(--site-color-2);
+  box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.401);
+  background-color: lightblue;
 }
 
 .about-heading {
+  background-color: orange;
   width: fit-content;
   display: flex;
   justify-content: center;
@@ -34,9 +44,8 @@ main {
 
 .about-heading h1 {
   position: relative;
-  font-size: 4rem;
-  line-height: 4.4rem;
-  margin-bottom: 2.5rem;
+  font-size: 5rem;
+  line-height: 5rem;
 }
 
 .about-heading h1::after {
@@ -49,23 +58,40 @@ main {
   bottom: -1rem;
 }
 
+.about-background,
+span,
+.email {
+  text-align: left;
+  font-size: 1.6rem;
+  line-height: 1.7rem;
+  font-weight: 450;
+  
+  
+}
+
 .about-content {
+  background-color: blueviolet;
   width: 62%;
-  height: 55rem;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 1rem 2rem;
+  row-gap: 1rem;
+  margin-right: 2rem ;
 }
 
 h2 {
-  font-size: 2rem;
-  line-height: 2.4rem;
+  font-family: "Satoshi", sans-serif;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  text-transform: uppercase;
+  background-color: yellow;
 }
 
 .about-skills {
-  list-style: disc;
+  list-style: none;
+  background-color: darkblue;
 }
 
 .about-skills li {
@@ -82,6 +108,9 @@ h2 {
 }
 
 .aboout-image-container {
+  background-color: aqua;
+  border-radius: 50%;
+  box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.437);
   flex: 3;
 }
 
@@ -94,14 +123,18 @@ a:hover {
   font-weight: 600;
 }
 
-.about-background,
-span,
-.email {
-  text-align: left;
-  font-size: 1.9rem;
-  font-weight: 450;
-  line-height: 2rem;
+#social{
+  width: 6rem;
+  background-color: coral;
+  display: flex;
+  gap: 1rem;
 }
+.icons{
+  height: 2rem;
+  width: 2rem;
+}
+
+
 
 /* Responsive media queries converted */
 /*

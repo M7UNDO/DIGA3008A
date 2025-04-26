@@ -22,6 +22,11 @@ main {
   align-items: center;
 }
 
+.main-intro {
+  margin: 0 3rem;
+  gap: 7rem;
+}
+
 h1 {
   color: white;
   text-align: center;
@@ -40,8 +45,8 @@ h1 {
 .subheading {
   color: white;
   text-align: center;
-  font-size: 2.2rem;
-  line-height: 2.5rem;
+  font-size: 2em;
+  line-height: 2.4rem;
   margin-bottom: 3rem;
 }
 
@@ -50,11 +55,13 @@ h1 {
 }
 
 button {
+  font-family: "Satoshi", sans-serif;
   font-size: 1.4rem;
   line-height: 1.6rem;
   font-weight: bold;
   color: var(--site-color-1);
   text-decoration: none;
+  text-transform: uppercase;
   height: 7rem;
   width: 25rem;
   padding: 0 2rem;
@@ -157,6 +164,64 @@ button:hover {
   z-index: 1;
 }
 
+@media (min-width: 400px) {
+  main {
+    flex-wrap: wrap;
+    margin: 0 0;
+  }
+
+  .home-title h1 {
+    font-size: 5rem;
+    line-height: 5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .index-category {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .index-category p {
+    font-size: 2.2rem;
+  }
+
+  a.category-box {
+    width: 80%;
+    height: 20rem;
+    border-radius: 0.5rem;
+  }
+
+  .dark-overlay {
+    border-radius: 0.5rem;
+  }
+
+  .subheading {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  button {
+    font-family: "Satoshi", sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    font-weight: bold;
+    color: var(--site-color-1);
+    text-decoration: none;
+    text-transform: uppercase;
+    height: 7rem;
+    width: 25rem;
+    padding: 0 2rem;
+    background-color: white;
+    border: none;
+    border-radius: 5rem;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+  }
+}
+
 @media (max-width: 600px) {
   main {
     flex-wrap: wrap;
@@ -183,20 +248,45 @@ button:hover {
     align-content: center;
   }
 
-  .category-box{
+  .category-box {
     width: 50rem;
     height: 20rem;
     border-radius: 0.5rem;
+  }
+
+  a.category-box h2 {
+    font-size: 2rem;
   }
 
   .dark-overlay {
     border-radius: 0.5rem;
   }
 
-
   .subheading {
     font-size: 1.7rem;
     line-height: 2.3rem;
+  }
+
+  button {
+    font-family: "Satoshi", sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    font-weight: bold;
+    color: var(--site-color-1);
+    text-decoration: none;
+    text-transform: uppercase;
+    height: 7rem;
+    width: 25rem;
+    padding: 0 2rem;
+    background-color: white;
+    border: none;
+    border-radius: 5rem;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+  }
+
+  footer{
+    font-size: 1.2rem;
   }
 }
 
@@ -231,10 +321,27 @@ button:hover {
     align-content: center;
   }
 
-  
   .subheading {
     font-size: 1.7rem;
     line-height: 2.3rem;
+  }
+
+  button {
+    font-family: "Satoshi", sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    font-weight: bold;
+    color: var(--site-color-1);
+    text-decoration: none;
+    text-transform: uppercase;
+    height: 7rem;
+    width: 25rem;
+    padding: 0 2rem;
+    background-color: white;
+    border: none;
+    border-radius: 5rem;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
   }
 }
 
@@ -258,15 +365,26 @@ button:hover {
     font-size: 1.7rem;
     line-height: 2.3rem;
   }
+
+  button {
+    height: 7rem;
+    width: 25rem;
+    padding: 0 2rem;
+  }
+
+  button a {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    height: 7rem;
+    width: 25rem;
+    padding: 0 2rem;
+  }
 }
 @media (min-width: 992px) {
   main {
     flex-wrap: nowrap;
     margin: 0 0rem;
-  }
-
-  .home-title h1 {
-    font-weight: 300;
+    height: calc(100vh - 7rem);
   }
 
   .index-category {
@@ -275,8 +393,52 @@ button:hover {
     align-content: center;
   }
 
+  .index-category p {
+    font-size: 2.5rem;
+  }
+
+  a.category-box {
+    width: 30rem;
+    height: 27rem;
+    border-radius: 0.5rem;
+  }
+
+  a.category-box h2 {
+    font-size: 2.2rem;
+  }
+
   .subheading {
     font-size: 2.2rem;
     line-height: 2.5rem;
+    margin: 3rem 0;
+  }
+
+  button {
+    font-family: "Satoshi", sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    font-weight: bold;
+    color: var(--site-color-1);
+    text-decoration: none;
+    text-transform: uppercase;
+    height: 7rem;
+    width: 100%;
+    padding: 0 4rem;
+    background-color: white;
+    border: none;
+    border-radius: 5rem;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+  }
+
+  .home-title h1 {
+    color: white;
+    text-align: center;
+    font-family: "Satoshi", sans-serif;
+    text-transform: uppercase;
+    font-size: 6.2rem;
+    line-height: 6.3rem;
+    font-weight: 300;
+    margin: 0;
   }
 }

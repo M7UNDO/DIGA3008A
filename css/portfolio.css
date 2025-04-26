@@ -164,6 +164,69 @@ button p {
 }
 
 /* MEDIA QUERIES */
+@media (min-width:400px) {
+  .game-dev-container {
+    padding: 5rem;
+    display: grid;
+    grid-template-rows: repeat(4, 15rem);
+    grid-template-columns: repeat(1, 100%);
+    gap: 1rem;
+  }
+
+  .game-project {
+    height: 12rem;
+    width: 100%;
+    height: 1;
+    box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.345);
+    border: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 1rem;
+  }
+
+  .image-container {
+    width: 12rem;
+    height: 12rem;
+    background-color: var(--site-color-2);
+    border-radius: 1rem;
+    margin-left: 0rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .project-title-description {
+    width: 65%;
+    height: 100%;
+    margin-left: 2.5rem;
+  }
+
+  .project-title-description p {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: left;
+  }
+
+  button h2 {
+    font-family: "Satoshi", sans-serif;
+    font-size: 1rem;
+    line-height: 2.2rem;
+    font-weight: 550;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  .subheading {
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+  }
+}
 
 @media (max-width: 600px) {
   .game-dev-container {

@@ -12,7 +12,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 1% 2%;
+  margin: 0;
   padding: 0;
 }
 
@@ -93,7 +93,6 @@ h1 {
 }
 
 button {
-  font-weight: bold;
   color: var(--site-color-1);
   text-decoration: none;
   background-color: white;
@@ -150,7 +149,7 @@ button p {
 .project-title-description p {
   width: 100%;
   font-size: 1.4rem;
-  font-weight: 500;
+  font-weight: 300;
 }
 .game-dev-container a {
   color: var(--site-color-2);
@@ -231,9 +230,7 @@ button p {
 
 @media (min-width: 400px) {
 
-  main{
-     width: 100%;
-  }
+  
 
   .game-dev-container {
     align-self: center;
@@ -470,9 +467,9 @@ button p {
   .project-title-description p {
     width: 100%;
     font-size: 1.6rem;
-    font-weight: 350;
+    font-weight: 300;
     line-height: 1.7rem;
-    font-weight: 500;
+    font-weight: 350;
     text-align: left;
   }
 

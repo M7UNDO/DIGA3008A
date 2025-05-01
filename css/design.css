@@ -35,6 +35,8 @@ main {
   font-size: 1.6em;
   font-weight: 500;
   line-height: 2rem;
+  width: 50%;
+  left: 25%;
 }
 
 .subheading::after {
@@ -74,7 +76,7 @@ p, figcaption, .design-list li {
 }
 
 .initial-wireframe {
-  margin-left: 0;
+  margin-left: -1% ;
   padding: 0 1rem 2rem 2rem;
 }
 
@@ -107,8 +109,8 @@ p, figcaption, .design-list li {
 }
 
 .reference-site {
-  width: 70rem;
-  border-radius: 1.25rem;
+  width: 40rem;
+  border-radius: 0.5rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 

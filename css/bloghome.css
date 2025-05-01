@@ -64,6 +64,9 @@ h1 {
 .home-section {
   width: 95%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  
 }
 
 .blog-left {

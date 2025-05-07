@@ -11,11 +11,11 @@ main {
   border-radius: 2rem;
   margin: 2em 3rem;
   padding: 2rem 2rem;
-  background-color: chocolate;
+  /*background-color: chocolate;*/
 }
 
 .design-container{
-  background-color: gold;
+  /*background-color: gold;*/
   width: 90%;
   height: 100%;
 }
@@ -23,7 +23,7 @@ main {
 .heading {
   margin: 0;
   padding-bottom: 3rem;
-  background-color: antiquewhite;
+  /*background-color: antiquewhite;*/
   width: 100%;
 }
 
@@ -54,13 +54,13 @@ p, figcaption, .design-list li {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 2.2rem;
-  background-color: aquamarine;
+  /*background-color: aquamarine;*/
 }
 
 
 .design-list {
   list-style: square;
-  background-color: cadetblue;
+  /*background-color: cadetblue;*/
 }
 
 .design-list li a {
@@ -68,7 +68,7 @@ p, figcaption, .design-list li {
 }
 
 .design-list li a:hover {
-  color: darkblue;
+ /* color: darkblue;*/
 }
 
 .ixd-container {

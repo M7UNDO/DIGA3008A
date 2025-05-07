@@ -316,7 +316,7 @@ footer p {
     flex-direction: column;
     justify-items: center;
     align-items: center;
-    row-gap: 2rem;
+    
   }
 
   .list-item {

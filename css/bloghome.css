@@ -184,7 +184,6 @@ h1 {
 .read-more {
   font-family: "Satoshi", sans-serif;
   display: inline-block;
-  margin-top: 3rem;
   text-decoration: none;
   transition: color 0.2s ease;
   font-weight: 500;
@@ -695,7 +694,7 @@ footer p {
   .blog-container {
     display: flex;
     width: 90%;
-    height: 100%;
+    height: 30rem;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
@@ -705,6 +704,10 @@ footer p {
   }
 
   .blog-post {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     width: 90%;
     height: 100%;
     padding: 2rem;
@@ -740,7 +743,7 @@ footer p {
     margin-top: 1rem;
     height: 10%;
     border-radius: 1rem;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     font-weight: 500;
     text-transform: uppercase;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -754,18 +757,19 @@ footer p {
 
   .blog-post:hover {
     transform: translateX(-0.4rem);
-    background-color: var(--site-color-3);
+    background-color: white;
     box-shadow: 0 0 1rem var(--site-color-2);
   }
 
   .blog-content {
+    margin-top: 0;
     max-height: 10rem;
-    overflow: hidden;
+    overflow:hidden;
     position: relative;
   }
 
   .blog-content p {
-    margin: 0 1rem;
+    margin: 0rem;
     font-size: 1.6rem;
     line-height: 1.8rem;
   }
@@ -775,15 +779,14 @@ footer p {
     position: absolute;
     bottom: 0;
     left: 0;
-    height: 4rem;
+    height: 7rem;
     width: 100%;
-    background: linear-gradient(to bottom, rgba(245, 245, 245, 0), rgba(245, 245, 245, 1));
+    background: linear-gradient(to bottom, rgba(245, 245, 245, 0), rgb(255, 255, 255));
   }
 
   .read-more {
     font-family: "Satoshi", sans-serif;
     display: inline-block;
-    margin-top: 3rem;
     text-decoration: none;
     transition: color 0.2s ease;
     font-weight: 500;

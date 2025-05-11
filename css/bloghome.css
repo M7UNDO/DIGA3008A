@@ -31,7 +31,7 @@ main {
 }
 
 .heading {
-  width: 50%;
+  width: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -230,7 +230,7 @@ footer p {
   }
 
   .heading {
-    width: 70%;
+    width: fit-content;
     margin-right: 0;
     margin-left: 0;
   }
@@ -363,7 +363,7 @@ footer p {
   }
 
   .heading {
-    width: 70%;
+    width: fit-content;
     margin-right: 0;
     margin-left: 0;
   }
@@ -498,7 +498,7 @@ footer p {
   }
 
   .heading {
-    width: 70%;
+    width: fit-content;
     margin-right: 0;
     margin-left: 0;
   }
@@ -629,7 +629,7 @@ footer p {
   }
 
   .heading {
-    width: 50%;
+    width: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;

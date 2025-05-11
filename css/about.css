@@ -29,6 +29,7 @@ main {
   padding: 5rem 2rem;
   box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.401);
   border-radius: 1.5rem;
+  margin: 3rem;
 }
 
 .about-heading {

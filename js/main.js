@@ -20,8 +20,11 @@ function topFunction() {
 
 function openNav(){
     document.getElementsByClassName("nav-menu")[0].style.width = "100%";
+    document.getElementsByClassName("closeBtn")[0].style.display = "block";
 }
 
 function closeNav(){
     document.getElementsByClassName("nav-menu")[0].style.width = "0%";
+    document.getElementsByClassName("closeBtn")[0].style.display = "none"
+
 }

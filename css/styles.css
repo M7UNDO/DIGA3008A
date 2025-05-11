@@ -147,7 +147,7 @@ main {
   color: white;
   line-height: 3rem;
   cursor: pointer;
-  display: block;
+  display: none;
   align-self: flex-end;
   margin: 1rem;
 }
@@ -236,7 +236,7 @@ footer p{
     flex-direction: column;
     position: fixed;
     height: 100vh;
-    width: 100%;
+    width: 0%;
     background-color: var(--site-color-1);
     top:0;
     left: 0;
@@ -316,11 +316,6 @@ footer p{
     display: none;
   }
   
-
- 
-  #check:checked ~ .nav-menu {
-    left: 0;
-  }
 }
 
 @media (min-width: 400px) {

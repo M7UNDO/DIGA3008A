@@ -8,35 +8,37 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 2rem;
-  margin: 2em 3rem;
-  padding: 2rem 2rem;
-  /*background-color: chocolate;*/
+  margin: 5rem 0;
+  background-color: chocolate;
 }
 
 .design-container{
-  /*background-color: gold;*/
-  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: gold;
+  width: 95%;
   height: 100%;
 }
 
 .heading {
   margin: 0;
   padding-bottom: 3rem;
-  /*background-color: antiquewhite;*/
-  width: 100%;
+  background-color: antiquewhite;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .subheading {
   position: relative;
   margin-top: -1.8rem;
   text-align: center;
-  margin-top: -1.4375rem;
   font-size: 1.6em;
-  font-weight: 500;
-  line-height: 2rem;
-  width: 50%;
-  left: 25%;
+  line-height: 1.7rem;
+  font-weight: 400;
 }
 
 .subheading::after {
@@ -54,34 +56,35 @@ p, figcaption, .design-list li {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 2.2rem;
-  /*background-color: aquamarine;*/
+  background-color: aquamarine;
 }
 
 
 .design-list {
   list-style: square;
-  /*background-color: cadetblue;*/
+  background-color: cadetblue;
 }
 
 .design-list li a {
   color: var(--site-color-2);
 }
 
-.design-list li a:hover {
- /* color: darkblue;*/
-}
 
 .ixd-container {
   padding: 3rem 0;
 }
 
 .initial-wireframe {
-  margin-left: -1% ;
-  padding: 0 1rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
 }
 
 .first-wireframe {
-  height: 30rem;
+  width: 60rem;
 }
 
 .flow-diagrams {
@@ -173,9 +176,9 @@ p, figcaption, .design-list li {
 
 h1{
   text-align: center;
-  font-size: 3.6rem;
+  font-size: 5rem;
   font-weight: bold;
-  line-height: 4rem;
+  line-height: 5rem;
   text-transform: uppercase;
   text-align: center;
 }

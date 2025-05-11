@@ -27,7 +27,6 @@ main {
   justify-content: flex-start;
   align-items: center;
   padding: 5rem 2rem;
-  border-radius: 2rem;
   box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.401);
 }
 
@@ -43,6 +42,7 @@ main {
 .about-heading h1 {
   position: relative;
   font-size: 5rem;
+  text-transform: uppercase;
   line-height: 5rem;
 }
 
@@ -101,6 +101,8 @@ h2 {
   flex: 3;
   width: 40rem;
   height: 40rem;
+  border-radius: 100%;
+  box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.437);
 }
 
 .aboout-image-container {
@@ -360,9 +362,10 @@ a:hover {
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
+    margin: 3rem 0;
     padding: 5rem 2rem;
-    border-radius: 2rem;
-    box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.401);
+    border-radius: 1.5rem;
+    box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.216);
   }
   
   .about-heading {
@@ -376,7 +379,7 @@ a:hover {
   
   .about-heading h1 {
     position: relative;
-    font-size: 5rem;
+    font-size: 4rem;
     line-height: 5rem;
   }
   
@@ -384,10 +387,10 @@ a:hover {
     content: "";
     position: absolute;
     background-color: var(--site-color-2);
-    height: 0.3rem;
+    height: 0.25rem;
     width: 100%;
     left: 0;
-    bottom: -1rem;
+    bottom: -2rem;
   }
   
   .about-background,
@@ -441,145 +444,3 @@ a:hover {
 
 
 
-/* Responsive media queries converted */
-/*
-@media only screen and (max-width: 60rem) {
-  main {
-    width: 100%;
-    height: 100%;
-    margin: 1% 1%;
-    box-shadow:none
-  }
-
-  h2{
-    font-family: 'Satoshi', sans-serif;
-    font-size: 30rem;;
-  }
-  .profile-photo {
-    width: 35rem;
-    height: 35rem;
-  }
-
-  .about-skills li {
-    margin-left: -4rem;
-    font-size: 1.6rem;
-  }
-
-  .about-background,
-  span,
-  .email {
-    text-align: left;
-    font-size: 1.6rem;
-    
-  }
-
-  .about-container {
-    width: 100%;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-    row-gap: 1rem;
-    margin: 1rem 0;
-  }
-
-  .about-content {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 1rem 1rem;
-  }
-
-  .about-heading h1 {
-    font-size: 4rem;
-    line-height: 4rem;
-    margin-bottom: 1rem;
-    text-align: center;
-  }
-
-  h2 {
-    font-size: 2rem;
-    line-height: 2.4rem;
-  }
-
-  .about-skills li {
-    margin-left: -4.5rem;
-  }
-}
-
-@media (min-width: 60.1rem) {
-  main {
-    margin-top: 1rem;
-    font-size: 1.6rem;
-  }
-
-  .about-container {
-    width: 55rem;
-    margin: 0;
-  }
-
-  .about-content{
-
-  }
-
-  .about-heading h1 {
-    font-size: 3rem;
-    line-height: 3.2rem;
-    margin-bottom: 1rem;
-  }
-}
-
-@media (min-width: 76.8rem) {
-  main {
-    margin-top: 1.5rem;
-    font-size: 1.6rem;
-  }
-
-  .about-container {
-    width: 70rem;
-    row-gap: 0.1rem;
-  }
-
-  .profile-photo {
-    width: 31rem;
-    height: 31rem;
-  }
-}
-
-@media (min-width: 99.2rem) {
-  .about-container {
-    width: 97rem;
-    padding: 2rem;
-    margin: 4rem auto;
-    box-shadow: 0 0 1rem var(--site-color-2);
-    border-radius: 2rem;
-  }
-
-  .about-heading h1 {
-    font-size: 4rem;
-    margin-bottom: 2.5rem;
-  }
-
-  .about-heading h1::after {
-    height: 0.3rem;
-    bottom: -1rem;
-  }
-
-  .about-content {
-    height: 55rem;
-    padding: 1rem 2rem;
-  }
-
-  .profile-photo {
-    width: 35rem;
-    height: 35rem;
-  }
-
-  footer {
-    font-size: 1.4rem;
-    line-height: 4.2rem;
-    height: 4.2rem;
-  }
-}

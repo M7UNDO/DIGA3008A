@@ -28,6 +28,7 @@ main {
   align-items: center;
   padding: 5rem 2rem;
   box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.401);
+  border-radius: 1.5rem;
 }
 
 .about-heading {
@@ -138,6 +139,7 @@ a:hover {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
+    margin: 3rem 0;
   }
 
   .profile-photo {
@@ -190,6 +192,7 @@ a:hover {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
+    margin: 3rem 0;
   }
 
   .profile-photo {
@@ -241,6 +244,7 @@ a:hover {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
+    margin: 3rem 0;
   }
 
   .profile-photo {
@@ -292,6 +296,7 @@ a:hover {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
+    margin: 3rem 0;
   }
 
   .profile-photo {

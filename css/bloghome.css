@@ -362,6 +362,7 @@ footer p {
   }
 
   .heading {
+    align-self: center;
     width: fit-content;
     margin-right: 0;
     margin-left: 0;

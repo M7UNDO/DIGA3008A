@@ -163,7 +163,7 @@ main {
   position: fixed; /* Fixed/sticky position */
   bottom: 2rem; /* Place the button at the bottom of the page */
   right: 3rem; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
+  z-index: 0; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
   background-color: var(--site-color-3); /* Set a background color */
@@ -242,6 +242,7 @@ footer p{
     left: 0;
     overflow: hidden;
     transition: all 0.5s;
+    z-index: 2;
   }
   .navlinks {
     display: flex;

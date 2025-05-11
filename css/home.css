@@ -54,7 +54,7 @@ h1 {
   margin: 2rem 2rem;
 }
 
-button {
+.menuButton {
   font-family: "Satoshi", sans-serif;
   font-size: 1.4rem;
   line-height: 1.6rem;
@@ -68,14 +68,14 @@ button {
   background-color: white;
   border: none;
   border-radius: 5rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.281);
   cursor: pointer;
-  transition: all 0.3s ease 0s;
+  /*transition: all 0.5s ease 0s;*/
 }
 
-button:hover {
-  background-color: rgba(255, 255, 255, 0.707);
+.menuButton:hover {
   transform: translateY(-0.3rem);
-  box-shadow: 0 0 1rem var(--site-color-1);
+  box-shadow: 0 0 1rem var(--site-color-2);
 }
 
 /* category section */
@@ -202,23 +202,7 @@ button:hover {
     line-height: 2rem;
   }
 
-  button {
-    font-family: "Satoshi", sans-serif;
-    font-size: 1.2rem;
-    line-height: 1.2rem;
-    font-weight: bold;
-    color: var(--site-color-1);
-    text-decoration: none;
-    text-transform: uppercase;
-    height: 7rem;
-    width: 25rem;
-    padding: 0 2rem;
-    background-color: white;
-    border: none;
-    border-radius: 5rem;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-  }
+
 }
 
 @media (max-width: 600px) {
@@ -266,23 +250,6 @@ button:hover {
     line-height: 2.3rem;
   }
 
-  button {
-    font-family: "Satoshi", sans-serif;
-    font-size: 1.2rem;
-    line-height: 1.6rem;
-    font-weight: bold;
-    color: var(--site-color-1);
-    text-decoration: none;
-    text-transform: uppercase;
-    height: 7rem;
-    width: 25rem;
-    padding: 0 2rem;
-    background-color: white;
-    border: none;
-    border-radius: 5rem;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-  }
 
   footer{
     font-size: 1.2rem;
@@ -325,23 +292,6 @@ button:hover {
     line-height: 2.3rem;
   }
 
-  button {
-    font-family: "Satoshi", sans-serif;
-    font-size: 1.4rem;
-    line-height: 1.6rem;
-    font-weight: bold;
-    color: var(--site-color-1);
-    text-decoration: none;
-    text-transform: uppercase;
-    height: 7rem;
-    width: 25rem;
-    padding: 0 2rem;
-    background-color: white;
-    border: none;
-    border-radius: 5rem;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-  }
 }
 
 @media (min-width: 768px) {
@@ -412,23 +362,6 @@ button:hover {
     margin: 3rem 0;
   }
 
-  button {
-    font-family: "Satoshi", sans-serif;
-    font-size: 1.4rem;
-    line-height: 1.6rem;
-    font-weight: bold;
-    color: var(--site-color-1);
-    text-decoration: none;
-    text-transform: uppercase;
-    height: 7rem;
-    width: 100%;
-    padding: 0 4rem;
-    background-color: white;
-    border: none;
-    border-radius: 5rem;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-  }
 
   .home-title h1 {
     color: white;

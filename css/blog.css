@@ -185,7 +185,7 @@ footer p {
 
 hr.solid {
   border-top: 3px solid var(--site-color-2);
-  margin: 5rem 3rem 0 0;
+  margin: 5rem 0 3rem 0;
 }
 
 @media (max-width: 600px) {

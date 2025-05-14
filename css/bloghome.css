@@ -63,6 +63,8 @@ h1 {
   font-weight: bold;
   line-height: 5rem;
   text-transform: uppercase;
+  text-decoration: none;
+  color: var(--site-color-1);
 }
 
 .home-section {
@@ -125,6 +127,8 @@ h1 {
   justify-self: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-decoration: none;
+  text-decoration: none;
+  color: var(--site-color-1);
 }
 
 .list-item:hover {
@@ -380,6 +384,7 @@ footer p {
     margin-left: 0rem;
     text-align: center;
     width: fit-content;
+    color: var(--site-color-1);
   }
 
   h2 {
@@ -475,6 +480,8 @@ footer p {
     box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.293);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     margin: 0;
+    text-decoration: none;
+    color: var(--site-color-1);
   }
 }
 
@@ -602,6 +609,8 @@ footer p {
     box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.293);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     margin: 0;
+    text-decoration: none;
+    color: var(--site-color-1);
   }
 }
 

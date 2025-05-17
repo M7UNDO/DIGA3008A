@@ -38,7 +38,8 @@ p {
 }
 
 .blog-heading p a:hover {
-  color: darkblue;
+  color: var(--site-color-2);
+  font-weight: 450;
 }
 
 .content {
@@ -109,10 +110,11 @@ p {
 
 .blog-list li a {
   color: var(--site-color-2);
+  font-weight: 500;
 }
 
 .blog-list li a:hover {
-  color: darkblue;
+  font-weight: bold;
 }
 
 .folder-main {
@@ -186,6 +188,60 @@ footer p {
 hr.solid {
   border-top: 3px solid var(--site-color-2);
   margin: 5rem 0 3rem 0;
+}
+
+.nav-btn-container{
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 5rem;
+  width: 100%;
+  margin: 2rem 0;
+
+}
+
+.previous-btn{
+  border: none; /* Remove borders */
+  border-radius: 5rem;
+  outline: none;
+  width: 5rem;
+  height: 5rem;
+  background-color: var(--site-color-1);
+  color: white;
+  font-size: 2rem;
+  line-height: 5rem;
+  transition: all 0.5s ease 0s;
+  
+}
+
+.previous-btn:hover{
+  transform: translateY(-0.4rem);
+  background-color: var(--site-color-3);
+  color: var(--site-color-1);
+  box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.445);
+}
+
+.next-btn{
+  border: none; /* Remove borders */
+  border-radius: 5rem;
+  outline: none;
+  width: 5rem;
+  height: 5rem;
+  background-color: var(--site-color-1);
+  color: white;
+  font-size: 2rem;
+  line-height: 5rem;
+  transition: all 0.5s ease 0s;
+
+}
+
+.next-btn:hover{
+  transform: translateY(-0.4rem);
+  background-color: var(--site-color-3);
+  color: var(--site-color-1);
+  box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.445);
+
 }
 
 @media (max-width: 600px) {
@@ -405,10 +461,6 @@ hr.solid {
     line-height: 1.8rem;
     color: var(--site-color-2);
     text-decoration: none;
-  }
-
-  .blog-heading p a:hover {
-    color: darkblue;
   }
 
   .content {

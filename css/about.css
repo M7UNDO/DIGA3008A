@@ -14,7 +14,7 @@ main {
   flex-wrap: wrap;
 }
 
-.about-info{
+.about-info {
   width: 100%;
   height: 100%;
 }
@@ -33,9 +33,9 @@ main {
 }
 
 .about-heading {
-
   width: fit-content;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -48,25 +48,14 @@ main {
   line-height: 5rem;
 }
 
-.about-heading h1::after {
-  content: "";
-  position: absolute;
-  background-color: var(--site-color-2);
-  height: 0.3rem;
-  width: 100%;
-  left: 0;
-  bottom: -1rem;
-}
-
 .about-background,
 span,
 .email {
+  font-family: var(--secondary-font);
   text-align: left;
   font-size: 1.6rem;
   line-height: 1.7rem;
   font-weight: 450;
-  
-  
 }
 
 .about-content {
@@ -77,23 +66,36 @@ span,
   justify-content: center;
   align-items: flex-start;
   row-gap: 1rem;
-  margin-right: 2rem ;
+  margin-right: 2rem;
 }
 
 h2 {
   font-family: "Satoshi", sans-serif;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 450;
-  line-height: 3rem;
+  line-height: 2.3rem;
   text-transform: uppercase;
 }
 
-.about-skills {
-  list-style: none;
+h3{
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.3rem;
+  text-transform: uppercase;
 }
 
-.about-skills li {
-  margin-left: -4rem;
+.skill-list {
+  list-style: square;
+}
+
+.skill-list li::marker {
+  color: var(--site-color-2);
+}
+
+.skill-list li{
+  font-family: var(--secondary-font);
+  margin-left: 0;
   font-size: 1.6rem;
   font-weight: 450;
   line-height: 1.7rem;
@@ -115,27 +117,32 @@ h2 {
 
 a {
   color: black;
+  transition: all 0.3s ease 0s;
 }
 
 a:hover {
   color: var(--site-color-2);
-  font-weight: 600;
+  font-weight: bold;
 }
 
-#social{
+#social {
   width: 6rem;
   display: flex;
   gap: 1rem;
 }
-.icons{
+.icons {
   height: 2rem;
   width: 2rem;
 }
 
+.solid {
+  width: 80%;
+  border-top: 3px solid var(--site-color-2);
+  margin: -0.7rem 0 1rem;
+}
 
-
-@media only screen and (max-width: 600px){
-  .about-container{
+@media only screen and (max-width: 600px) {
+  .about-container {
     width: 95%;
     flex-direction: column-reverse;
     justify-content: center;
@@ -156,39 +163,43 @@ a:hover {
     text-align: center;
   }
 
-  .about-heading{
+  .about-heading {
     align-self: center;
   }
 
   .about-content {
-
     width: 100%;
     height: 100%;
   }
 
   .about-skills li {
-    margin-left: -4rem;
     font-size: 1.6rem;
     font-weight: 450;
     line-height: 1.7rem;
   }
 
-  .about-background,span,.email{
+  .about-background,
+  span,
+  .email {
     text-align: left;
     font-size: 1.6rem;
     line-height: 1.7rem;
     font-weight: 450;
   }
 
-  h2{
+  h2 {
     font-size: 2rem;
     line-height: 2.4rem;
   }
 
+  h3{
+  font-size: 1.5rem;
+  line-height: 2rem;
+  }
 }
 
-@media only screen and (min-width: 400px){
-  .about-container{
+@media only screen and (min-width: 400px) {
+  .about-container {
     width: 95%;
     flex-direction: column-reverse;
     justify-content: center;
@@ -209,7 +220,7 @@ a:hover {
     text-align: center;
   }
 
-  .about-heading{
+  .about-heading {
     align-self: center;
   }
 
@@ -218,29 +229,35 @@ a:hover {
     height: 100%;
   }
 
-  h2{
+  h2 {
     font-size: 1.8rem;
     line-height: 1.8rem;
   }
 
+  h3{
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2rem;
+  }
+
   .about-skills li {
-    margin-left: -4rem;
     font-size: 1.4rem;
     font-weight: 450;
     line-height: 1.7rem;
   }
 
-  .about-background,span,.email{
+  .about-background,
+  span,
+  .email {
     text-align: left;
     font-size: 1.4rem;
     line-height: 1.7rem;
     font-weight: 450;
   }
-
 }
 
-@media only screen and (min-width: 601px){
-  .about-container{
+@media only screen and (min-width: 601px) {
+  .about-container {
     width: 95%;
     flex-direction: column-reverse;
     justify-content: center;
@@ -261,7 +278,7 @@ a:hover {
     text-align: center;
   }
 
-  .about-heading{
+  .about-heading {
     align-self: center;
   }
 
@@ -271,28 +288,34 @@ a:hover {
   }
 
   .about-skills li {
-    margin-left: -4rem;
     font-size: 1.4rem;
     font-weight: 450;
     line-height: 1.6rem;
   }
 
-  .about-background,span,.email{
+  .about-background,
+  span,
+  .email {
     text-align: left;
     font-size: 1.4rem;
     line-height: 1.6rem;
     font-weight: 450;
   }
 
-  h2{
-    font-size: 2rem;
+  h2 {
+    font-size: 1.8rem;
     line-height: 2.4rem;
   }
 
+  h3{
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2rem;
+  }
 }
 
-@media only screen and (min-width: 768px){
-  .about-container{
+@media only screen and (min-width: 768px) {
+  .about-container {
     width: 95%;
     flex-direction: column-reverse;
     justify-content: center;
@@ -313,7 +336,7 @@ a:hover {
     text-align: center;
   }
 
-  .about-heading{
+  .about-heading {
     align-self: center;
   }
 
@@ -322,28 +345,34 @@ a:hover {
     height: 100%;
   }
 
-  h2{
+  h2 {
     font-size: 2.2rem;
     line-height: 2.4rem;
   }
 
+  h3{
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2rem;
+  }
+
   .about-skills li {
-    margin-left: -4rem;
     font-size: 1.4rem;
     font-weight: 450;
     line-height: 1.7rem;
   }
 
-  .about-background,span,.email{
+  .about-background,
+  span,
+  .email {
     text-align: left;
     font-size: 1.4rem;
     line-height: 1.7rem;
     font-weight: 450;
   }
-
 }
 
-@media only screen and (min-width: 992px){
+@media only screen and (min-width: 992px) {
   main {
     height: 100%;
     width: 100%;
@@ -355,10 +384,11 @@ a:hover {
     align-items: center;
     flex-wrap: wrap;
   }
-  
-  .about-info{
-    width: 100%;
-    height: 100%;
+
+  .about-info {
+    width: 90%;
+    height: fit-content;
+
   }
   .about-container {
     height: 100%;
@@ -373,7 +403,7 @@ a:hover {
     border-radius: 1.5rem;
     box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.216);
   }
-  
+
   .about-heading {
     width: fit-content;
     display: flex;
@@ -382,23 +412,14 @@ a:hover {
     text-align: center;
     align-self: flex-start;
   }
-  
+
   .about-heading h1 {
     position: relative;
     font-size: 4rem;
-    line-height: 5rem;
+    line-height: 4.5rem;
+    font-weight: bold;
+    text-transform: capitalize;
   }
-  
-  .about-heading h1::after {
-    content: "";
-    position: absolute;
-    background-color: var(--site-color-2);
-    height: 0.25rem;
-    width: 100%;
-    left: 0;
-    bottom: -2rem;
-  }
-  
   .about-background,
   span,
   .email {
@@ -406,10 +427,8 @@ a:hover {
     font-size: 1.6rem;
     line-height: 1.7rem;
     font-weight: 450;
-    
-    
   }
-  
+
   .about-content {
     width: 62%;
     height: 100%;
@@ -417,36 +436,36 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    row-gap: 1rem;
-    margin-right: 2rem ;
+    row-gap: 0.3rem;
+    margin-right: 2rem;
   }
-  
-  h2 {
-    font-family: "Satoshi", sans-serif;
-    font-size: 2.5rem;
+
+  h2{
+    font-size: 2.2rem;
     font-weight: 450;
-    line-height: 3rem;
-    text-transform: uppercase;
+    line-height: 2.3rem;
+    font-weight: 600;
   }
-  
-  .about-skills {
-    list-style: none;
+
+  h3{
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.3rem;
   }
-  
+
+  .skill-list {
+    list-style-type: url(../images/icons/life-ring.svg);
+  }
+
   .about-skills li {
-    margin-left: -4rem;
     font-size: 1.6rem;
     font-weight: 450;
     line-height: 1.7rem;
   }
-  
+
   .profile-photo {
     flex: 3;
     width: 40rem;
     height: 40rem;
   }
-
 }
-
-
-

@@ -117,24 +117,17 @@ button p {
   width: 24rem;
   height: 18rem;
   background-color: var(--site-color-2);
-  border-radius: 0.5rem;
   margin-left: 0rem;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-#game-1 {
-  background-image: url(../portfolio/images/Mini-Golf.png);
+.image-container img{
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
 }
-#game-2 {
-  background-image: url(../portfolio/images/Staff\ of\ Elysium.png);
-}
-#game-3 {
-  background-image: url(../portfolio/images/LostDays.png);
-}
-#game-4 {
-  background-image: url(../portfolio/images/AirHockey.png);
-}
+
 
 .project-title-description {
   width: 50em;

@@ -334,6 +334,10 @@ footer p {
   }
 
   .blog-post {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     height: 80%;
     width: 90%;
     padding: 2rem;
@@ -342,6 +346,8 @@ footer p {
     box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.293);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     margin: 0;
+    text-decoration: none;
+    color: var(--site-color-1);
   }
 
   footer p {
@@ -351,7 +357,7 @@ footer p {
   }
 }
 
-@media (max-width: 600px) {
+@media (min-width: 600px) {
   main {
     flex-wrap: wrap;
     margin: 0;
@@ -794,6 +800,8 @@ footer p {
 
   .read-more {
     font-family: "Satoshi", sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
     display: inline-block;
     text-decoration: none;
     transition: color 0.2s ease;
@@ -802,6 +810,7 @@ footer p {
 
   .read-more:hover {
     color: var(--site-color-2);
+    font-weight: 550;
   }
 
   h2 {

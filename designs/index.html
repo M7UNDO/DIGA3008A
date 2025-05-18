@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/normalise.css">
     <link rel="stylesheet" href="../css/design.css">
-    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,401,500,700&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@1,2&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a977cb27e6.js" crossorigin="anonymous"></script>
   </head>
   <body>
@@ -48,9 +48,10 @@
         <div class="initial-wireframe-container">
           <h2>Initial Wireframes</h2>
 
-          <h3>Home Page</h3>
-          <figure class="initial-wireframe">
+          <figure class="initial-wireframe fade" id="in-wireframe-1">
+            <h3>Home Page</h3>
             <img class="first-wireframe"src="images/homepage.png" alt="Home page wireframe"/>
+            <div class="numbertext">1 / 5</div>
             <figcaption>
               The title on my home page welcomes users to my site, while subheading will give them a brief description
               of its purpose, along with a catchy line that engages users and encourages them to explore. The navigation
@@ -62,18 +63,23 @@
             </figcaption>
           </figure>
 
-          <h3>About Page</h3>
-          <figure class="initial-wireframe">
+          
+          <figure class="initial-wireframe fade">
+            <h3>About Page</h3>
             <img class="first-wireframe" src="images/aboutpage.png" alt="About Page Wireframe"/>
+            <div class="numbertext">2 / 5</div>
             <figcaption>
               The About Me Page introduces you with a bold heading, a short bio tagline, and a profile image. Below, the
               main content area provides a brief background.
             </figcaption>
+            
           </figure>
 
-          <h3>Blog Page</h3>
-          <figure class="initial-wireframe">
+          
+          <figure class="initial-wireframe fade">
+            <h3>Blog Page</h3>
             <img class="first-wireframe" src="images/blogpage.png" alt="Blog Page"/>
+            <div class="numbertext">3 / 5</div>
             <figcaption>
               The layout of my blog page includes a title at the top of the page, which is labelled “Blogs. Below it are
               some interactable blocks with each representing a single blog post. Each of these blocks contains the
@@ -81,11 +87,14 @@
               there is a quick blog menu in numerical order that does include titles or introductions, allowing for
               quick navigation of through the content.
             </figcaption>
+            
           </figure>
 
-          <h3>Portfolio Page</h3>
-          <figure class="initial-wireframe">
+          
+          <figure class="initial-wireframe fade">
+            <h3>Portfolio Page</h3>
             <img class="first-wireframe" src="images/portfoliopage.png" alt="Portfolio Page"/>
+            <div class="numbertext">4 / 5</div>
             <figcaption>
               The layout of my portfolio page is engaging, inspired by how games are presented on app stores. Each
               project displayed with an image on the and the title of the project and its description text on the right.
@@ -93,14 +102,29 @@
             </figcaption>
           </figure>
 
-          <h3>Design Page</h3>
-          <figure class="initial-wireframe">
+          
+          <figure class="initial-wireframe fade">
+            <h3>Design Page</h3>
             <img class="first-wireframe"src="images/designpage.png" alt="Design Page"/>
+            <div class="numbertext">5 / 5</div>
             <figcaption>
               The layout of my design page features a title centred at the page, followed by headings and text boxes
               that answer or unpack key questions and considerations throughout my design process.
             </figcaption>
           </figure>
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        
+
+        <div id="three-dots">
+             <span class="dot" onclick="currentSlide(1)"></span>
+             <span class="dot" onclick="currentSlide(2)"></span>
+             <span class="dot" onclick="currentSlide(3)"></span>
+             <span class="dot" onclick="currentSlide(4)"></span>
+             <span class="dot" onclick="currentSlide(5)"></span>
         </div>
 
         <div class="ixd-container">
@@ -385,7 +409,6 @@
         
       </article>
       <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
-      
     </main>
 
 
@@ -394,5 +417,6 @@
     </footer>
     
     <script src="../js/main.js"></script>
+    <script src="../js/design.js"></script>
   </body>
 </html>

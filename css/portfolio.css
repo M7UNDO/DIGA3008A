@@ -138,7 +138,7 @@ button p {
 .project-title-description p {
   width: 100%;
   font-size: 1.4rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 .game-dev-container a {
   color: var(--site-color-2);
@@ -459,7 +459,7 @@ button p {
     font-size: 1.6rem;
     font-weight: 300;
     line-height: 1.7rem;
-    font-weight: 350;
+    font-weight: 430;
     text-align: left;
   }
 

@@ -11,7 +11,11 @@ main {
   margin: 5rem 0;
 }
 
-.design-container{
+.heading {
+  margin: 0 3rem 0 0;
+}
+
+.design-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20,15 +24,122 @@ main {
   height: 100%;
 }
 
-.initial-wireframe-container{
+.initial-wireframe-container {
+  align-items: center;
+  width: 90%;
+  height: fit-content;
+  position: relative;
+}
+
+.initial-wireframe {
+  border-radius: 2rem;
+  box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.401);
+  padding: 3rem;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.initial-wireframe h3 {
+  align-self: flex-start;
+  text-align: left;
+  width: auto;
+}
+
+.initial-wireframe figcaption{
+  font-style: normal;
+}
+
+#in-wireframe-1 {
+  display: flex;
+}
+
+.numbertext {
+  font-family: var(--secondary-font);
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.6rem;
+  padding: 0.8rem 1.2rem;
+}
+
+.first-wireframe {
+  width: 60rem;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  background-color: rgba(63, 94, 251, 0.597);
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 1rem 0 0 1rem;
+}
+
+.prev {
+  left: 0;
+  border-radius: 0 1rem 1rem 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: var(--site-color-2);
+}
+
+#three-dots {
+  margin: 3rem;
+  text-align: center;
+}
+
+.dot {
+  cursor: pointer;
+  height: 1rem;
+  width: 1rem;
+  margin: 0 0.8rem;
+  background-color: #bababa;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.activeDot,
+.dot:hover {
+  background-color: var(--site-color-2);
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.typography {
   width: 100%;
 }
 
-.typography{
-  width: 100%;
-}
-
-.design-elements{
+.design-elements {
   width: 100%;
 }
 .heading {
@@ -60,64 +171,64 @@ main {
   text-align: center;
 }
 
-p, figcaption, .design-list li {
+p,
+figcaption,
+.design-list li {
+  font-family: var(--secondary-font);
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 2.2rem;
 }
 
+figcaption{
+  font-style:italic;
+}
+
 .design-list {
   list-style: square;
   width: 100%;
+  margin: 0 0 7rem 0;
 }
 
 .design-list li a {
   color: var(--site-color-2);
 }
 
-
 .ixd-container {
   width: 100%;
   padding: 3rem 0;
 }
 
-.initial-wireframe {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-
-}
-
-.first-wireframe {
-  width: 60rem;
-}
-
 .flow-diagrams {
   width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
+  gap: 2rem;
 }
 
 .user-diagrams {
-  height: 60rem;;
+  height: 60rem;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.345);
+  margin-bottom: 1rem;
+  
 }
 
-.flow-diagrams figure{
+.flow-diagrams figure {
   margin: 0;
   width: 100%;
 }
 .design-reference {
   display: flex;
-  flex-direction: column;
-  gap: 1rem;
+  flex-direction: row;
+  gap: 2rem;
 }
 
 .design-reference figure figcaption {
-  margin: 1rem 0;
+  margin: 1rem;
 }
 
 .reference-site {
@@ -126,7 +237,7 @@ p, figcaption, .design-list li {
 }
 
 .reference-site:hover {
-  transform: translateX(0.4rem);
+  transform: translateY(-0.4rem);
   box-shadow: 0 0 1rem var(--site-color-2);
 }
 
@@ -165,47 +276,13 @@ p, figcaption, .design-list li {
 .visual-element-diagram {
   text-align: left;
   margin: 1rem 0;
+  font-style: italic;
 }
 
-h1{
-  text-align: center;
-  font-size: 5rem;
-  font-weight: bold;
-  line-height: 5rem;
+h1,h2,h3,h4,h5 {
+  font-family: var(--secondary-font);
+  text-align: left;
   text-transform: uppercase;
-  text-align: center;
-}
-
-h2 {
-  font-family: 'Satoshi', sans-serif;
-  text-align: left;
-  font-size: 2.6rem;
-  font-weight: 600;
-  line-height: 3rem;
-}
-
-h3 {
-  font-family: 'Satoshi', sans-serif;
-  text-align: left;
-  font-size: 2.2rem;
-  font-weight: 500;
-  line-height: 2.6rem;
-}
-
-h4 {
-  font-family: 'Satoshi', sans-serif;
-  text-align: left;
-  font-size: 2rem;
-  font-weight: 450;
-  line-height: 2rem;
-}
-
-h5 {
-  font-family: 'Satoshi', sans-serif;
-  text-align: left;
-  font-size: 1.8rem;
-  line-height: 1.8em;
-  font-weight: 450;
 }
 
 .web-image {
@@ -223,200 +300,40 @@ h5 {
   box-shadow: 0 0 1rem var(--site-color-2);
 }
 
-.website-name{
+.website-name {
   font-weight: 600;
 }
 
-footer{
+footer {
   box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.345);
 }
 
-footer p{
+footer p {
   font-size: 1.4rem;
   line-height: 5rem;
   text-align: center;
   font-weight: 520;
-
 }
 
-figure{
+figure {
   margin: 0;
 }
 
-@media (max-width: 600px){
-  main{
+@media (max-width: 600px) {
+  main {
     width: 100%;
     height: 100%;
   }
 
-  p, figcaption, .design-list li {
-  font-size: 1.2rem;
-  font-weight: 400;
-  line-height: 2rem;
-  }
-
-  h1{
-    font-size: 3.2rem;
-    line-height: 3.2rem;
-  }
-
-  .subheading {
-    font-size: 1.4rem;
-    line-height: 2.4rem;
-  }
-
-  h2{
-    font-size: 2.2rem;
-    line-height: 2.4rem;
-    text-transform: uppercase;
-  }
-
-  h3{
-    font-size: 1.9rem;
-    line-height: 2.2rem;
-    text-transform: uppercase;
-  }
-
-  h4{
-    font-size: 1.7rem;
-    line-height: 2rem;
-    text-transform: uppercase;
-  }
-
-  h5{
-    font-size: 1.6rem;
-    line-height: 2rem;
-    text-transform: uppercase;
-  }
-
-  .first-wireframe {
-  width: 40rem;
-  }
-
-  .user-diagrams {
-  height: 20rem;
-  }
-
-  .font-choices {
-  width: 40rem;
-  }
-
-  .reference-site {
-  width: 40rem;
-  }
-
-  .pallete {
-  width: 20rem;
-  }
-
-  .final-wireframe{
-  height: 20rem;
-  }
-
-  .web-image {
-  height: 20rem;
-  }
-}
-
-@media (min-width: 601px){
-  main{
-    width: 100%;
-    height: 100%;
-  }
-
-  p, figcaption, .design-list li {
-  font-size: 1.2rem;
-  font-weight: 400;
-  line-height: 2rem;
-  }
-
-  h1{
-    font-size: 3.2rem;
-    line-height: 3.2rem;
-  }
-
-  .subheading {
-    font-size: 1.4rem;
-    line-height: 2.4rem;
-  }
-
-  h2{
-    font-size: 2.2rem;
-    line-height: 2.4rem;
-    text-transform: uppercase;
-  }
-
-  h3{
-    font-size: 1.9rem;
-    line-height: 2.2rem;
-    text-transform: uppercase;
-  }
-
-  h4{
-    font-size: 1.7rem;
-    line-height: 2rem;
-    text-transform: uppercase;
-  }
-
-  h5{
-    font-size: 1.6rem;
-    line-height: 2rem;
-    text-transform: uppercase;
-  }
-
-  .first-wireframe {
-  width: 40rem;
-  }
-
-  .user-diagrams {
-  height: 20rem;
-  }
-
-  .font-choices {
-  width: 40rem;
-  }
-
-  .reference-site {
-  width: 40rem;
-  }
-
-  .pallete {
-  width: 20rem;
-  }
-
-  .final-wireframe{
-  height: 20rem;
-  }
-
-  .web-image {
-  height: 20rem;
-  }
-}
-
-@media (min-width: 400px){
-  main{
-    width: 100%;
-    height: 100%;
-  }
-
-  p, figcaption, .design-list li {
-  font-size: 1.2rem;
-  }
-
-  p{
-  }
-  
-
-  figcaption{
-  }
-  
-  .design-list{
-    width: 100%;
-  }
+  p,
+  figcaption,
   .design-list li {
-
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 2rem;
   }
-  h1{
+
+  h1 {
     font-size: 3.2rem;
     line-height: 3.2rem;
   }
@@ -426,73 +343,69 @@ figure{
     line-height: 2.4rem;
   }
 
-  h2{
+  h2 {
     font-size: 2.2rem;
     line-height: 2.4rem;
-    text-transform: uppercase;
   }
 
-  h3{
+  h3 {
     font-size: 1.9rem;
     line-height: 2.2rem;
-    text-transform: uppercase;
   }
 
-  h4{
+  h4 {
     font-size: 1.7rem;
     line-height: 2rem;
-    text-transform: uppercase;
   }
 
-  h5{
+  h5 {
     font-size: 1.6rem;
     line-height: 2rem;
-    text-transform: uppercase;
   }
 
   .first-wireframe {
-  width: 32rem;
+    width: 40rem;
   }
 
   .user-diagrams {
-  height: 30rem;
+    height: 20rem;
   }
 
   .font-choices {
-  width: 34rem;
+    width: 40rem;
   }
 
   .reference-site {
-  width: 35rem;
   }
 
   .pallete {
-  width: 20rem;
+    width: 20rem;
   }
 
-  .final-wireframe{
-  height: 20rem;
+  .final-wireframe {
+    height: 20rem;
   }
 
   .web-image {
-  height: 16.5rem;
+    height: 20rem;
   }
 }
 
-
-@media (min-width: 768px){
-  main{
+@media (min-width: 601px) {
+  main {
     width: 100%;
     height: 100%;
   }
 
-  p, figcaption, .design-list li {
-  font-size: 1.2rem;
-  font-weight: 400;
-  line-height: 2rem;
+  p,
+  figcaption,
+  .design-list li {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 2rem;
   }
 
-  h1{
+  h1 {
     font-size: 3.2rem;
     line-height: 3.2rem;
   }
@@ -502,75 +415,229 @@ figure{
     line-height: 2.4rem;
   }
 
-  h2{
+  h2 {
     font-size: 2.2rem;
     line-height: 2.4rem;
-    text-transform: uppercase;
   }
 
-  h3{
+  h3 {
     font-size: 1.9rem;
     line-height: 2.2rem;
-    text-transform: uppercase;
   }
 
-  h4{
+  h4 {
     font-size: 1.7rem;
     line-height: 2rem;
-    text-transform: uppercase;
   }
 
-  h5{
+  h5 {
     font-size: 1.6rem;
     line-height: 2rem;
-    text-transform: uppercase;
   }
 
   .first-wireframe {
-  width: 50rem;
+    width: 40rem;
   }
 
   .user-diagrams {
-  height: 40rem;
+    height: 20rem;
   }
 
   .font-choices {
-  width: 40rem;
+    width: 40rem;
   }
 
   .reference-site {
-  width: 40rem;
+
   }
 
   .pallete {
-  width: 20rem;
+    width: 20rem;
   }
 
-  .final-wireframe{
-  height: 35rem;
+  .final-wireframe {
+    height: 20rem;
   }
 
   .web-image {
-  height: 30rem;
+    height: 20rem;
   }
 }
 
-
-@media (min-width: 992px){
-  main{
+@media (min-width: 400px) {
+  main {
     width: 100%;
     height: 100%;
   }
 
-  p, figcaption, .design-list li {
-  font-size: 1.6rem;
-  font-weight: 400;
-  line-height: 2.2rem;
+  p,
+  figcaption,
+  .design-list li {
+    font-size: 1.2rem;
   }
 
-  h1{
+  .design-list {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+  }
+
+  .subheading {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+    line-height: 2.4rem;
+  }
+
+  h3 {
+    font-size: 1.9rem;
+    line-height: 2.2rem;
+  }
+
+  h4 {
+    font-size: 1.7rem;
+    line-height: 2rem;
+  }
+
+  h5 {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+
+  .first-wireframe {
+    width: 32rem;
+  }
+
+  .user-diagrams {
+    height: 30rem;
+  }
+
+  .font-choices {
+    width: 34rem;
+  }
+
+  .reference-site {
+  }
+
+  .pallete {
+    width: 20rem;
+  }
+
+  .final-wireframe {
+    height: 20rem;
+  }
+
+  .web-image {
+    height: 16.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  main {
+    width: 100%;
+    height: 100%;
+  }
+
+  p,
+  figcaption,
+  .design-list li {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 2rem;
+  }
+
+  h1 {
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+    text-transform: uppercase;
+  }
+
+  .subheading {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+    line-height: 2.4rem;
+    font-weight: 700;
+  }
+
+  h3 {
+    font-size: 1.9rem;
+    line-height: 2.2rem;
+    font-weight: 550;
+  }
+
+  h4 {
+    font-size: 1.7rem;
+    line-height: 2rem;
+    font-weight: 550;
+  }
+
+  h5 {
+    font-size: 1.7rem;
+    line-height: 2rem;
+    font-weight: 500;
+  }
+
+  .first-wireframe {
+    width: 50rem;
+  }
+
+  .user-diagrams {
+    height: 40rem;
+  }
+
+  .font-choices {
+    width: 40rem;
+  }
+
+  .reference-site {
+    height: 20rem;
+  }
+
+  .pallete {
+    width: 20rem;
+  }
+
+  .final-wireframe {
+    height: 35rem;
+  }
+
+  .web-image {
+    height: 30rem;
+  }
+}
+
+@media (min-width: 992px) {
+  main {
+    width: 100%;
+    height: 100%;
+  }
+
+  p,
+  figcaption,
+  .design-list li {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.2rem;
+  }
+
+  h1 {
     font-size: 5rem;
     line-height: 5rem;
+  }
+
+  .heading {
+    height: 100%;
+    margin: 0 0 5rem 0;
   }
 
   .subheading {
@@ -578,58 +645,54 @@ figure{
     line-height: 1.7rem;
   }
 
-  h2{
-    font-size: 2.6rem;
-    line-height: 2.3rem;
-    text-transform: uppercase;
+  h2 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
   }
 
-  h3{
+  h3 {
     font-size: 2.2rem;
     line-height: 2.6rem;
-    text-transform: uppercase;
   }
 
-  h4{
+  h4 {
     font-size: 2rem;
     line-height: 2rem;
-    text-transform: uppercase;
   }
 
-  h5{
-    font-size: 1.8rem;
-    line-height: 1.8rem;
-    text-transform: uppercase;
+  h5 {
+    font-size: 1.6rem;
+    line-height: 1.8em;
+    font-weight: 450;
   }
 
   .first-wireframe {
-  width: 70rem;
+    width: 70rem;
   }
 
   .user-diagrams {
-  height: 60rem;
+    height: 60rem;
   }
 
   .font-choices {
-    height: 20rem;
+    width: 55rem;
   }
 
   .reference-site {
-    width: 40rem;
-    height: 20rem;
+    height: 27rem;
+    margin: 0 0.5rem;
   }
 
   .pallete {
-  width: 20rem;
+    width: 20rem;
   }
 
-  .final-wireframe{
-  height: 50rem;
+  .final-wireframe {
+    height: 50rem;
   }
 
   .web-image {
-  height: 40rem;
+    height: 40rem;
   }
 }
-
-

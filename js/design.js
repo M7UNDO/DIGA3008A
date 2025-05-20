@@ -1,33 +1,3 @@
-/*let wireFrameIndex = 1;
-showSlides(wireFrameIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(wireFrameIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(wireFrameIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("initial-wireframe");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length){wireFrameIndex = 1}
-  if(n < 1) {wireFrameIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" activeDot", "");
-  }
-  slides[wireFrameIndex-1].style.display = "flex";
-  dots[wireFrameIndex-1].className += " activeDot";
-}
-*/
-
 let wireFrameIndex = 1; //tracking what slide is currently being displayed, setting it to 1 by default
 showSlides(wireFrameIndex); //Calling the function display the first slide immediately when my pages loads
 
@@ -63,4 +33,42 @@ function showSlides(n) {
   //Doing this because Arrays start at 0;
   slides[wireFrameIndex - 1].style.display = "flex"; //Displays the selected slide (wireFrameIndex - 1, because arrays are 0-based).
   dot[wireFrameIndex - 1].className += " activeDot"; //Adds the "activeDot" class to the corresponding dot to highlight it.
+}
+
+
+let finalWireframeIndex = 1;
+showSlides2(finalWireframeIndex);
+
+function plusSlidess(n){
+  showSlides2(finalWireframeIndex += n);
+}
+
+function currentSlide2(n){
+  showSlides2(finalWireframeIndex = n);
+}
+
+function showSlides2(n){
+  let i;
+  let slides = document.getElementsByClassName("design-elements-box");
+  let dots = document.getElementsByClassName("dots");
+
+  if( n > slides.length){
+    finalWireframeIndex = 1;
+  }
+
+  if( n < 1){
+    finalWireframeIndex = slides.length;
+  }
+
+  for(i = 0; i < slides.length; i++){
+    slides[i].style.display = "none";
+  }
+
+  for(i = 0; i <dots.length; i++){
+    dots[i].className = dots[i].className.replace(" dotActive", "");
+  }
+  slides[finalWireframeIndex -1].style.display = "flex";
+  dots[finalWireframeIndex -1].className += " dotActive";
+
+
 }

@@ -24,9 +24,10 @@ main {
   height: 100%;
 }
 
+/*Inital Wireframes*/
 .initial-wireframe-container {
   align-items: center;
-  width: 90%;
+  width: 75%;
   height: fit-content;
   position: relative;
 }
@@ -48,7 +49,7 @@ main {
   width: auto;
 }
 
-.initial-wireframe figcaption{
+.initial-wireframe figcaption {
   font-style: normal;
 }
 
@@ -69,7 +70,9 @@ main {
 }
 
 .prev,
-.next {
+.next,
+.prev-button,
+.next-button {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -83,19 +86,22 @@ main {
   transition: 0.6s ease;
   user-select: none;
 }
-.next {
+.next,
+.next-button {
   right: 0;
   border-radius: 1rem 0 0 1rem;
 }
 
-.prev {
+.prev,
+.prev-button {
   left: 0;
   border-radius: 0 1rem 1rem 0;
 }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
-.next:hover {
+.prev-button:hover, .next:hover,
+.next-button:hover {
   background-color: var(--site-color-2);
 }
 
@@ -104,7 +110,8 @@ main {
   text-align: center;
 }
 
-.dot {
+.dot,
+.dots {
   cursor: pointer;
   height: 1rem;
   width: 1rem;
@@ -120,7 +127,13 @@ main {
   background-color: var(--site-color-2);
 }
 
+.dotActive,
+.dots:hover {
+  background-color: var(--site-color-2);
+}
+
 /* Fading animation */
+
 .fade {
   animation-name: fade;
   animation-duration: 0.5s;
@@ -135,13 +148,51 @@ main {
   }
 }
 
+.final-wireframe {
+  height: 40rem;
+  border-radius: 1.25rem;
+}
+
+/*Second Set of wireframes*/
+
+.design-elements {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.401);
+  border-radius: 2rem;
+}
+
+.design-elements-box {
+  margin: 3rem 0;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#fin-wireframe-1 {
+  display: flex;
+}
+
+.visual-element-diagram {
+  text-align: left;
+  margin: 1rem 0;
+  font-style: italic;
+}
+
 .typography {
   width: 100%;
 }
 
-.design-elements {
-  width: 100%;
+.typography figure {
+  width: 50%;
+  background-color: red;
 }
+
 .heading {
   margin: 0;
   padding-bottom: 3rem;
@@ -180,8 +231,8 @@ figcaption,
   line-height: 2.2rem;
 }
 
-figcaption{
-  font-style:italic;
+figcaption {
+  font-style: italic;
 }
 
 .design-list {
@@ -214,7 +265,6 @@ figcaption{
   padding: 1rem 2rem;
   box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.345);
   margin-bottom: 1rem;
-  
 }
 
 .flow-diagrams figure {
@@ -251,10 +301,25 @@ figcaption{
   margin-bottom: 6rem;
 }
 
-.pallete {
-  width: 30rem;
-  box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.345);
+/*container for all the colour palletes*/
+.colour-palettes{
+  display: flex;
+  column-gap: 2rem;
+}
+
+/*container for each of the paletes*/
+.pallete-container {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid 0.3rem rgba(0, 0, 0, 0.184);
   border-radius: 1.25rem;
+  padding: 3rem;
+  
+}
+.pallete {
+  height: 18.5rem;
 }
 
 .font-choices {
@@ -263,23 +328,11 @@ figcaption{
   box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.345);
 }
 
-.final-wireframe {
-  height: 40rem;
-  box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.345);
-  border-radius: 1.25rem;
-}
-
-.design-elements-box {
-  margin: 3rem 0;
-}
-
-.visual-element-diagram {
-  text-align: left;
-  margin: 1rem 0;
-  font-style: italic;
-}
-
-h1,h2,h3,h4,h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: var(--secondary-font);
   text-align: left;
   text-transform: uppercase;
@@ -379,7 +432,7 @@ figure {
   }
 
   .pallete {
-    width: 20rem;
+    height: 18.5rem;
   }
 
   .final-wireframe {
@@ -448,11 +501,10 @@ figure {
   }
 
   .reference-site {
-
   }
 
   .pallete {
-    width: 20rem;
+    height: 18.5rem;
   }
 
   .final-wireframe {
@@ -526,7 +578,7 @@ figure {
   }
 
   .pallete {
-    width: 20rem;
+    height: 18.5rem;
   }
 
   .final-wireframe {
@@ -584,7 +636,6 @@ figure {
   h5 {
     font-size: 1.7rem;
     line-height: 2rem;
-    font-weight: 500;
   }
 
   .first-wireframe {
@@ -604,7 +655,7 @@ figure {
   }
 
   .pallete {
-    width: 20rem;
+    height: 18.5rem;
   }
 
   .final-wireframe {
@@ -625,7 +676,7 @@ figure {
   p,
   figcaption,
   .design-list li {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     font-weight: 400;
     line-height: 2.2rem;
   }
@@ -641,8 +692,8 @@ figure {
   }
 
   .subheading {
-    font-size: 1.6rem;
-    line-height: 1.7rem;
+    font-size: 1.7rem;
+    line-height: 2rem;
   }
 
   h2 {
@@ -652,19 +703,20 @@ figure {
   }
 
   h3 {
-    font-size: 2.2rem;
+    font-size: 1.9rem;
     line-height: 2.6rem;
   }
 
   h4 {
-    font-size: 2rem;
-    line-height: 2rem;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    font-weight: bold;
   }
 
   h5 {
-    font-size: 1.6rem;
-    line-height: 1.8em;
-    font-weight: 450;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    font-weight: 500;
   }
 
   .first-wireframe {
@@ -685,7 +737,7 @@ figure {
   }
 
   .pallete {
-    width: 20rem;
+    height: 23rem;
   }
 
   .final-wireframe {

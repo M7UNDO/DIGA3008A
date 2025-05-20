@@ -155,7 +155,12 @@ a:hover {
   text-transform: uppercase;
   padding: 0 2rem;
   margin: 3rem 0 0 0;
+  transition: all 0.4s ease-in-out 0s ;
 
+}
+
+#contact-btn:hover{
+  background-color: rgb(23, 46, 162);
 }
 
 @media only screen and (max-width: 600px) {

@@ -36,7 +36,7 @@ function showSlides(n) {
 }
 
 
-let finalWireframeIndex = 1;
+let finalWireframeIndex = 1; //Make this more dynamiic for the sake of not having multiple indexes
 showSlides2(finalWireframeIndex);
 
 function plusSlidess(n){

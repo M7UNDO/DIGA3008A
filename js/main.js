@@ -28,3 +28,11 @@ function closeNav(){
     document.getElementsByClassName("closeBtn")[0].style.display = "none"
 
 }
+
+function lineSlide(){
+  let line = document.querySelector("solid");
+
+  line.style.width = "100%"
+}
+
+Window.onload.lineSlide();

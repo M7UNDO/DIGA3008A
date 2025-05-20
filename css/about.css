@@ -416,6 +416,104 @@ a:hover {
     height: 100%;
     width: 80%;
     display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 3rem 0;
+    padding: 5rem 2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.216);
+  }
+
+  .about-heading {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-self: flex-start;
+  }
+
+  .about-heading h1 {
+    position: relative;
+    font-size: 4rem;
+    line-height: 4.5rem;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  .about-background,
+  span,
+  .email {
+    text-align: left;
+    font-size: 1.6rem;
+    line-height: 1.7rem;
+    font-weight: 450;
+  }
+
+  .about-content {
+    width: 62%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    row-gap: 0.3rem;
+    margin-right: 2rem;
+  }
+
+  h2{
+    font-size: 2rem;
+    font-weight: 450;
+    line-height: 2.3rem;
+    font-weight: 600;
+  }
+
+  h3{
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.3rem;
+  }
+
+  .skill-list {
+    list-style-type: url(../images/icons/life-ring.svg);
+  }
+
+  .about-skills li {
+    font-size: 1.6rem;
+    font-weight: 450;
+    line-height: 1.7rem;
+  }
+
+  .profile-photo {
+    flex: 3;
+    width: 40rem;
+    height: 40rem;
+  }
+}
+
+@media only screen and (min-width: 1240px) {
+  main {
+    height: 100%;
+    width: 100%;
+    padding-top: 0rem;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .about-info {
+    width: 90%;
+    height: fit-content;
+
+  }
+  .about-container {
+    height: 100%;
+    width: 80%;
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -490,4 +588,11 @@ a:hover {
     width: 40rem;
     height: 40rem;
   }
+}
+/*
+@media (max-width: 1024px) {
+  .about-container{
+    flex-direction: column-reverse;
+  }
+  
 }

@@ -3,17 +3,18 @@ header {
 }
 
 main {
+  font-family: var(--secondary-font);
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 2rem 4rem;
+  margin: 4rem 4rem 2rem 4rem;
   padding: 0 8rem;
 }
 
-.blog-heading {
-  margin: 5rem 3rem 0 0;
+.heading {
+  margin: 5rem 3rem 0;
 }
 
 p {
@@ -22,7 +23,7 @@ p {
   line-height: 2.1rem;
 }
 
-.blog-heading p {
+.heading p {
   position: relative;
   font-size: 1.6rem;
   line-height: 1.8rem;
@@ -30,14 +31,14 @@ p {
   z-index: -0.8;
 }
 
-.blog-heading p a {
+.heading p a {
   font-size: 1.6rem;
   line-height: 1.8rem;
   color: var(--site-color-2);
   text-decoration: none;
 }
 
-.blog-heading p a:hover {
+.heading p a:hover {
   color: var(--site-color-2);
   font-weight: 450;
 }
@@ -60,7 +61,7 @@ p {
 }
 
 .blog-ixd {
-  margin-top: 0rem; 
+  margin-top: 0rem;
 }
 
 .reference-list {
@@ -145,7 +146,7 @@ h1 {
   line-height: 4.2rem;
 }
 
-.blog-heading p {
+.heading p {
   font-size: 1.2rem;
   line-height: 1.8rem;
 }
@@ -155,7 +156,7 @@ h1 {
   line-height: 3.8rem;
 }
 
-.blog-heading span {
+.heading span {
   font-weight: 400;
 }
 
@@ -190,6 +191,7 @@ hr.solid {
   margin: 5rem 0 3rem 0;
 }
 
+/*
 .nav-btn-container{
   height: 6rem;
   display: flex;
@@ -202,7 +204,7 @@ hr.solid {
 }
 
 .previous-btn{
-  border: none; /* Remove borders */
+  border: none; 
   border-radius: 5rem;
   outline: none;
   width: 5rem;
@@ -223,7 +225,7 @@ hr.solid {
 }
 
 .next-btn{
-  border: none; /* Remove borders */
+  border: none; 
   border-radius: 5rem;
   outline: none;
   width: 5rem;
@@ -243,6 +245,7 @@ hr.solid {
   box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.445);
 
 }
+*/
 
 @media (max-width: 600px) {
   main {
@@ -265,7 +268,7 @@ hr.solid {
     line-height: 3.8rem;
   }
 
-  .blog-title p{
+  .blog-title p {
     font-size: 3.4rem;
     line-height: 3.8rem;
   }
@@ -277,14 +280,13 @@ hr.solid {
     line-height: 3.4rem;
   }
 
-  .blog-heading span {
+  .heading span {
     font-weight: 400;
   }
 
   a.p-author.h-card {
     font-size: 1.3rem;
     line-height: 1.6rem;
-
   }
 
   h2 {
@@ -311,7 +313,6 @@ hr.solid {
     font-size: 1.3rem;
     line-height: 1.6rem;
   }
-
 
   .publish {
     font-family: "Satoshi", sans-serif;
@@ -369,7 +370,7 @@ hr.solid {
     line-height: 3.4rem;
   }
 
-  .blog-heading span {
+  .heading span {
     font-weight: 400;
   }
 
@@ -403,7 +404,6 @@ hr.solid {
     line-height: 1.7rem;
   }
 
-
   .publish {
     text-align: center;
     position: relative;
@@ -432,33 +432,32 @@ hr.solid {
 }
 
 @media (min-width: 992px) {
-  .blog-heading {
-    margin: 5rem 3rem 0 0;
+  main{
+    margin: 4rem 0 2rem 0;
   }
 
-  .blog-container{
+
+  .blog-container {
     margin: 2rem 10rem;
   }
 
-
   p {
-    font-family: var(--secondary-font);
-    font-size: 1.6rem;
-    font-weight: 400;
-    line-height: 1.8rem;
+    font-size: 1.7rem;
+    font-weight: 420;
+    line-height: 2rem;
   }
 
-  .blog-heading .publish {
+  .heading .publish {
     position: relative;
-    font-size: 1.6rem;
-    line-height: 1.8rem;
+    font-size: 1.7rem;
+    line-height: 2rem;
     padding: 0 1rem;
     z-index: -0.8;
   }
 
-  .blog-heading .publish a {
-    font-size: 1.6rem;
-    line-height: 1.8rem;
+  .heading .publish a {
+    font-size: 1.7rem;
+    line-height: 2rem;
     color: var(--site-color-2);
     text-decoration: none;
   }
@@ -484,9 +483,9 @@ hr.solid {
   }
 
   .reference-list li {
-    font-family: var(--secondary-font);
     padding: 0.5rem 0;
     font-size: 1.7rem;
+    line-height: 2rem;
   }
 
   .reference-list li a {
@@ -517,17 +516,21 @@ hr.solid {
     list-style: square;
     margin-left: 0;
     font-size: 1.7rem;
+    line-height: 2rem;
+    font-weight: 420;
   }
 
   .blog-list li {
     margin: 1rem 0;
     font-size: 1.7rem;
     line-height: 2rem;
+    font-weight: 420;
   }
 
   .blog-list li a {
     color: var(--site-color-2);
     text-decoration: none;
+    font-weight: 500;
   }
 
   .blog-list li a:hover {
@@ -557,13 +560,13 @@ hr.solid {
 
   h1 {
     text-align: center;
-    font-size: 3.6rem;
+    font-size: 4rem;
     font-weight: bold;
     line-height: 4rem;
-
+    text-transform: uppercase;
   }
 
-  .blog-heading p {
+  .heading p {
     font-size: 1.2rem;
     line-height: 1.8rem;
   }
@@ -573,14 +576,14 @@ hr.solid {
     line-height: 3.8rem;
   }
 
-  .blog-heading span {
+  .heading span {
     font-weight: 400;
   }
 
   h2 {
     text-align: left;
     font-size: 2.4rem;
-    font-weight: 450;
+    font-weight: 550;
     line-height: 3rem;
   }
 

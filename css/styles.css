@@ -40,6 +40,35 @@ h1.slide-in {
   opacity: 1;
 }
 
+.heading{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.subheading {
+  width: fit-content;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  margin-top: -1rem;
+  position: relative;
+  margin-bottom: 8rem;
+  text-align: center;
+}
+
+.subheading::after {
+  content: "";
+  position: absolute;
+  background-color: var(--site-color-2);
+  height: 0.2rem;
+  width: 100%;
+  left: 0rem;
+  bottom: -3rem;
+  text-align: center;
+}
+
 main {
   height: calc(100vh - 8rem);
   margin-top: 8rem;
@@ -248,6 +277,61 @@ footer p {
   color: white;
   background-color: rgba(255, 0, 72, 0.808);
 }
+
+.nav-btn-container{
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 5rem;
+  width: 100%;
+  margin: 2rem 0;
+
+}
+
+.previous-btn{
+  border: none; /* Remove borders */
+  border-radius: 5rem;
+  outline: none;
+  width: 5rem;
+  height: 5rem;
+  background-color: var(--site-color-1);
+  color: white;
+  font-size: 2rem;
+  line-height: 5rem;
+  transition: all 0.5s ease 0s;
+  
+}
+
+.previous-btn:hover{
+  transform: translateY(-0.4rem);
+  background-color: var(--site-color-3);
+  color: var(--site-color-1);
+  box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.445);
+}
+
+.next-btn{
+  border: none; /* Remove borders */
+  border-radius: 5rem;
+  outline: none;
+  width: 5rem;
+  height: 5rem;
+  background-color: var(--site-color-1);
+  color: white;
+  font-size: 2rem;
+  line-height: 5rem;
+  transition: all 0.5s ease 0s;
+
+}
+
+.next-btn:hover{
+  transform: translateY(-0.4rem);
+  background-color: var(--site-color-3);
+  color: var(--site-color-1);
+  box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.445);
+
+}
+
 
 @media (max-width: 60rem) {
   main {

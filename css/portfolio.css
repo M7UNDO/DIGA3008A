@@ -36,6 +36,7 @@ h1 {
 }
 
 .subheading {
+  width: fit-content;
   font-size: 1.6rem;
   line-height: 1.6rem;
   margin-top: -1rem;

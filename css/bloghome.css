@@ -39,8 +39,8 @@ main {
 }
 
 .subheading {
-  font-size: 1.6rem;
-  line-height: 1.6rem;
+  font-size: 1.7rem;
+  line-height: 1.7rem;
   margin-top: -1rem;
   position: relative;
   margin-bottom: 8rem;
@@ -652,8 +652,8 @@ footer p {
 
   .subheading {
     font-family: var(--primary-font);
-    font-size: 1.6rem;
-    line-height: 1.6rem;
+    font-size: 1.7rem;
+    line-height: 1.7rem;
     margin-top: -1rem;
     position: relative;
     margin-bottom: 8rem;
@@ -672,9 +672,9 @@ footer p {
   }
 
   h1 {
-    font-size: 5rem;
+    font-size: 5.5rem;
     font-weight: bold;
-    line-height: 5rem;
+    line-height: 5.5rem;
     text-transform: uppercase;
   }
 

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Mfundo Dhlamini" />
+    <meta name="description" content="Read weekly blog posts by Mfundo Dhlamini, sharing insights, and reflections." />
+    <title>Blog 8</title>
+    <link rel="stylesheet" href="../css/normalise.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/blog.css" />
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@1,2&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/a977cb27e6.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navcontainer">
+        <div class="nav-logo">
+          <div class="logo"><a href="../index.html">M7UNDO</a></div>
+          <label class="burgerbutton" onclick="openNav()"><i class="fa-solid fa-bars"></i></label>
+        </div>
+
+        <div class="nav-menu">
+          <a class="closeBtn" onclick="closeNav()"><i class="fa-solid fa-xmark"></i></a>
+          <ul class="navlinks">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="index.html">Blogs</a></li>
+            <li><a href="../essays/index.html">Essays</a></li>
+            <li><a href="../portfolio/index.html">Portfolio</a></li>
+            <li><a href="../blogs/index.html">Blogs</a></li>
+            <li><a href="../about/index.html">About</a></li>
+          </ul>
+          <div class="nav-sm">
+            <a href="https://www.linkedin.com/in/mfundo-dhlamini" target="_blank"
+              ><div class="sm-linkedin">
+                <img class="icon" src="../images/icons/social_10097160.png" alt="Linkedin logo" /></div
+            ></a>
+            <a href="https://github.com/M7UNDO" target="_blank"
+              ><div class="sm-github">
+                <img class="icon" src="../images/icons/GitHub_Invertocat_Light.png" alt="Github logo" /></div
+            ></a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <article class="blog-container h-entry">
+        <div class="heading">
+          <h1 class="blog-title p-name" id="heading-intro">
+            <span>Blog Post 8:</span>Coding with Consciousness: Decolonialism and Design Decisions
+          </h1>
+          <p class="publish">
+            Published on:
+            <time class="dt-published" datetime="2025-05-12">12 May 2025,</time>
+            by
+            <a class="p-author h-card" href="../about/index.html">Mfundo Dhlamini</a>
+          </p>
+        </div>
+        <hr class="solid" />
+        <div class="content">
+          <div class="blog-content">
+            <h2>
+              Reflecting on how my code matters in the context of decolonialism, and identifying things in my own coding
+              practice that I should be aware of
+            </h2>
+            <p>
+              When thinking about how my coding practice fits into a decolonial framework, one key thing I've become
+              aware of is whose design conventions I'm centring and who gets excluded by default. Since most web
+              development is shaped by Western-centric design systems, assumptions about user behaviour and
+              accessibility standards don't always reflect local or Global South contexts. As I build my website, I ask
+              myself if it reflects my culture and my community or if it just replicates templates made for someone
+              else's audience.
+            </p>
+          </div>
+
+          <div class="blog-content">
+            <h2>Development process (Initial JavaScript implementation)</h2>
+            <ul class="blog-list">
+              <li>
+                <span class="list-item">Scroll back to top button</span> I added a scroll back to top button for certain
+                pages on my website that have more content and require users to scroll down significantly. I realised
+                that users would benefit from a quick way to scroll back up to the top, especially on mobile, where
+                scrolling back to the top on long pages requires a lot of effort and excessive scrolling. Although this
+                is a small change, it is something that has a meaningful impact on accessibility and comfort.
+              </li>
+              <li>
+                <span class="list-item">Navigation menu on smaller screens:</span> I previously had issues with the
+                navigation menu on smaller screens, as CSS alone wasn't flexible enough to animate the menu sliding in
+                and out exactly as I wanted. However, by writing two functions, triggered by clicks on the burger and
+                close buttons, which seamlessly open and close the navigation by adjusting the width of the navigation
+                menu between 0% and 100%. This not only allowed me to achieve the sliding effect I envisioned but also
+                simplified my code and improved the overall interaction design by making the menu more intuitive and
+                responsive for mobile users.
+              </li>
+              <li>
+                <span class="list-item">Button mouseover/mouseout effects</span> I wanted to create a hover effect that
+                would invert the background and text colour of my button when the user hovered over it and then revert
+                it when the mouse stopped hovering. JavaScript event listeners made this easy to implement using
+                mouseover and mouseout events. This approach gave me full control over the interaction and helped me
+                achieve exactly the visual feedback I envisioned. Combined with CSS transitions, it also improved the
+                smoothness and quality of the user experience, making interactions feel more deliberate and polished.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </article>
+      <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+      <div class="nav-btn-container">
+        <a href="blog7.html"
+          ><button class="previous-btn"><i class="fa-solid fa-arrow-left"></i></button
+        ></a>
+        <a href="blog9.html"
+          ><button class="next-btn"><i class="fa-solid fa-arrow-right"></i></button
+        ></a>
+        <!--<a href=""><button class="next-btn"><i class="fa-solid fa-arrow-right"></i></button></a>-->
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Mfundo Dhlamini. All Rights Reserved</p>
+    </footer>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

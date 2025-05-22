@@ -2,34 +2,112 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 main {
   height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 5rem 0;
+  gap: 1rem;
 }
 
-.heading {
-  margin: 0 3rem 0 0;
-}
-
+/*Design Section Container*/
 .design-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 85%;
+  width: 100%;
   height: 100%;
+  padding: 0 8rem;
+  gap: 1.5rem;
 }
 
-/*Inital Wireframes*/
+/*Headings*/
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--secondary-font);
+  text-align: left;
+  text-transform: uppercase;
+  width: fit-content;
+  margin: 1rem 0;
+}
+
+h1 {
+  font-family: var(--secondary-font);
+  text-align: left;
+  text-transform: uppercase;
+  width: fit-content;
+}
+
+.h2-initial {
+  width: auto;
+  align-self: flex-start;
+}
+.heading {
+  margin: 0;
+  padding-bottom: 3rem;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.subheading {
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  margin-top: -1rem;
+  position: relative;
+  margin-bottom: 8rem;
+  text-align: center;
+}
+
+.subheading::after {
+  content: "";
+  position: absolute;
+  background-color: var(--site-color-2);
+  height: 0.2rem;
+  width: 100%;
+  left: 0rem;
+  bottom: -3rem;
+  text-align: center;
+}
+
+/* Typography and General Text */
+p,
+figcaption,
+.design-list li {
+  font-family: var(--secondary-font);
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.2rem;
+}
+
+figcaption {
+  font-style: italic;
+}
+
+/*Initial Wireframes Carousel */
+.wireframes-rough-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
 .initial-wireframe-container {
   align-items: center;
-  width: 75%;
+  width: 90%;
   height: fit-content;
   position: relative;
+  gap: 1rem1;
 }
 
 .initial-wireframe {
@@ -47,6 +125,11 @@ main {
   align-self: flex-start;
   text-align: left;
   width: auto;
+}
+
+.page-name {
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .initial-wireframe figcaption {
@@ -69,6 +152,7 @@ main {
   width: 60rem;
 }
 
+/* Slideshow Navigation Buttons */
 .prev,
 .next,
 .prev-button,
@@ -77,15 +161,16 @@ main {
   position: absolute;
   top: 50%;
   width: auto;
-  padding: 16px;
-  margin-top: -22px;
+  padding: 1.6rem;
+  margin-top: -2.2rem;
   background-color: rgba(63, 94, 251, 0.597);
   color: rgb(255, 255, 255);
   font-weight: bold;
-  font-size: 18px;
+  font-size: 1.8rem;
   transition: 0.6s ease;
   user-select: none;
 }
+
 .next,
 .next-button {
   right: 0;
@@ -98,14 +183,15 @@ main {
   border-radius: 0 1rem 1rem 0;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover,
-.prev-button:hover, .next:hover,
+.prev-button:hover,
+.next:hover,
 .next-button:hover {
   background-color: var(--site-color-2);
 }
 
-#three-dots {
+/* Slideshow Dots */
+.three-dots {
   margin: 3rem;
   text-align: center;
 }
@@ -115,7 +201,7 @@ main {
   cursor: pointer;
   height: 1rem;
   width: 1rem;
-  margin: 0 0.8rem;
+  margin: 0 0.6rem;
   background-color: #bababa;
   border-radius: 50%;
   display: inline-block;
@@ -123,17 +209,13 @@ main {
 }
 
 .activeDot,
-.dot:hover {
-  background-color: var(--site-color-2);
-}
-
+.dot:hover,
 .dotActive,
 .dots:hover {
   background-color: var(--site-color-2);
 }
 
-/* Fading animation */
-
+/* Fade Animation */
 .fade {
   animation-name: fade;
   animation-duration: 0.5s;
@@ -148,15 +230,15 @@ main {
   }
 }
 
+/*Final Wireframes Section */
 .final-wireframe {
   height: 40rem;
   border-radius: 1.25rem;
 }
 
-/*Second Set of wireframes*/
-
+/*Design Elements Section */
 .design-elements {
-  width: 80%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -164,10 +246,12 @@ main {
   position: relative;
   box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.401);
   border-radius: 2rem;
+  gap: 1rem;
 }
 
 .design-elements-box {
-  margin: 3rem 0;
+  margin: 0;
+  padding: 3rem;
   display: none;
   flex-direction: column;
   justify-content: center;
@@ -180,77 +264,63 @@ main {
 
 .visual-element-diagram {
   text-align: left;
-  margin: 1rem 0;
+  margin: 0;
   font-style: italic;
 }
 
+/* Typography Section */
 .typography {
   width: 100%;
-}
-
-.typography figure {
-  width: 50%;
-  background-color: red;
-}
-
-.heading {
-  margin: 0;
-  padding-bottom: 3rem;
-  width: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
 
-.subheading {
-  position: relative;
-  margin-top: -1.8rem;
-  text-align: center;
-  font-size: 1.6em;
-  line-height: 1.7rem;
-  font-weight: 400;
+.typography div {
+  display: flex;
+  gap: 1rem;
 }
 
-.subheading::after {
-  content: "";
-  position: absolute;
-  background-color: var(--site-color-2);
-  height: 0.25rem;
-  width: 100%;
+.typography .font-container {
+  width: 50%;
+  height: 100%;
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: var(--site-color-3);
+  box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.345);
+  border-radius: 1.25rem;
+  gap: 1rem;
   left: 0;
-  bottom: -3.5rem;
-  text-align: center;
+  right: 0;
 }
 
-p,
-figcaption,
-.design-list li {
-  font-family: var(--secondary-font);
-  font-size: 1.6rem;
-  font-weight: 400;
-  line-height: 2.2rem;
+.typography .font-container figcaption {
+  padding: 1rem;
 }
 
-figcaption {
-  font-style: italic;
+.font-choices {
+  width: 60rem;
+  border-radius: 1.25rem;
+  box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.345);
+  left: 0;
+  right: 0;
 }
 
-.design-list {
-  list-style: square;
-  width: 100%;
-  margin: 0 0 7rem 0;
-}
-
-.design-list li a {
-  color: var(--site-color-2);
-}
-
+/* Interaction Design (IXD) and Flow Diagrams */
 .ixd-container {
   width: 100%;
-  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0 3rem 0;
+  gap: 0;
 }
 
 .flow-diagrams {
+  margin: 5rem 0;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -259,26 +329,47 @@ figcaption {
   gap: 2rem;
 }
 
-.user-diagrams {
-  height: 60rem;
+.flow-diagrams figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  margin: 0 0 0 0;
+  width: 100%;
   border-radius: 2rem;
-  padding: 1rem 2rem;
   box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.345);
-  margin-bottom: 1rem;
+  padding: 0 0 2rem 0;
 }
 
-.flow-diagrams figure {
-  margin: 0;
-  width: 100%;
+
+.user-diagrams {
+  height: 60rem;
+  padding: 1rem 2rem;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease-in 0s;
 }
+
+.flow-diagrams figure:hover {
+  transform: translateY(-0.4rem);
+  box-shadow: 0.4rem 0.4rem 1.2rem var(--site-color-4);
+}
+/* Design Reference Section*/
 .design-reference {
+  margin: 2rem 0;
+  width: 100%;
   display: flex;
+  justify-content: center;
   flex-direction: row;
   gap: 2rem;
 }
 
 .design-reference figure figcaption {
+  width: auto;
   margin: 1rem;
+  left: 0;
+  right: 0;
+  text-align: center;
 }
 
 .reference-site {
@@ -291,51 +382,99 @@ figcaption {
   box-shadow: 0 0 1rem var(--site-color-2);
 }
 
+#website-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 30rem;
+  width: 100%;
+  border-radius: 2rem;
+  background-color: var(--site-color-3);
+}
+
 .likes-dislikes {
   width: 100%;
   margin-bottom: 5rem;
 }
 
+.design-list li::marker {
+  content: " \271C";
+  color: var(--site-color-2);
+  font-size: 2rem;
+  margin-right: 0.1rem;
+}
+.design-list a {
+  text-decoration: none;
+  color: var(--site-color-2);
+  font-weight: 500;
+}
+
+.design-list a:hover {
+  text-decoration: none;
+  font-weight: 800;
+  color: var(--site-color-5);
+}
+/* Style Guide Section*/
 .styleguide {
-  margin-top: 5rem;
-  margin-bottom: 6rem;
-}
-
-/*container for all the colour palletes*/
-.colour-palettes{
+  margin: 0;
+  width: 100%;
   display: flex;
-  column-gap: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
 
-/*container for each of the paletes*/
+.colour-palettes {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
 .pallete-container {
   width: 30%;
+  height: 40rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: solid 0.3rem rgba(0, 0, 0, 0.184);
+  box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.345);
   border-radius: 1.25rem;
   padding: 3rem;
-  
 }
+
 .pallete {
-  height: 18.5rem;
+  height: fit-content;
 }
 
-.font-choices {
-  width: 60rem;
-  border-radius: 1.25rem;
-  box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.345);
+/* Website Examples */
+.wireframe-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: var(--secondary-font);
-  text-align: left;
-  text-transform: uppercase;
+.web-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.website-example {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .web-image {
@@ -357,7 +496,9 @@ h5 {
   font-weight: 600;
 }
 
+/* Footer */
 footer {
+  width: 100%;
   box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.345);
 }
 
@@ -370,6 +511,103 @@ footer p {
 
 figure {
   margin: 0;
+}
+
+/* Sidebar Navigation*/
+.sidebar{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem ;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden;
+  transition: 0.5s; 
+  
+}
+
+.sidebar a {
+  position: relative;
+  height: auto;
+  margin: 0 1rem;
+  width: 70%;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: var(--secondary-font);
+  font-size: 2rem;
+  line-height: 2.5rem;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+  padding: 1rem 2rem;
+  
+}
+
+.sidebar a::after{
+  content: "";
+  position: absolute;
+  background-color: var(--site-color-2);
+  height: 0.25rem;
+  width: 0;
+  left: 0;
+  bottom: -1.5rem;
+  text-align: center;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.sidebar a:hover::after{
+  width: 100%;
+}
+
+.sidebar a:hover {
+  color: var(--site-color-5);
+  font-weight: bold;
+}
+
+.sidebar .closebtn {
+  margin-top: 1rem;
+  align-self: flex-end;
+  width: auto;
+  text-align: right;
+  position: absolute;
+  top: 0;
+  font-size: 3.6rem;
+}
+
+.openbtn {
+  position: fixed;
+  top: 12%;
+  left: 1.5%;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2rem;
+  cursor: pointer;
+  background-color: var(--site-color-4);
+  color: white;
+  padding: 1.5rem 2rem;
+  border: none;
+  border-radius: 1rem;
+  z-index: 2rem;
+  transition: all 0.3s ease 0s;
+}
+
+.openbtn:hover {
+  background-color: var(--site-color-2);
+  font-weight: 600;
+  box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.345);
+}
+
+#main {
+  width: 100%;
+  transition: margin-left 0.5s;
+  padding: 2rem;
 }
 
 @media (max-width: 600px) {
@@ -516,10 +754,17 @@ figure {
   }
 }
 
-@media (min-width: 400px) {
+@media (max-width: 400px) {
   main {
     width: 100%;
     height: 100%;
+  }
+
+  .sidebar {
+    padding-top: 1.5rem;
+  }
+  .sidebar a {
+    font-size: 1.8rem;
   }
 
   p,
@@ -596,6 +841,17 @@ figure {
     height: 100%;
   }
 
+  .design-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    gap: 1.5rem;
+  }
+
   p,
   figcaption,
   .design-list li {
@@ -642,8 +898,39 @@ figure {
     width: 50rem;
   }
 
+  .flow-diagrams {
+    margin: 0;
+    padding: 0;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .flow-diagrams figure {
+    width: 80%;
+    border-radius: 2rem;
+    box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.345);
+    padding: 0 0 2rem 0;
+  }
+
   .user-diagrams {
     height: 40rem;
+  }
+
+  .typography .font-container {
+    width: 40%;
+    height: 100%;
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: var(--site-color-3);
+    box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.345);
+    border-radius: 1.25rem;
+    gap: 1rem;
+    left: 0;
+    right: 0;
   }
 
   .font-choices {
@@ -673,6 +960,21 @@ figure {
     height: 100%;
   }
 
+  .design-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0 8rem;
+    gap: 1.5rem;
+  }
+
+  .design-container {
+    width: 100%;
+  }
+
   p,
   figcaption,
   .design-list li {
@@ -697,9 +999,9 @@ figure {
   }
 
   h2 {
-    font-size: 2.4rem;
+    font-size: 2.8rem;
     font-weight: bold;
-    line-height: 2.6rem;
+    line-height: 2.8rem;
   }
 
   h3 {
@@ -723,12 +1025,62 @@ figure {
     width: 70rem;
   }
 
+  .flow-diagrams {
+    margin: 5rem 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .flow-diagrams figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    margin: 0 0 0 0;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.345);
+    padding: 0 0 2rem 0;
+  }
+
   .user-diagrams {
     height: 60rem;
+    padding: 1rem 2rem;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease-in 0s;
+  }
+
+  .font-holder {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .font-holder-update {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .font-container {
+    width: 50%;
+    height: 22rem;
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: var(--site-color-3);
+    box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.345);
+    border-radius: 1.25rem;
+    gap: 1rem;
+    left: 0;
+    right: 0;
   }
 
   .font-choices {
-    width: 55rem;
+    height: 18rem;
+    width: 100%;
   }
 
   .reference-site {

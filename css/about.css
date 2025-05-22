@@ -3,6 +3,7 @@
 }
 
 main {
+  top: 7rem;
   height: 100%;
   width: 100%;
   padding-top: 0rem;
@@ -42,7 +43,7 @@ main {
   text-align: center;
 }
 
-.about-heading h1 {
+.about-headi {
   position: relative;
   font-size: 5rem;
   text-transform: uppercase;
@@ -106,12 +107,15 @@ h3{
   height: 40rem;
   border-radius: 100%;
   box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.437);
+  perspective: 100rem;
+
 }
 
 .aboout-image-container {
   border-radius: 50%;
   box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.437);
   flex: 3;
+  perspective: 100rem;
 }
 
 a {
@@ -177,7 +181,7 @@ a:hover {
     height: 30rem;
   }
 
-  .about-heading h1 {
+  .about-headi {
     position: relative;
     font-size: 4rem;
     font-weight: 450;
@@ -234,7 +238,7 @@ a:hover {
     height: 25rem;
   }
 
-  .about-heading h1 {
+  .about-headi {
     position: relative;
     font-size: 3rem;
     font-weight: 450;
@@ -292,7 +296,7 @@ a:hover {
     height: 35rem;
   }
 
-  .about-heading h1 {
+  .about-headi {
     position: relative;
     font-size: 3rem;
     font-weight: 450;

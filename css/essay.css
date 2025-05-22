@@ -3,12 +3,23 @@
 }
 
 main {
+  top: 7rem;
   width: 100%;
   height: 100%;
   margin: 4rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+
+.essay-main{
+  margin: 7rem 0 4rem 0;
+}
+
+.essay-content-container{
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -22,12 +33,40 @@ h1 {
 
 }
 
+.heading{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.subheading {
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  margin-top: -1rem;
+  position: relative;
+  margin-bottom: 8rem;
+  text-align: center;
+}
+
+.subheading::after {
+  content: "";
+  position: absolute;
+  background-color: var(--site-color-2);
+  height: 0.2rem;
+  width: 100%;
+  left: 0rem;
+  bottom: -3rem;
+  text-align: center;
+}
+
 #essay-heading{
   width: fit-content;
 }
 
 .solid {
-  width: 20%;
+  width: 0;
   border-top: 3px solid var(--site-color-2);
   margin: -1rem 0 3rem 0;
   transition: all 1s ease 0s;
@@ -60,13 +99,17 @@ h4 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 4rem;
+  padding: 3rem;
   width: 40%;
   height: 60rem;
   background-color: var(--site-color-3);
   border-radius: 2rem;
-  box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.547);
+  box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.356);
   text-decoration: none;
+}
+
+.essay-block:hover{
+  box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.541);
 }
 
 .essay-text {
@@ -87,10 +130,10 @@ h4 {
 
 .essay-block p {
   font-family: var(--secondary-font);
-  font-size: 1.6rem;
+  font-size: 1.55rem;
   line-height: 2rem;
   font-weight: 450;
-  height: 100%;
+  height: auto;
 }
 
 .essay-content{
@@ -100,11 +143,19 @@ h4 {
   line-height: 2.1rem;
   font-weight: 450;
   height: 100%;
-  margin: 10rem 15rem;
+  margin: 1rem 15rem;
+}
+
+.essay-content p{
+  font-family: var(--secondary-font);
+  font-size: 1.7rem;
+  line-height: 2.1rem;
+  font-weight: 450;
+
 }
 
 .read-more {
-  margin: 2rem 0;
+  margin: 2rem 0 0 0;
   font-size: 1.6rem;
   line-height: 1.6rem;
   font-weight: 600;
@@ -114,7 +165,16 @@ h4 {
 
 .read-more:hover {
   color: var(--site-color-2);
-  transform: translateY(-0.4rem);
+  transform: translateY(-0.7rem);
+}
+
+.reference-container{
+  margin: 5rem 0 0 0;
+}
+
+
+li{
+  line-height: 2.8rem;
 }
 /*
 @media(min-width: 400px) {

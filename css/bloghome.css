@@ -38,7 +38,7 @@ main {
   justify-self: center;
 }
 
-.blog-index-subheading {
+.subheading {
   font-size: 1.6rem;
   line-height: 1.6rem;
   margin-top: -1rem;
@@ -47,7 +47,7 @@ main {
   text-align: center;
 }
 
-.blog-index-subheading::after {
+.subheading::after {
   content: "";
   position: absolute;
   background-color: var(--site-color-2);
@@ -255,7 +255,7 @@ footer p {
     font-weight: 600;
   }
 
-  .blog-index-subheading {
+  .subheading {
     font-size: 1.4rem;
     line-height: 1.4rem;
     margin: 0;
@@ -264,7 +264,7 @@ footer p {
     text-align: center;
   }
 
-  .blog-index-subheading::after {
+  .subheading::after {
     content: "";
     position: absolute;
     background-color: var(--site-color-2);
@@ -399,7 +399,7 @@ footer p {
     font-weight: 600;
   }
 
-  .blog-index-subheading {
+  .subheading {
     font-size: 1.4rem;
     line-height: 1.4rem;
     margin: 0;
@@ -408,7 +408,7 @@ footer p {
     text-align: center;
   }
 
-  .blog-index-subheading::after {
+  .subheading::after {
     content: "";
     position: absolute;
     background-color: var(--site-color-2);
@@ -529,7 +529,7 @@ footer p {
     font-weight: 600;
   }
 
-  .blog-index-subheading {
+  .subheading {
     font-size: 1.4rem;
     line-height: 1.4rem;
     margin: 0;
@@ -538,7 +538,7 @@ footer p {
     text-align: center;
   }
 
-  .blog-index-subheading::after {
+  .subheading::after {
     content: "";
     position: absolute;
     background-color: var(--site-color-2);
@@ -650,7 +650,7 @@ footer p {
     align-self: center;
   }
 
-  .blog-index-subheading {
+  .subheading {
     font-family: var(--primary-font);
     font-size: 1.6rem;
     line-height: 1.6rem;
@@ -660,7 +660,7 @@ footer p {
     text-align: center;
   }
 
-  .blog-index-subheading::after {
+  .subheading::after {
     content: "";
     position: absolute;
     background-color: var(--site-color-2);

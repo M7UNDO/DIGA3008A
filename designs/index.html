@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Mfundo Dhlamini" />
-    <meta property="og:description" content="Take a look behind-the-scenes of my web developement process" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mfundo Dhlamini">
+    <meta property="og:description" content="Take a look behind-the-scenes of my web developement process">
     <title>Design Process</title>
-    <link rel="stylesheet" href="../css/normalise.css" />
-    <link rel="stylesheet" href="../css/styles.css" />
-    <link rel="stylesheet" href="../css/design.css" />
-    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@1,2&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/normalise.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/design.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@1,2&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a977cb27e6.js" crossorigin="anonymous"></script>
   </head>
   <body>
@@ -43,92 +43,30 @@
         </div>
       </nav>
     </header>
+    
+    <div id="mySidebar" class="sidebar">
+         <a href="javascript:void(0)" class="closebtn" onclick="closeTable()">&times;</a>
+         <a href="#IxD">IxD Process</a>
+         <a href="#UserFlow">User Flow</a>
+         <a href="#websiteReferences">Website References</a>
+         <a href="#StyleGuide">Style Guide</a>
+         <a href="#Wireframes">Wireframes</a>
+    </div>
 
-    <main>
+    <button class="openbtn" onclick="openTable()">&#9776; Contents</button>
+    <main id="main">
+
       <article class="design-container">
         <div class="heading">
-          <h1>My Design Process</h1>
+          <h1 id="heading-intro">My Design Process</h1>
           <p class="subheading">Take a look behind-the-scenes of my web developement process</p>
         </div>
-
-        <div class="initial-wireframe-container">
-          <h2>Initial Wireframes</h2>
-
-          <figure class="initial-wireframe fade" id="in-wireframe-1">
-            <h3>Home Page</h3>
-            <img class="first-wireframe" src="images/homepage.png" alt="Home page wireframe">
-            <div class="numbertext">1 / 5</div>
-            <figcaption>
-              The title on my home page welcomes users to my site, while the subheading provides a brief description of
-              its purpose, along with a catchy line that engages visitors and encourages them to explore further. The
-              navigation panel is positioned in the top right corner for easy access, following a common web convention.
-              This menu remains consistent across all pages. My name appears in the top left corner to establish my
-              identity and help visitors remember me. Below the subheading, a central navigation menu features images
-              and descriptions that guide users through the site.
-            </figcaption>
-          </figure>
-
-          <figure class="initial-wireframe fade">
-            <h3>About Page</h3>
-            <img class="first-wireframe" src="images/aboutpage.png" alt="About Page Wireframe">
-            <div class="numbertext">2 / 5</div>
-            <figcaption>
-              The About Me page introduces me with a bold heading, a short bio tagline, and a profile image. Below this,
-              the main content area provides a comprehensive overview of my professional background.
-            </figcaption>
-          </figure>
-
-          <figure class="initial-wireframe fade">
-            <h3>Blog Page</h3>
-            <img class="first-wireframe" src="images/blogpage.png" alt="Blog Page">
-            <div class="numbertext">3 / 5</div>
-            <figcaption>
-              The layout of my blog page includes a title at the top labeled “Blogs.” Below it are interactive blocks,
-              each representing an individual blog post. These blocks contain the blog title, a brief introduction, and
-              additional descriptive text. On the left side of the page, there is a quick-access blog menu arranged in
-              numerical order. This menu does not include titles or introductions, allowing users to quickly navigate
-              through the content.
-            </figcaption>
-          </figure>
-
-          <figure class="initial-wireframe fade">
-            <h3>Portfolio Page</h3>
-            <img class="first-wireframe" src="images/portfoliopage.png" alt="Portfolio Page">
-            <div class="numbertext">4 / 5</div>
-            <figcaption>
-              The layout of my portfolio page is engaging and inspired by how games are showcased on app stores. Each
-              project is presented with an image on the left and the title and description on the right. A scroll bar on
-              the right allows users to browse through the list of projects.
-            </figcaption>
-          </figure>
-
-          <figure class="initial-wireframe fade">
-            <h3>Design Page</h3>
-            <img class="first-wireframe" src="images/designpage.png" alt="Design Page">
-            <div class="numbertext">5 / 5</div>
-            <figcaption>
-              The layout of my design page features a title centred at the page, followed by headings and text boxes
-              that answer or unpack key questions and considerations throughout my design process.
-            </figcaption>
-          </figure>
-
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-
-        <div id="three-dots">
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
-          <span class="dot" onclick="currentSlide(4)"></span>
-          <span class="dot" onclick="currentSlide(5)"></span>
-        </div>
-
-        <div class="ixd-container">
-          <h2>IxD Process</h2>
+      
+        <div class="ixd-container" >
+          <h2 id="IxD">IxD Process</h2>
 
           <h3>Goal Alignment</h3>
-          <h4>My target audience</h4>
+          <h3>My target audience:</h3>
           <p>
             The target audience for my site includes three key groups. Firstly, potential employers, who are on the
             website to engage with my past projects and learn about me in order to consider me for professional
@@ -136,7 +74,7 @@
             the purpose of potential collaborations or networking opportunities. Lastly users who might be visiting my
             website seeking some inspiration into my design process.
           </p>
-          <h4>My content</h4>
+          <h3 id="UserFlow">My content:</h3>
           <ul class="design-list">
             <li>
               My home page will serve as the landing page, welcoming users and providing them with a brief introduction
@@ -159,7 +97,7 @@
             </li>
           </ul>
 
-          <h4>Information Structure & User Flow</h4>
+          <h3>Information Structure & User Flow</h3>
           <div class="flow-diagrams">
             <figure>
               <img class="user-diagrams" src="images/Information Structure.png" alt="Information Structure">
@@ -184,6 +122,7 @@
           </div>
 
           <div class="likes-dislikes">
+            <h3>Likes & Dislikes</h3>
             <h4>Likes</h4>
             <ul class="design-list">
               <li>
@@ -224,7 +163,7 @@
             </ul>
           </div>
 
-          <h4>Some other websites that I drew inspiration from</h4>
+          <h3 id="WebsiteReferences">Some other websites that I drew inspiration from</h3>
           <ul class="design-list">
             <li>
               <a href="https://wits-digital-arts-interactive-media.github.io/WSOA3028A_2549309/" target="_blank"
@@ -237,7 +176,9 @@
         </div>
 
         <div class="styleguide">
-          <h2>Style Guide</h2>
+
+          <h2 id="StyleGuide">Style Guide</h2>
+
           <h3>Colour Scheme:</h3>
 
           <div class="colour-palettes">
@@ -247,8 +188,7 @@
               <figcaption>
                 <p>Colours: Dark forest green, Soft cream white, Pure black, Muted sage green, calm and natural</p>
                 <p>
-                  This palette has a natural and earthy vibe, combining deep greens and soft neutrals for a grounded,
-                  organic look.
+                 
                 </p>
               </figcaption>
             </figure>
@@ -258,7 +198,7 @@
               <img class="pallete" src="images/Colour_Palette 2.png" alt="Colour Palette 3">
               <figcaption>
                 <p>Colours: Deep navy blue, Soft gray, Warm off-white, Muted warm gray</p>
-                <p>This palette leans towards a muted, classic look with calming shades and a sophisticated vibe.</p>
+                
               </figcaption>
             </figure>
 
@@ -270,13 +210,12 @@
                   Colours: Dark charcoal gray, Warm taupe brown, Warm off-white, Neutral gray
                 </p>
                 <p>
-                  This palette has a more balanced and modern feel with a mix of warm and cool tones. It would be ideal
-                  for the minimalist and contemporary design I am going for.
+                  
                 </p>
               </figcaption>
             </figure>
 
-            <figure class="pallete-container">
+            <figure class="pallete-container updated-palette">
               <h4>Primary Palette (Updated)</h4>
               <img class="pallete" src="images/Final Colour Palette.png" alt="Three circular swatches showing a dark navy 
               (#19102D), a vibrant blue (#3F5EFB), and a soft white (#F5F5F5) representing a modern web design color palette 
@@ -284,12 +223,18 @@
               <figcaption>
                 <p>Colours:Deep navy (primary), Soft white (primary), Vibrant blue (accent)</p>
                 <p>
-                  A clean, modern palette with deep navy and soft white as primaries, accented by a bold, vibrant blue
-                  for emphasis.
+                  
                 </p>
               </figcaption>
             </figure>
           </div>
+          
+          <ul class="design-list">
+            <li>Primary Palette: This palette has a natural and earthy vibe, combining deep greens and soft neutrals for a grounded, organic look.</li>
+            <li>Secondary Palette: This palette leans towards a muted, classic look with calming shades and a sophisticated vibe.</li>
+            <li>Neutral Palette:This palette has a more balanced and modern feel with a mix of warm and cool tones. It would be idealfor the minimalist and contemporary design I am going for.</li>
+            <li>Updated Primary Palette:A clean, modern palette with deep navy and soft white as primaries, accented by a bold, vibrant bluefor emphasis.</li>
+          </ul>
         </div>
 
         <div class="typography">
@@ -305,56 +250,133 @@
           </p>
 
           <h3>Initial Font Choices</h3>
-          <h4>Khand(sans-serif)</h4>
+          <div class="font-holder">
+            <figure class="font-container">
+               <img
+                class="font-choices"
+                src="images/Khand Font.png"
+                alt="Sample text displayed in Khand font, a compact, angular sans-serif typeface"
+                >
+                <figcaption>Khand (sans-serif) font</figcaption>
+            </figure>
 
-          <figure>
-            <img
-              class="font-choices"
-              src="images/Khand Font.png"
-              alt="Sample text displayed in Khand font, a compact, angular sans-serif typeface"
-            >
-          </figure>
+            <figure class="font-container">
+                <img
+                class="font-choices"
+                src="images/Montserrat Font.png"
+                alt="Sample text displayed in Montserrat font, a modern sans-serif typeface"
+                >
+                <figcaption>Montserrat (sans-serif)</figcaption>
+            </figure>
+          </div>
 
-          <figure>
-            <img
-              class="font-choices"
-              src="images/Montserrat Font.png"
-              alt="Sample text displayed in Montserrat font, a modern sans-serif typeface"
-            >
-          </figure>
-
-          <h4>Montserrat(sans-serif)</h4>
-
-          <h3>Updated and FInalised Font Choices</h3>
-
-          <h4>Santoshi(sans-serif)</h4>
-          <figure>
-            <img
+          <h3>Update Font Choices</h3>
+          <div class="font-holder-update">
+            <figure class="font-container">
+              <img
               src="images/Santoshi_Font.png"
               class="font-choices"
               alt="Sample text displayed in Santoshi font, a clean and minimal sans-serif typeface designed for readability"
-            >
-            <figcaption>
-              Santoshi applied to body text and all heading levels (h1 to h5), ensuring readability and visual
+              >
+              <figcaption>
+              Santoshi(sans-serif) applied to body text and all heading levels (h1 to h5), ensuring readability and visual
               consistency.
-            </figcaption>
-          </figure>
+              </figcaption>
+             </figure>
 
-          <h4>Montserrat(sans-serif)</h4>
-          <figure>
-            <img
-              src="images/Montserrat Font.png"
-              class="font-choices"
-              alt="Sample text displayed in Montserrat font, a modern sans-serif typeface"
-            >
-            <figcaption>
-              Montserrat used for main headings (h1) and paragraph text, offering a modern and clean look.
-            </figcaption>
-          </figure>
+             <figure class="font-container">
+                <img
+                src="images/Montserrat Font.png"
+                class="font-choices"
+                alt="Sample text displayed in Montserrat font, a modern sans-serif typeface"
+                >
+                <figcaption>
+                  Montserrat(sans-serif) used for main headings (h1) and paragraph text, offering a modern and clean look.
+                </figcaption>
+             </figure>
+          </div>
+          
         </div>
 
-        <h3>Visualisation of composition and interace elements:</h3>
-        <div class="design-elements">
+        <div class="wireframes-rough-container">
+          <h2 class="h2-intial"  id="Wireframes">Initial Rough Wireframes</h2>
+         <div class="initial-wireframe-container">
+          
+
+          <figure class="initial-wireframe fade" id="in-wireframe-1">
+            <img class="first-wireframe" src="images/homepage.png" alt="Home page wireframe">
+            <div class="numbertext">1 / 5</div>
+            <figcaption>
+              <span class="page-name">Home Page:</span>
+              The title on my home page welcomes users to my site, while the subheading provides a brief description of
+              its purpose, along with a catchy line that engages visitors and encourages them to explore further. The
+              navigation panel is positioned in the top right corner for easy access, following a common web convention.
+              This menu remains consistent across all pages. My name appears in the top left corner to establish my
+              identity and help visitors remember me. Below the subheading, a central navigation menu features images
+              and descriptions that guide users through the site.
+            </figcaption>
+          </figure>
+
+          <figure class="initial-wireframe fade">
+            <img class="first-wireframe" src="images/aboutpage.png" alt="About Page Wireframe">
+            <div class="numbertext">2 / 5</div>
+            <figcaption>
+              <span class="page-name">About Page:</span>
+              The About Me page introduces me with a bold heading, a short bio tagline, and a profile image. Below this,
+              the main content area provides a comprehensive overview of my professional background.
+            </figcaption>
+          </figure>
+
+          <figure class="initial-wireframe fade">
+            <img class="first-wireframe" src="images/blogpage.png" alt="Blog Page">
+            <div class="numbertext">3 / 5</div>
+            <figcaption>
+              <span class="page-name">Blog Page:</span>
+              The layout of my blog page includes a title at the top labeled “Blogs.” Below it are interactive blocks,
+              each representing an individual blog post. These blocks contain the blog title, a brief introduction, and
+              additional descriptive text. On the left side of the page, there is a quick-access blog menu arranged in
+              numerical order. This menu does not include titles or introductions, allowing users to quickly navigate
+              through the content.
+            </figcaption>
+          </figure>
+
+          <figure class="initial-wireframe fade">
+            <img class="first-wireframe" src="images/portfoliopage.png" alt="Portfolio Page">
+            <div class="numbertext">4 / 5</div>
+            <figcaption>
+              <span class="page-name">Portfolio Page:</span>
+              The layout of my portfolio page is engaging and inspired by how games are showcased on app stores. Each
+              project is presented with an image on the left and the title and description on the right. A scroll bar on
+              the right allows users to browse through the list of projects.
+            </figcaption>
+          </figure>
+
+          <figure class="initial-wireframe fade">
+            <img class="first-wireframe" src="images/designpage.png" alt="Design Page">
+            <div class="numbertext">5 / 5</div>
+            <figcaption>
+              <span class="page-name">Design Page:</span>
+              The layout of my design page features a title centred at the page, followed by headings and text boxes
+              that answer or unpack key questions and considerations throughout my design process.
+            </figcaption>
+          </figure>
+
+          <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+         </div>
+        </div>
+
+        <div class="three-dots">
+          <span class="dot" onclick="currentSlide(1, 0)"></span>
+          <span class="dot" onclick="currentSlide(2, 0)"></span>
+          <span class="dot" onclick="currentSlide(3, 0)"></span>
+          <span class="dot" onclick="currentSlide(4, 0)"></span>
+          <span class="dot" onclick="currentSlide(5, 0)"></span>
+        </div>
+        
+        <div class="wireframe-container">
+         <h2>Visualisation of composition and interace elements:</h2>
+         <div class="design-elements">
           <figure class="design-elements-box fade" id="fin-wireframe-1">
             <img class="final-wireframe" src="images/HomeUpdate.png" alt="Wireframe of home page">
             <div class="numbertext">1 / 5</div>
@@ -385,29 +407,32 @@
             <figcaption class="visual-element-diagram">Wireframe of the about page</figcaption>
           </figure>
 
-          <a class="prev-button" onclick="plusSlidess(-1)">&#10094;</a>
-          <a class="next-button" onclick="plusSlidess(1)">&#10095;</a>
+          <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+         </div>
+
         </div>
 
-        <div id="three-dots">
-          <span class="dots" onclick="currentSlide2(1)"></span>
-          <span class="dots" onclick="currentSlide2(2)"></span>
-          <span class="dots" onclick="currentSlide2(3)"></span>
-          <span class="dots" onclick="currentSlide2(4)"></span>
-          <span class="dots" onclick="currentSlide2(5)"></span>
+        <div class="three-dots">
+          <span class="dots" onclick="currentSlide(1, 1)"></span>
+          <span class="dots" onclick="currentSlide(2, 1)"></span>
+          <span class="dots" onclick="currentSlide(3, 1)"></span>
+          <span class="dots" onclick="currentSlide(4, 1)"></span>
+          <span class="dots" onclick="currentSlide(5, 1)"></span>
         </div>
 
-        <h3>Potential websites my Essay 1: UX & UI Analysis.</h3>
+        <div class="web-container">
+             <h3>Evaluating potential websites my Essay 1: UX & UI Analysis.</h3>
 
-        <div class="website-exaple">
-          <h4 class="website-name">GCRA</h4>
+         <div class="website-example">
+          <h4 class="website-name">GCRA website- Pros & Cons</h4>
           <a href="https://gcrabursary.gauteng.gov.za/"
             ><img class="web-image" src="images/GCRA.png" alt="GCRA website"
           ></a>
-        </div>
+         </div>
 
-        <h5>Pros</h5>
-        <ul class="design-list">
+         <h5>Pros</h5>
+         <ul class="design-list">
           <li>
             The website has a clear purpose. The landing page immediately displays the current status of applications,
             whether they are open or closed. Since applications are closed in this case, they have removed the CTA
@@ -423,10 +448,10 @@
           </li>
           <li>When bursary applications are open, a prominent CTA button like “Apply Now” is displayed.</li>
           <li>The information on the website is well structured with a logical flow.</li>
-        </ul>
+         </ul>
 
-        <h5>Cons</h5>
-        <ul class="design-list">
+         <h5>Cons</h5>
+         <ul class="design-list">
           <li>
             Only “Home” in the navigation bar turns blue when active. The other pages do not indicate the current page
             you are on. This inconsistency makes navigation less intuitive.
@@ -440,16 +465,16 @@
             The pop-up that appears when going onto the login page can be confusing, as there is no close button, and it
             took me a minute to realise that you need to scroll within the pop-up as there was no direction given.
           </li>
-        </ul>
+         </ul>
 
-        <div class="website-exaple">
-          <h4 class="website-name">Vodacom</h4>
+         <div class="website-example">
+          <h4 class="website-name">Vodacom website- Pros & Cons</h4>
           <a href="https://www.vodacom.co.za/"
             ><img class="web-image" src="images/Vodacom.png" alt="Vodacom Website"
           ></a>
-        </div>
-        <h5>Pros</h5>
-        <ul class="design-list">
+         </div>
+         <h5>Pros</h5>
+         <ul class="design-list">
           <li>The navigation is well organised</li>
           <li>
             There is a consistent iconography that uses a gradient style, making them aesthetically pleasing and
@@ -457,29 +482,29 @@
           </li>
           <li>The website effectively makes use of CTA buttons like “Buy Now.”</li>
           <li>The website has a minimalist design that improves readability and makes it easy to follow</li>
-        </ul>
-        <h5>Cons</h5>
-        <ul class="design-list">
+         </ul>
+         <h5>Cons</h5>
+         <ul class="design-list">
           <li>The navigation bar does indicate what page you are on.</li>
-        </ul>
+         </ul>
 
-        <div class="website-exaple">
-          <h4 class="website-name">Takealot</h4>
+         <div class="website-example">
+          <h4 class="website-name">Takealot website- Pros & Cons</h4>
           <a href="https://www.takealot.com/"
             ><img class="web-image" src="images/TakeAlot_Screenshot.png" alt="TakeAlot Website"
           ></a>
-        </div>
-        <h5>Pros</h5>
-        <ul class="design-list">
+         </div>
+         <h5>Pros</h5>
+         <ul class="design-list">
           <li>The load times are fast despite the cluttered pages</li>
           <li>
             Deals and discounts that are displayed like "ALOT FOR LESS—Save up to 55%" could allow for quick decision
             when shopping
           </li>
           <li>Offers a wide range of options, like shopping by brand, category, department, and promotions</li>
-        </ul>
-        <h5>Cons</h5>
-        <ul class="design-list">
+         </ul>
+         <h5>Cons</h5>
+         <ul class="design-list">
           <li>
             The home page is cluttered. Navigation feels overwhelming, as there are multiple promotional banners across
             the page
@@ -493,11 +518,12 @@
           </li>
           <li>The department dropdown has a long list, and it is not actually collapsable.</li>
           <li>Too many advertisements across the page are distracting from the core shopping experience</li>
-        </ul>
+         </ul>
+        </div>
+
       </article>
       <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
     </main>
-
     <footer>
       <p>&copy; 2025 Mfundo Dhlamini. All Rights Reserved</p>
     </footer>

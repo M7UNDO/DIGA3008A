@@ -1,21 +1,20 @@
-// Get the button:
-let mybutton = document.getElementById("myBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
+let mybutton = document.getElementById("myBtn");
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     mybutton.style.display = "block";
+    
   } else {
     mybutton.style.display = "none";
   }
 }
 
-// When the user clicks on the button, scroll to the top of the document
+
 function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  document.body.scrollTop = 0
+  document.documentElement.scrollTop = 0; 
 }
 
 function openNav(){
@@ -29,10 +28,51 @@ function closeNav(){
 
 }
 
-function lineSlide(){
-  let line = document.querySelector("solid");
 
-  line.style.width = "100%"
+const subheading = document.querySelector(".subheading");
+const blogssubheading = document.querySelector(".blog-index-subheading");
+const text = subheading.textContent;
+subheading.textContent = "";
+
+let index = 0;
+function typeWriter() {
+  if (index < text.length) {
+    subheading.textContent += text.charAt(index);
+    index++;
+    setTimeout(typeWriter, 20);
+  }
 }
 
-Window.onload.lineSlide();
+
+window.addEventListener("load", typeWriter);
+
+function lineEffect(){
+  let line = document.querySelector("solid");
+  line.style.width = "100%";
+  console.log("Line loaded")
+}
+
+window.addEventListener("load", lineEffect)
+
+window.addEventListener("load", function(){
+   let i;
+   document.getElementById("heading-intro").classList.add("slide-in");
+   let aboutHeader = document.getElementsByClassName("p-name");
+
+   for(i = 0; i<aboutHeader.length; i++){
+    aboutHeader[i].classList = aboutHeader[i].classList.replace("slide-in", "");
+   }
+
+   aboutHeader.classList += "slide-in";
+
+
+})
+
+window.addEventListener("load", () => {
+  document.getElementById("loader").style.display = "none";
+});
+
+
+let projectImage = document.getElementsByClassName("project-image");
+
+

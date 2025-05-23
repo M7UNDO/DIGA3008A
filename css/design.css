@@ -13,6 +13,7 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: flex-start;
   gap: 1rem;
   /* transition: margin-left 0.5s;
   padding: 2rem;*/
@@ -23,13 +24,16 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex: 1;
   padding: 0 3rem;
   width: 90%;
   height: 100%;
   gap: 1.5rem;
+  transition: all0.5s ease-in-out 0s;
 }
 
 .design-content {
+  width: 90%;
   margin: 1rem 0;
   display: flex;
   flex-direction: column;
@@ -530,7 +534,7 @@ figure {
   left: 0;
   background-color: black;
   overflow-x: hidden;
-  transition: 0.5s;
+  transition: all 0.5s ease 0s;
 }
 
 .sidebar a {
@@ -606,6 +610,15 @@ figure {
 }
 
 @media (min-width: 400px) {
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 1rem;
+    width: 100%;
+    height: 100%;
+    margin-top: 3rem;
+  }
   .design-container {
     display: flex;
     flex-direction: column;
@@ -739,7 +752,8 @@ figure {
 
   .pallete-container {
     width: 45%;
-    height: 40rem;
+    min-height: 20rem;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -762,15 +776,15 @@ figure {
     gap: 0rem;
   }
 
-  .design-reference figure figcaption{
+  .design-reference figure figcaption {
     width: fit-content;
-  } 
-  
-  .design-reference figure{
+  }
+
+  .design-reference figure {
     width: 100%;
   }
 
-  .design-reference figure a{
+  .design-reference figure a {
     width: fit-content;
   }
 
@@ -795,18 +809,53 @@ figure {
   .web-image {
     height: 17rem;
   }
+
+  .sidebar {
+    position: sticky;
+    display:  none;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    gap: 4rem;
+    height: 100vh;
+    padding: 1rem; 
+    width: 20rem; 
+    z-index: 1;
+    top: 6rem;
+    left: 0;
+    background-color: black;
+    overflow-y: auto; 
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+
+  .sidebar a {
+    width: 100%;
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    padding: 1rem 0;
+  }
+
+  .sidebar .closebtn {
+    margin-top: 1rem;
+    align-self: flex-end;
+    width: auto;
+    text-align: right;
+    top: 0;
+    font-size: 3.6rem;
+  }
 }
 
 @media (min-width: 601px) {
-  .design-container {
+  main {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0 1rem;
-    width: 90%;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 1rem;
+    width: 100%;
     height: 100%;
-    gap: 1.5rem;
+    margin-top: 3rem;
   }
 
   .initial-wireframe-container {
@@ -930,8 +979,9 @@ figure {
   }
 
   .pallete-container {
-    width: 45%;
-    height: 40rem;
+    width: 48%;
+    min-height: 40rem;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -954,15 +1004,15 @@ figure {
     gap: 0rem;
   }
 
-  .design-reference figure figcaption{
+  .design-reference figure figcaption {
     width: fit-content;
-  } 
-  
-  .design-reference figure{
+  }
+
+  .design-reference figure {
     width: 100%;
   }
 
-  .design-reference figure a{
+  .design-reference figure a {
     width: fit-content;
   }
 
@@ -987,11 +1037,63 @@ figure {
   .web-image {
     height: 26rem;
   }
+
+  .sidebar {
+    position: sticky;
+    display:  none;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    gap: 4rem;
+    height: 100vh;
+    padding: 1rem; 
+    width: 20rem; 
+    z-index: 1;
+    top: 6rem;
+    left: 0;
+    background-color: black;
+    overflow-y: auto; 
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+
+  .sidebar a {
+    position: relative;
+    height: auto;
+    margin: 0 1rem;
+    width: fit-content;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: var(--secondary-font);
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+    padding: 1rem 2rem;
+  }
+
+  .sidebar .closebtn {
+    margin-top: 1rem;
+    align-self: flex-end;
+    width: auto;
+    text-align: right;
+    top: 0;
+    font-size: 3.6rem;
+  }
 }
 
-
-
 @media (min-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 1rem;
+    width: 100%;
+    height: 100%;
+    margin-top: 3rem;
+  }
   .design-container {
     display: flex;
     flex-direction: column;
@@ -1001,6 +1103,7 @@ figure {
     width: 90%;
     height: 100%;
     gap: 1.5rem;
+    flex: 1;
   }
 
   .initial-wireframe-container {
@@ -1025,8 +1128,8 @@ figure {
   p,
   figcaption,
   .design-list li {
-    font-size: 1.2rem;
-    font-weight: 400;
+    font-size: 1.4rem;
+    font-weight: 420;
     line-height: 2rem;
   }
 
@@ -1171,9 +1274,318 @@ figure {
   .web-image {
     height: 30rem;
   }
+
+  .sidebar {
+    position: sticky;
+    display: flex; 
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    gap: 4rem;
+    height: 100vh;
+    padding: 3rem 1rem 5rem 1rem;
+    width: 25rem; 
+    z-index: 1;
+    top: 7rem;
+    left: 0;
+    background-color: black;
+    overflow-y: auto; 
+    overflow-x: hidden; 
+    transition: 0.5s;
+  }
+
+  .sidebar a {
+    position: relative;
+    height: auto;
+    margin: 0 1rem;
+    width: fit-content;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: var(--secondary-font);
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+    padding: 1rem 2rem;
+  }
+
+  .sidebar .closebtn {
+    margin-top: 1rem;
+    align-self: flex-end;
+    width: auto;
+    text-align: right;
+    top: 0;
+    font-size: 3.6rem;
+  }
 }
 
 @media (min-width: 992px) {
+  .design-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 3rem;
+    width: 90%;
+    height: 100%;
+    gap: 1.5rem;
+  }
+
+  .initial-wireframe-container {
+    align-items: center;
+    width: 90%;
+    height: fit-content;
+    position: relative;
+    gap: 1rem1;
+  }
+
+  .design-elements {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.401);
+    border-radius: 2rem;
+    gap: 1rem;
+  }
+
+  p,
+  figcaption,
+  .design-list li {
+    font-size: 1.7rem;
+    font-weight: 420;
+    line-height: 2.2rem;
+  }
+
+  h1 {
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+
+  .subheading {
+    font-size: 1.7rem;
+    line-height: 2rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 3rem;
+    scroll-margin-top: 9rem;
+  }
+
+  h3 {
+    font-size: 2.2rem;
+    line-height: 2.6rem;
+    font-weight: 500;
+  }
+
+  h4 {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    font-weight: bold;
+  }
+
+  h5 {
+    font-size: 1.8;
+    line-height: 2.4rem;
+    font-weight: 500;
+  }
+
+  .first-wireframe {
+    width: 70rem;
+  }
+
+  .flow-diagrams {
+    margin: 5rem 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .flow-diagrams figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    margin: 0 0 0 0;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.345);
+    padding: 0 0 2rem 0;
+  }
+
+  .user-diagrams {
+    height: 40rem;
+    padding: 1rem 2rem;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease-in 0s;
+  }
+
+  .font-holder {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  figure.font-container {
+    width: 40%;
+    height: 100%;
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: var(--site-color-3);
+  }
+
+  .font-choices {
+    height: 100%;
+    width: 100%;
+    margin: 0 0 1rem 0;
+  }
+
+  .design-reference {
+    margin: 2rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .design-reference a {
+    width: fit-content;
+  }
+
+  .reference-site {
+    height: 26rem;
+    width: 50rem;
+    margin: 0 0.5rem;
+  }
+
+  .colour-palettes {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .pallete-container {
+    width: 25%;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.345);
+    border-radius: 1.25rem;
+    padding: 3rem 3rem 5rem 3rem;
+  }
+
+  .pallete-container figcaption p {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+
+  .pallete {
+    height: 15rem;
+  }
+
+  .final-wireframe {
+    height: 40rem;
+  }
+
+  .numbertext {
+    font-family: var(--secondary-font);
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    padding: 0.8rem 1.2rem;
+  }
+
+  .web-image {
+    height: 40rem;
+  }
+
+  .sidebar {
+    position: sticky;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    height: 100%;
+    padding: 3rem 0 5rem 0;
+    width: 100%;
+    z-index: 1;
+    top: 7rem;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+
+  .sidebar a {
+    position: relative;
+    height: auto;
+    margin: 0 1rem;
+    width: fit-content;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: var(--secondary-font);
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+    padding: 1rem 2rem;
+  }
+
+  .sidebar a::after {
+    background-color: var(--site-color-5);
+    height: 0.25rem;
+    width: 0;
+    left: 0;
+    bottom: -0.5rem;
+  }
+
+  .sidebar .closebtn {
+    margin: 0 2rem 0 0;
+    padding: 0;
+    align-self: flex-end;
+    width: auto;
+    text-align: right;
+    top: 0;
+    font-size: 3.6rem;
+  }
+
+  .sidebar .closebtn:hover {
+    text-decoration: none;
+  }
+
+  .openbtn {
+    position: fixed;
+    height: 5rem;
+    width: 15rem;
+    top: 15%;
+    left: 1.5%;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2rem;
+  }
+}
+
+@media (min-width: 1200px) {
   .design-container {
     display: flex;
     flex-direction: column;
@@ -1285,6 +1697,7 @@ figure {
   .font-holder {
     display: flex;
     justify-content: center;
+    flex-direction: row;
     gap: 2rem;
   }
 
@@ -1311,8 +1724,13 @@ figure {
     gap: 2rem;
   }
 
+  .design-reference a {
+    width: fit-content;
+  }
+
   .reference-site {
     height: 26rem;
+    width: 50rem;
     margin: 0 0.5rem;
   }
 
@@ -1323,17 +1741,13 @@ figure {
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    padding: 1rem;
   }
 
   .pallete-container {
-    width: 30%;
-    height: 40rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.345);
-    border-radius: 1.25rem;
-    padding: 3rem;
+    width: 25%;
+    min-height: 40rem;
+    height: fit-content;
   }
 
   .pallete {
@@ -1364,10 +1778,10 @@ figure {
     align-items: center;
     gap: 4rem;
     height: 100%;
-    padding: 3rem 0;
+    padding: 3rem 0 5rem 0;
     width: 100%;
     z-index: 1;
-    top: 0;
+    top: 7rem;
     left: 0;
     background-color: black;
     overflow-x: hidden;
@@ -1378,12 +1792,12 @@ figure {
     position: relative;
     height: auto;
     margin: 0 1rem;
-    width: 70%;
+    width: fit-content;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
     font-family: var(--secondary-font);
-    font-size: 2rem;
+    font-size: 1.8rem;
     line-height: 2.5rem;
     color: #ffffff;
     display: block;
@@ -1392,19 +1806,25 @@ figure {
   }
 
   .sidebar a::after {
-    background-color: var(--site-color-2);
+    background-color: var(--site-color-5);
     height: 0.25rem;
     width: 0;
     left: 0;
+    bottom: -0.5rem;
   }
 
   .sidebar .closebtn {
-    margin-top: 1rem;
+    margin: 0 2rem 0 0;
+    padding: 0;
     align-self: flex-end;
     width: auto;
     text-align: right;
     top: 0;
     font-size: 3.6rem;
+  }
+
+  .sidebar .closebtn:hover {
+    text-decoration: none;
   }
 
   .openbtn {

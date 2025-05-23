@@ -14,14 +14,16 @@ body {
 
 #loader {
   position: fixed;
-  top: 0; left: 0; right: 0; bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 9999;
 }
-
 
 main {
   padding-top: 0rem;
@@ -34,8 +36,24 @@ main {
 }
 
 .main-intro {
-  margin: 0 3rem;
+  margin: 0;
   gap: 7rem;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.home-title h1 {
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-family: "Satoshi", sans-serif;
+  text-transform: uppercase;
+  font-size: 6.5rem;
+  line-height: 7rem;
+  font-weight: 300;
+  margin: 0;
 }
 
 h1 {
@@ -64,11 +82,12 @@ h1.slide-in {
 }
 
 .subheading {
+  width: 100%;
   color: white;
-  text-align: center;
   font-size: 2em;
   line-height: 2.4rem;
-  margin-bottom: 3rem;
+  margin: 3rem 0;
+  text-align: center;
 }
 
 .button {
@@ -113,14 +132,34 @@ h1.slide-in {
 
 .index-category p {
   font-family: "Satoshi", sans-serif;
-  font-size: 3rem;
-  line-height: 3.4rem;
+  font-size: 5rem;
+  line-height: 5rem;
   font-weight: bold;
   color: var(--site-color-1);
   text-align: center;
   padding: 0rem 0;
   flex-basis: 100%;
   text-transform: uppercase;
+  background: linear-gradient(
+    to right,
+    #004cff,
+    #8f68ff,
+    #487bff,
+    #8f68ff,
+    #72ffea
+  );
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate-gradient 2.5s linear infinite;
+}
+
+@keyframes animate-gradient {
+  to{
+    background-position: 200%;
+  }
+  
 }
 
 .index-category a {
@@ -157,7 +196,7 @@ h1.slide-in {
 }
 
 .dark-overlay {
-  border-radius: 2rem;
+  border-radius: 1rem;
   position: absolute;
   top: 0;
   right: 0;
@@ -195,47 +234,7 @@ h1.slide-in {
   text-align: center;
 }
 
-@media (min-width: 400px) {
-  main {
-    flex-wrap: wrap;
-    margin: 0 0;
-  }
 
-  .home-title h1 {
-    font-size: 5rem;
-    line-height: 5rem;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-
-  .index-category {
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-  }
-
-  .index-category p {
-    font-size: 2.2rem;
-  }
-
-  a.category-box {
-    width: 80%;
-    height: 20rem;
-    border-radius: 0.5rem;
-  }
-
-  .dark-overlay {
-    border-radius: 0.5rem;
-  }
-
-  .subheading {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
-
-}
 
 @media (max-width: 600px) {
   main {
@@ -263,6 +262,11 @@ h1.slide-in {
     align-content: center;
   }
 
+  .index-category p{
+    font-size: 2.8rem;
+    line-height: 3rem;
+  }
+
   .category-box {
     width: 50rem;
     height: 20rem;
@@ -282,8 +286,7 @@ h1.slide-in {
     line-height: 2.3rem;
   }
 
-
-  footer{
+  footer {
     font-size: 1.2rem;
   }
 }
@@ -319,10 +322,80 @@ h1.slide-in {
     align-content: center;
   }
 
+  .index-category p{
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
   .subheading {
     font-size: 1.7rem;
     line-height: 2.3rem;
   }
+}
+
+@media (max-width: 400px) {
+  main {
+    padding-top: 7rem;
+    flex-wrap: wrap;
+    margin: 0 0;
+  }
+
+  .home-title h1 {
+    font-size: 5.5rem;
+    line-height: 6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .index-category {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .index-category p {
+    font-size: 2.2rem;
+  }
+
+  a.category-box {
+    width: 80%;
+    height: 20rem;
+    border-radius: 0.5rem;
+  }
+
+  .dark-overlay {
+    border-radius: 0.5rem;
+  }
+
+  .subheading {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .button {
+  margin: 0 0 5rem 0;
+}
+
+.menuButton {
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  font-weight: bold;
+  color: var(--site-color-1);
+  text-decoration: none;
+  text-transform: uppercase;
+  height: 7rem;
+  width: 25rem;
+  padding: 0 2rem;
+  background-color: white;
+  border: none;
+  border-radius: 5rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.281);
+  cursor: pointer;
+  /*transition: all 0.5s ease 0s;*/
+}
+
 
 }
 
@@ -342,9 +415,15 @@ h1.slide-in {
     align-content: center;
   }
 
+  .index-category p{
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
   .subheading {
     font-size: 1.7rem;
     line-height: 2.3rem;
+    margin: 3rem 0;
   }
 
   button {
@@ -363,9 +442,9 @@ h1.slide-in {
 }
 @media (min-width: 992px) {
   main {
+    padding-top: 0;
     flex-wrap: nowrap;
     margin: 7rem 0 0 0;
-    height: calc(100vh - 7rem);
   }
 
   .index-category {
@@ -375,13 +454,14 @@ h1.slide-in {
   }
 
   .index-category p {
-    font-size: 2.5rem;
+    font-size: 3rem;
+    line-height: 3rem;
   }
 
   a.category-box {
     width: 30rem;
     height: 27rem;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
   }
 
   a.category-box h2 {
@@ -394,24 +474,39 @@ h1.slide-in {
     margin: 3rem 0;
   }
 
-  .home-title{
+  .home-title {
     display: flex;
     width: auto;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
   }
 
-
-  .home-title h1 {
-    color: white;
-    text-align: center;
-    font-family: "Satoshi", sans-serif;
-    text-transform: uppercase;
-    font-size: 6.2rem;
-    line-height: 6.3rem;
-    font-weight: 300;
-    margin: 0;
+  .home-title h1{
+    font-weight: 6rem;
+    line-height: 6.5rem;
   }
+
+  .button {
+  margin: 2rem 2rem;
+}
+
+.menuButton {
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  font-weight: bold;
+  color: var(--site-color-1);
+  text-decoration: none;
+  text-transform: uppercase;
+  height: 7rem;
+  width: 25rem;
+  padding: 0 2rem;
+  background-color: white;
+  border: none;
+  border-radius: 5rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.281);
+  cursor: pointer;
+  /*transition: all 0.5s ease 0s;*/
+}
 }

@@ -1,4 +1,4 @@
-
+console.log("main.js loaded");
 let mybutton = document.getElementById("myBtn");
 window.onscroll = function() {scrollFunction()};
 
@@ -46,13 +46,18 @@ function typeWriter() {
 
 window.addEventListener("load", typeWriter);
 
-function lineEffect(){
-  let line = document.querySelector("solid");
-  line.style.width = "100%";
-  console.log("Line loaded")
+function lineEffect() {
+  let line = document.querySelector(".solid"); // class selector
+  if (line) {
+    line.style.width = "0";
+    line.style.borderColor = "red";
+    console.log("Line loaded");
+  } else {
+    console.warn("No element with class 'solid' found.");
+  }
 }
 
-window.addEventListener("load", lineEffect)
+window.addEventListener("load", lineEffect);
 
 window.addEventListener("load", function(){
    let i;

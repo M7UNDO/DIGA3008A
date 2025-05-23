@@ -784,9 +784,10 @@ footer p {
   }
 
   .blog-content p {
+    font-family: var(--secondary-font);
     margin: 0rem;
-    font-size: 1.6rem;
-    line-height: 1.8rem;
+    font-size: 1.5rem;
+    line-height: 1.6rem;
   }
 
   .blog-content::after {

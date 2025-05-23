@@ -33,6 +33,25 @@ h1 {
   font-weight: bold;
   line-height: 5rem;
   text-transform: uppercase;
+  background: linear-gradient(
+    to right,
+    #004cff,
+    #8f68ff,
+    #487bff,
+    #8f68ff,
+    #72ffea
+  );
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate-gradient 2.5s linear infinite;
+}
+
+@keyframes animate-gradient {
+  to{
+    background-position: 200%;
+  }
 }
 
 .subheading {

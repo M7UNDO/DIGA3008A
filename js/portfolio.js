@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const originalSrc = imageSources[index].original;
     const hoverSrc = imageSources[index].hover;
 
-    img.src = originalSrc; // Ensure initial image is set
+    img.src = originalSrc; 
 
     project.addEventListener("mouseover", function(){
       img.src = hoverSrc;

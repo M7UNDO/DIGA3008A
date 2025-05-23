@@ -8,6 +8,7 @@ html {
 
 main {
   margin-top: 3rem;
+  margin: 3rem 0 3rem 0;
   height: 100%;
   width: 100%;
   display: flex;
@@ -340,7 +341,6 @@ figure.font-container {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  cursor: pointer;
   margin: 0 0 0 0;
   width: 100%;
   border-radius: 2rem;
@@ -355,10 +355,7 @@ figure.font-container {
   transition: all 0.3s ease-in 0s;
 }
 
-.flow-diagrams figure:hover {
-  transform: translateY(-0.4rem);
-  box-shadow: 0.4rem 0.4rem 1.2rem var(--site-color-4);
-}
+
 /* Design Reference Section*/
 .design-reference {
   margin: 2rem 0;
@@ -518,54 +515,6 @@ figure {
   margin: 0;
 }
 
-/* Sidebar Navigation*/
-.sidebar {
-  position: sticky;
-  display: none;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 4rem;
-  height: 100%;
-  padding: 3rem 0;
-  width: 100%;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: black;
-  overflow-x: hidden;
-  transition: all 0.5s ease 0s;
-}
-
-.sidebar a {
-  position: relative;
-  height: auto;
-  margin: 0 1rem;
-  width: 70%;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-family: var(--secondary-font);
-  font-size: 2rem;
-  line-height: 2.5rem;
-  color: #ffffff;
-  display: block;
-  transition: 0.3s;
-  padding: 1rem 2rem;
-}
-
-.sidebar a::after {
-  content: "";
-  position: absolute;
-  background-color: var(--site-color-2);
-  height: 0.25rem;
-  width: 0;
-  left: 0;
-  bottom: -1.5rem;
-  text-align: center;
-  transition: all 0.4s ease-in-out 0s;
-}
-
 .sidebar a:hover::after {
   width: 100%;
 }
@@ -575,14 +524,6 @@ figure {
   font-weight: bold;
 }
 
-.sidebar .closebtn {
-  margin-top: 1rem;
-  align-self: flex-end;
-  width: auto;
-  text-align: right;
-  top: 0;
-  font-size: 3.6rem;
-}
 
 .openbtn {
   position: fixed;
@@ -1452,22 +1393,34 @@ figure {
   }
 
   .design-reference {
-    margin: 2rem 0;
     width: 100%;
     display: flex;
-    justify-content: center;
     flex-direction: row;
-    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
   }
 
-  .design-reference a {
+  .design-reference figure{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+  }
+
+  .design-reference a{
+
     width: fit-content;
   }
 
   .reference-site {
     height: 26rem;
-    width: 50rem;
-    margin: 0 0.5rem;
+    width: 60rem;
+    margin: 0;
   }
 
   .colour-palettes {
@@ -1569,9 +1522,6 @@ figure {
     font-size: 3.6rem;
   }
 
-  .sidebar .closebtn:hover {
-    text-decoration: none;
-  }
 
   .openbtn {
     position: fixed;
@@ -1594,72 +1544,17 @@ figure {
     padding: 0 3rem;
     width: 90%;
     height: 100%;
-    gap: 1.5rem;
+
   }
 
   .initial-wireframe-container {
-    align-items: center;
     width: 90%;
-    height: fit-content;
-    position: relative;
     gap: 1rem1;
   }
 
   .design-elements {
     width: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.401);
-    border-radius: 2rem;
-    gap: 1rem;
   }
-
-  p,
-  figcaption,
-  .design-list li {
-    font-size: 1.7rem;
-    font-weight: 420;
-    line-height: 2.2rem;
-  }
-
-  h1 {
-    font-size: 5rem;
-    line-height: 5rem;
-  }
-
-  .subheading {
-    font-size: 1.7rem;
-    line-height: 2rem;
-  }
-
-  h2 {
-    font-size: 3rem;
-    font-weight: bold;
-    line-height: 3rem;
-    scroll-margin-top: 9rem;
-  }
-
-  h3 {
-    font-size: 2.2rem;
-    line-height: 2.6rem;
-    font-weight: 500;
-  }
-
-  h4 {
-    font-size: 1.8rem;
-    line-height: 2.4rem;
-    font-weight: bold;
-  }
-
-  h5 {
-    font-size: 1.8;
-    line-height: 2.4rem;
-    font-weight: 500;
-  }
-
   .first-wireframe {
     width: 70rem;
   }
@@ -1758,21 +1653,12 @@ figure {
     height: 50rem;
   }
 
-  .numbertext {
-    font-family: var(--secondary-font);
-    font-size: 1.6rem;
-    font-weight: 500;
-    line-height: 1.6rem;
-    padding: 0.8rem 1.2rem;
-  }
-
   .web-image {
     height: 40rem;
   }
 
   .sidebar {
     position: sticky;
-    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -1780,10 +1666,9 @@ figure {
     height: 100%;
     padding: 3rem 0 5rem 0;
     width: 100%;
-    z-index: 1;
     top: 7rem;
-    left: 0;
     background-color: black;
+    border: 3px solid white;
     overflow-x: hidden;
     transition: 0.5s;
   }
@@ -1804,37 +1689,8 @@ figure {
     transition: 0.3s;
     padding: 1rem 2rem;
   }
-
-  .sidebar a::after {
-    background-color: var(--site-color-5);
-    height: 0.25rem;
-    width: 0;
-    left: 0;
-    bottom: -0.5rem;
-  }
-
-  .sidebar .closebtn {
-    margin: 0 2rem 0 0;
-    padding: 0;
-    align-self: flex-end;
-    width: auto;
-    text-align: right;
-    top: 0;
-    font-size: 3.6rem;
-  }
-
-  .sidebar .closebtn:hover {
-    text-decoration: none;
-  }
-
   .openbtn {
-    position: fixed;
-    height: 5rem;
-    width: 15rem;
     top: 12%;
     left: 1.5%;
-    font-size: 1.6rem;
-    font-weight: 500;
-    line-height: 2rem;
   }
 }

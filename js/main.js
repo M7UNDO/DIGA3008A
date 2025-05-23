@@ -1,6 +1,34 @@
+const root = document.documentElement
+
+const siteColour1 = getComputedStyle(root).getPropertyValue('--site-color-1');
+const siteColour2 = getComputedStyle(root).getPropertyValue('--site-color-2');
+const siteColour3 = getComputedStyle(root).getPropertyValue('--site-color-3');
+
+let menuButton = document.querySelector(".menuButton");
+
+//menuButton.style.transition = "background-color 0.3s ease, color 0.3s ease";
+menuButton.style.transition = "all 0.5s ease 0s";
+
+menuButton.addEventListener("mouseover", function(){
+
+   menuButton.style.backgroundColor = siteColour1;
+   menuButton.style.color = "white";
+
+})
+
+menuButton.addEventListener("mouseout", function(){
+
+   menuButton.style.backgroundColor = "";
+   menuButton.style.color = "";
+
+})
+
+
 console.log("main.js loaded");
 let mybutton = document.getElementById("myBtn");
 window.onscroll = function() {scrollFunction()};
+
+
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -47,7 +75,7 @@ function typeWriter() {
 window.addEventListener("load", typeWriter);
 
 function lineEffect() {
-  let line = document.querySelector(".solid"); // class selector
+  let line = document.querySelector(".solid"); //*remeber class selector
   if (line) {
     line.style.width = "0";
     line.style.borderColor = "red";

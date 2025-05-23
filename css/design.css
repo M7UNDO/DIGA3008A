@@ -355,7 +355,6 @@ figure.font-container {
   transition: all 0.3s ease-in 0s;
 }
 
-
 /* Design Reference Section*/
 .design-reference {
   margin: 2rem 0;
@@ -380,7 +379,7 @@ figure.font-container {
 }
 
 .reference-site:hover {
-  transform: translateY(-0.4rem);
+  transform: translateX(0.4rem);
   box-shadow: 0 0 1rem var(--site-color-2);
 }
 
@@ -416,6 +415,7 @@ figure.font-container {
   text-decoration: none;
   font-weight: 800;
   color: var(--site-color-5);
+  transition: all 0.5s ease-in-out 0s;
 }
 /* Style Guide Section*/
 .styleguide {
@@ -523,7 +523,6 @@ figure {
   color: var(--site-color-5);
   font-weight: bold;
 }
-
 
 .openbtn {
   position: fixed;
@@ -753,19 +752,19 @@ figure {
 
   .sidebar {
     position: sticky;
-    display:  none;
+    display: none;
     flex-direction: column;
-    justify-content: flex-start; 
-    align-items: flex-start; 
+    justify-content: flex-start;
+    align-items: flex-start;
     gap: 4rem;
     height: 100vh;
-    padding: 1rem; 
-    width: 20rem; 
+    padding: 1rem;
+    width: 20rem;
     z-index: 1;
     top: 6rem;
     left: 0;
     background-color: black;
-    overflow-y: auto; 
+    overflow-y: auto;
     overflow-x: hidden;
     transition: 0.5s;
   }
@@ -981,19 +980,19 @@ figure {
 
   .sidebar {
     position: sticky;
-    display:  none;
+    display: none;
     flex-direction: column;
-    justify-content: flex-start; 
-    align-items: flex-start; 
+    justify-content: flex-start;
+    align-items: flex-start;
     gap: 4rem;
     height: 100vh;
-    padding: 1rem; 
-    width: 20rem; 
+    padding: 1rem;
+    width: 20rem;
     z-index: 1;
     top: 6rem;
     left: 0;
     background-color: black;
-    overflow-y: auto; 
+    overflow-y: auto;
     overflow-x: hidden;
     transition: 0.5s;
   }
@@ -1218,20 +1217,20 @@ figure {
 
   .sidebar {
     position: sticky;
-    display: flex; 
+    display: flex;
     flex-direction: column;
-    justify-content: flex-start; 
-    align-items: flex-start; 
+    justify-content: flex-start;
+    align-items: flex-start;
     gap: 4rem;
     height: 100vh;
     padding: 3rem 1rem 5rem 1rem;
-    width: 25rem; 
+    width: 25rem;
     z-index: 1;
     top: 7rem;
     left: 0;
     background-color: black;
-    overflow-y: auto; 
-    overflow-x: hidden; 
+    overflow-y: auto;
+    overflow-x: hidden;
     transition: 0.5s;
   }
 
@@ -1402,7 +1401,7 @@ figure {
     gap: 0;
   }
 
-  .design-reference figure{
+  .design-reference figure {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -1412,8 +1411,7 @@ figure {
     gap: 0;
   }
 
-  .design-reference a{
-
+  .design-reference a {
     width: fit-content;
   }
 
@@ -1522,7 +1520,6 @@ figure {
     font-size: 3.6rem;
   }
 
-
   .openbtn {
     position: fixed;
     height: 5rem;
@@ -1544,7 +1541,6 @@ figure {
     padding: 0 3rem;
     width: 90%;
     height: 100%;
-
   }
 
   .initial-wireframe-container {
@@ -1619,14 +1615,14 @@ figure {
     gap: 2rem;
   }
 
-  .design-reference a {
-    width: fit-content;
-  }
-
   .reference-site {
     height: 26rem;
-    width: 50rem;
-    margin: 0 0.5rem;
+    width: 60rem;
+    margin: 0;
+  }
+
+  .design-reference a {
+    width: fit-content;
   }
 
   .colour-palettes {

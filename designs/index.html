@@ -44,25 +44,27 @@
       </nav>
     </header>
     
-    <div id="mySidebar" class="sidebar">
+    
+    <main id="main">
+      <div id="mySidebar" class="sidebar">
          <a href="javascript:void(0)" class="closebtn" onclick="closeTable()">&times;</a>
          <a href="#IxD">IxD Process</a>
          <a href="#UserFlow">User Flow</a>
-         <a href="#websiteReferences">Website References</a>
          <a href="#StyleGuide">Style Guide</a>
          <a href="#Wireframes">Wireframes</a>
-    </div>
+         <a href="#website-evaluation">Website References</a>
+      </div>
 
-    <button class="openbtn" onclick="openTable()">&#9776; Contents</button>
-    <main id="main">
+      
 
       <article class="design-container">
+        <button class="openbtn" onclick="openTable()">&#9776; Contents</button>
         <div class="heading">
           <h1 id="heading-intro">My Design Process</h1>
           <p class="subheading">Take a look behind-the-scenes of my web developement process</p>
         </div>
       
-        <div class="ixd-container" >
+        <div class="design-content" >
           <h2 id="IxD">IxD Process</h2>
 
           <h3>Goal Alignment</h3>
@@ -175,7 +177,7 @@
           </ul>
         </div>
 
-        <div class="styleguide">
+        <div class="design-content">
 
           <h2 id="StyleGuide">Style Guide</h2>
 
@@ -237,7 +239,7 @@
           </ul>
         </div>
 
-        <div class="typography">
+        <div class="design-content">
           <h3>Typography</h3>
           <p>
             I want the typography of my website to have a clean and modern feel. I think this is reflected by my font
@@ -271,7 +273,7 @@
           </div>
 
           <h3>Update Font Choices</h3>
-          <div class="font-holder-update">
+          <div class="font-holder">
             <figure class="font-container">
               <img
               src="images/Santoshi_Font.png"
@@ -298,8 +300,9 @@
           
         </div>
 
-        <div class="wireframes-rough-container">
-          <h2 class="h2-intial"  id="Wireframes">Initial Rough Wireframes</h2>
+        <div class="design-content">
+          <h2 class="h2-intial"  id="Wireframes">Wireframes</h2>
+          <h3>Initial Wireframes</h3>
          <div class="initial-wireframe-container">
           
 
@@ -364,18 +367,15 @@
           <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
           <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
          </div>
-        </div>
-
-        <div class="three-dots">
-          <span class="dot" onclick="currentSlide(1, 0)"></span>
-          <span class="dot" onclick="currentSlide(2, 0)"></span>
-          <span class="dot" onclick="currentSlide(3, 0)"></span>
-          <span class="dot" onclick="currentSlide(4, 0)"></span>
-          <span class="dot" onclick="currentSlide(5, 0)"></span>
-        </div>
+          <div class="three-dots">
+            <span class="dot" onclick="currentSlide(1, 0)"></span>
+            <span class="dot" onclick="currentSlide(2, 0)"></span>
+            <span class="dot" onclick="currentSlide(3, 0)"></span>
+            <span class="dot" onclick="currentSlide(4, 0)"></span>
+            <span class="dot" onclick="currentSlide(5, 0)"></span>
+         </div>
         
-        <div class="wireframe-container">
-         <h2>Visualisation of composition and interace elements:</h2>
+         <h3>Visualisation of composition and interace elements:</h3>
          <div class="design-elements">
           <figure class="design-elements-box fade" id="fin-wireframe-1">
             <img class="final-wireframe" src="images/HomeUpdate.png" alt="Wireframe of home page">
@@ -411,27 +411,29 @@
           <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
          </div>
 
+          <div class="three-dots">
+            <span class="dots" onclick="currentSlide(1, 1)"></span>
+            <span class="dots" onclick="currentSlide(2, 1)"></span>
+            <span class="dots" onclick="currentSlide(3, 1)"></span>
+            <span class="dots" onclick="currentSlide(4, 1)"></span>
+            <span class="dots" onclick="currentSlide(5, 1)"></span>
+          </div>
+
         </div>
 
-        <div class="three-dots">
-          <span class="dots" onclick="currentSlide(1, 1)"></span>
-          <span class="dots" onclick="currentSlide(2, 1)"></span>
-          <span class="dots" onclick="currentSlide(3, 1)"></span>
-          <span class="dots" onclick="currentSlide(4, 1)"></span>
-          <span class="dots" onclick="currentSlide(5, 1)"></span>
-        </div>
+        
 
-        <div class="web-container">
-             <h3>Evaluating potential websites my Essay 1: UX & UI Analysis.</h3>
+        <div class="design-content">
+             <h2 id="website-evaluation">Evaluating potential websites my Essay 1: UX & UI Analysis.</h2>
 
          <div class="website-example">
-          <h4 class="website-name">GCRA website- Pros & Cons</h4>
+          <h3 class="website-name">GCRA website- Pros & Cons</h3>
           <a href="https://gcrabursary.gauteng.gov.za/"
             ><img class="web-image" src="images/GCRA.png" alt="GCRA website"
           ></a>
          </div>
 
-         <h5>Pros</h5>
+         <h4>Pros</h4>
          <ul class="design-list">
           <li>
             The website has a clear purpose. The landing page immediately displays the current status of applications,
@@ -450,7 +452,7 @@
           <li>The information on the website is well structured with a logical flow.</li>
          </ul>
 
-         <h5>Cons</h5>
+         <h4>Cons</h4>
          <ul class="design-list">
           <li>
             Only “Home” in the navigation bar turns blue when active. The other pages do not indicate the current page
@@ -468,12 +470,12 @@
          </ul>
 
          <div class="website-example">
-          <h4 class="website-name">Vodacom website- Pros & Cons</h4>
+          <h3 class="website-name">Vodacom website- Pros & Cons</h3>
           <a href="https://www.vodacom.co.za/"
             ><img class="web-image" src="images/Vodacom.png" alt="Vodacom Website"
           ></a>
          </div>
-         <h5>Pros</h5>
+         <h4>Pros</h4>
          <ul class="design-list">
           <li>The navigation is well organised</li>
           <li>
@@ -483,18 +485,18 @@
           <li>The website effectively makes use of CTA buttons like “Buy Now.”</li>
           <li>The website has a minimalist design that improves readability and makes it easy to follow</li>
          </ul>
-         <h5>Cons</h5>
+         <h4>Cons</h4>
          <ul class="design-list">
           <li>The navigation bar does indicate what page you are on.</li>
          </ul>
 
          <div class="website-example">
-          <h4 class="website-name">Takealot website- Pros & Cons</h4>
+          <h3 class="website-name">Takealot website- Pros & Cons</h3>
           <a href="https://www.takealot.com/"
             ><img class="web-image" src="images/TakeAlot_Screenshot.png" alt="TakeAlot Website"
           ></a>
          </div>
-         <h5>Pros</h5>
+         <h4>Pros</h4>
          <ul class="design-list">
           <li>The load times are fast despite the cluttered pages</li>
           <li>
@@ -503,7 +505,7 @@
           </li>
           <li>Offers a wide range of options, like shopping by brand, category, department, and promotions</li>
          </ul>
-         <h5>Cons</h5>
+         <h4>Cons</h4>
          <ul class="design-list">
           <li>
             The home page is cluttered. Navigation feels overwhelming, as there are multiple promotional banners across

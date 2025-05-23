@@ -119,8 +119,8 @@ function showSlides(n, no){
 function openTable() {
   let openbtn = document.getElementsByClassName("openbtn")[0];
   openbtn.style.display = "none";
-  document.getElementById("mySidebar").style.width = "25rem";
-  document.getElementById("main").style.marginLeft = "25rem";
+  document.getElementById("mySidebar").style.display= "flex";
+  //document.getElementById("main").style.marginLeft = "100%";
 }
 
 
@@ -128,6 +128,6 @@ function openTable() {
 function closeTable() {
   let openbtn = document.getElementsByClassName("openbtn")[0];
   openbtn.style.display = "block";
-  document.getElementById("mySidebar").style.width = "0";
-  document.getElementById("main").style.marginLeft = "0";
+  document.getElementById("mySidebar").style.display = "none";
+  //document.getElementById("main").style.marginLeft = "0";
 }

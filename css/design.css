@@ -7,23 +7,36 @@ html {
 }
 
 main {
+  margin-top: 3rem;
   height: 100%;
   width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-around;
   gap: 1rem;
+  /* transition: margin-left 0.5s;
+  padding: 2rem;*/
 }
-
 /*Design Section Container*/
 .design-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  padding: 0 3rem;
+  width: 90%;
   height: 100%;
-  padding: 0 8rem;
   gap: 1.5rem;
+}
+
+.design-content {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 /*Headings*/
@@ -51,7 +64,6 @@ h1 {
 }
 .heading {
   margin: 0;
-  padding-bottom: 3rem;
   width: fit-content;
   display: flex;
   flex-direction: column;
@@ -72,7 +84,7 @@ h1 {
   content: "";
   position: absolute;
   background-color: var(--site-color-2);
-  height: 0.2rem;
+  height: 0.25rem;
   width: 100%;
   left: 0rem;
   bottom: -3rem;
@@ -270,22 +282,15 @@ figcaption {
 }
 
 /* Typography Section */
-.typography {
-  width: 100%;
+
+.font-holder {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
   gap: 2rem;
 }
 
-.typography div {
-  display: flex;
-  gap: 1rem;
-}
-
-.typography .font-container {
-  width: 50%;
+figure.font-container {
+  width: 40%;
   height: 100%;
   margin: 1rem 0;
   padding: 1rem;
@@ -295,10 +300,6 @@ figcaption {
   gap: 1rem;
   left: 0;
   right: 0;
-}
-
-.typography .font-container figcaption {
-  padding: 1rem;
 }
 
 .font-choices {
@@ -342,7 +343,6 @@ figcaption {
   box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.345);
   padding: 0 0 2rem 0;
 }
-
 
 .user-diagrams {
   height: 60rem;
@@ -515,22 +515,22 @@ figure {
 }
 
 /* Sidebar Navigation*/
-.sidebar{
-  display: flex;
+.sidebar {
+  position: sticky;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 4rem ;
+  gap: 4rem;
   height: 100%;
-  width: 0;
-  position: fixed;
+  padding: 3rem 0;
+  width: 100%;
   z-index: 1;
   top: 0;
   left: 0;
   background-color: black;
   overflow-x: hidden;
-  transition: 0.5s; 
-  
+  transition: 0.5s;
 }
 
 .sidebar a {
@@ -548,10 +548,9 @@ figure {
   display: block;
   transition: 0.3s;
   padding: 1rem 2rem;
-  
 }
 
-.sidebar a::after{
+.sidebar a::after {
   content: "";
   position: absolute;
   background-color: var(--site-color-2);
@@ -563,7 +562,7 @@ figure {
   transition: all 0.4s ease-in-out 0s;
 }
 
-.sidebar a:hover::after{
+.sidebar a:hover::after {
   width: 100%;
 }
 
@@ -577,13 +576,14 @@ figure {
   align-self: flex-end;
   width: auto;
   text-align: right;
-  position: absolute;
   top: 0;
   font-size: 3.6rem;
 }
 
 .openbtn {
   position: fixed;
+  height: 5rem;
+  width: 15rem;
   top: 12%;
   left: 1.5%;
   font-size: 1.6rem;
@@ -595,7 +595,7 @@ figure {
   padding: 1.5rem 2rem;
   border: none;
   border-radius: 1rem;
-  z-index: 2rem;
+  z-index: 99;
   transition: all 0.3s ease 0s;
 }
 
@@ -605,254 +605,423 @@ figure {
   box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.345);
 }
 
-#main {
-  width: 100%;
-  transition: margin-left 0.5s;
-  padding: 2rem;
-}
-
-@media (max-width: 600px) {
-  main {
-    width: 100%;
-    height: 100%;
-  }
-
-  p,
-  figcaption,
-  .design-list li {
-    font-size: 1.2rem;
-    font-weight: 400;
-    line-height: 2rem;
-  }
-
-  h1 {
-    font-size: 3.2rem;
-    line-height: 3.2rem;
-  }
-
-  .subheading {
-    font-size: 1.4rem;
-    line-height: 2.4rem;
-  }
-
-  h2 {
-    font-size: 2.2rem;
-    line-height: 2.4rem;
-  }
-
-  h3 {
-    font-size: 1.9rem;
-    line-height: 2.2rem;
-  }
-
-  h4 {
-    font-size: 1.7rem;
-    line-height: 2rem;
-  }
-
-  h5 {
-    font-size: 1.6rem;
-    line-height: 2rem;
-  }
-
-  .first-wireframe {
-    width: 40rem;
-  }
-
-  .user-diagrams {
-    height: 20rem;
-  }
-
-  .font-choices {
-    width: 40rem;
-  }
-
-  .reference-site {
-  }
-
-  .pallete {
-    height: 18.5rem;
-  }
-
-  .final-wireframe {
-    height: 20rem;
-  }
-
-  .web-image {
-    height: 20rem;
-  }
-}
-
-@media (min-width: 601px) {
-  main {
-    width: 100%;
-    height: 100%;
-  }
-
-  p,
-  figcaption,
-  .design-list li {
-    font-size: 1.2rem;
-    font-weight: 400;
-    line-height: 2rem;
-  }
-
-  h1 {
-    font-size: 3.2rem;
-    line-height: 3.2rem;
-  }
-
-  .subheading {
-    font-size: 1.4rem;
-    line-height: 2.4rem;
-  }
-
-  h2 {
-    font-size: 2.2rem;
-    line-height: 2.4rem;
-  }
-
-  h3 {
-    font-size: 1.9rem;
-    line-height: 2.2rem;
-  }
-
-  h4 {
-    font-size: 1.7rem;
-    line-height: 2rem;
-  }
-
-  h5 {
-    font-size: 1.6rem;
-    line-height: 2rem;
-  }
-
-  .first-wireframe {
-    width: 40rem;
-  }
-
-  .user-diagrams {
-    height: 20rem;
-  }
-
-  .font-choices {
-    width: 40rem;
-  }
-
-  .reference-site {
-  }
-
-  .pallete {
-    height: 18.5rem;
-  }
-
-  .final-wireframe {
-    height: 20rem;
-  }
-
-  .web-image {
-    height: 20rem;
-  }
-}
-
-@media (max-width: 400px) {
-  main {
-    width: 100%;
-    height: 100%;
-  }
-
-  .sidebar {
-    padding-top: 1.5rem;
-  }
-  .sidebar a {
-    font-size: 1.8rem;
-  }
-
-  p,
-  figcaption,
-  .design-list li {
-    font-size: 1.2rem;
-  }
-
-  .design-list {
-    width: 100%;
-  }
-
-  h1 {
-    font-size: 3.2rem;
-    line-height: 3.2rem;
-  }
-
-  .subheading {
-    font-size: 1.4rem;
-    line-height: 2.4rem;
-  }
-
-  h2 {
-    font-size: 2.2rem;
-    line-height: 2.4rem;
-  }
-
-  h3 {
-    font-size: 1.9rem;
-    line-height: 2.2rem;
-  }
-
-  h4 {
-    font-size: 1.7rem;
-    line-height: 2rem;
-  }
-
-  h5 {
-    font-size: 1.6rem;
-    line-height: 2rem;
-  }
-
-  .first-wireframe {
-    width: 32rem;
-  }
-
-  .user-diagrams {
-    height: 30rem;
-  }
-
-  .font-choices {
-    width: 34rem;
-  }
-
-  .reference-site {
-  }
-
-  .pallete {
-    height: 18.5rem;
-  }
-
-  .final-wireframe {
-    height: 20rem;
-  }
-
-  .web-image {
-    height: 16.5rem;
-  }
-}
-
-@media (min-width: 768px) {
-  main {
-    width: 100%;
-    height: 100%;
-  }
-
+@media (min-width: 400px) {
   .design-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    padding: 0 1rem;
+    width: 90%;
     height: 100%;
-    padding: 0;
     gap: 1.5rem;
   }
 
+  .initial-wireframe-container {
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    gap: 1rem;
+  }
+
+  .design-elements {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.401);
+    border-radius: 2rem;
+    gap: 1rem;
+  }
+  p,
+  figcaption,
+  .design-list li {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 2rem;
+  }
+
+  h1 {
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+    text-transform: uppercase;
+  }
+
+  .subheading {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+    line-height: 2.4rem;
+    font-weight: 700;
+  }
+
+  h3 {
+    font-size: 1.9rem;
+    line-height: 2.2rem;
+    font-weight: 550;
+  }
+
+  h4 {
+    font-size: 1.7rem;
+    line-height: 2rem;
+    font-weight: 550;
+  }
+
+  h5 {
+    font-size: 1.7rem;
+    line-height: 2rem;
+  }
+
+  .first-wireframe {
+    width: 30rem;
+  }
+
+  .flow-diagrams {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .flow-diagrams figure {
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.345);
+    padding: 0 0 2rem 0;
+  }
+
+  .user-diagrams {
+    height: 28rem;
+    padding: 1rem 2rem;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease-in 0s;
+  }
+
+  .font-holder {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0rem;
+  }
+
+  figure.font-container {
+    width: 100%;
+    height: 100%;
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: var(--site-color-3);
+  }
+
+  .font-choices {
+    width: 100%;
+  }
+
+  .colour-palettes {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .pallete-container {
+    width: 45%;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.345);
+    border-radius: 1.25rem;
+    padding: 3rem;
+  }
+
+  .pallete {
+    height: 15rem;
+  }
+
+  .design-reference {
+    margin: 2rem 0;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0rem;
+  }
+
+  .design-reference figure figcaption{
+    width: fit-content;
+  } 
+  
+  .design-reference figure{
+    width: 100%;
+  }
+
+  .design-reference figure a{
+    width: fit-content;
+  }
+
+  .reference-site {
+    width: 80%;
+    height: 100%;
+  }
+
+  .final-wireframe {
+    height: 17rem;
+    border-radius: 1.25rem;
+  }
+
+  .numbertext {
+    font-family: var(--secondary-font);
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.2rem;
+    padding: 0.8rem 1.2rem;
+  }
+
+  .web-image {
+    height: 17rem;
+  }
+}
+
+@media (min-width: 601px) {
+  .design-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    width: 90%;
+    height: 100%;
+    gap: 1.5rem;
+  }
+
+  .initial-wireframe-container {
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    gap: 1rem;
+  }
+
+  .design-elements {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.401);
+    border-radius: 2rem;
+    gap: 1rem;
+  }
+  p,
+  figcaption,
+  .design-list li {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 2rem;
+  }
+
+  h1 {
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+    text-transform: uppercase;
+  }
+
+  .subheading {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+    line-height: 2.4rem;
+    font-weight: 700;
+  }
+
+  h3 {
+    font-size: 1.9rem;
+    line-height: 2.2rem;
+    font-weight: 550;
+  }
+
+  h4 {
+    font-size: 1.7rem;
+    line-height: 2rem;
+    font-weight: 550;
+  }
+
+  h5 {
+    font-size: 1.7rem;
+    line-height: 2rem;
+  }
+
+  .first-wireframe {
+    width: 50rem;
+  }
+
+  .flow-diagrams {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .flow-diagrams figure {
+    width: 80%;
+    border-radius: 2rem;
+    box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.345);
+    padding: 0 0 2rem 0;
+  }
+
+  .user-diagrams {
+    height: 35rem;
+    padding: 1rem 2rem;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease-in 0s;
+  }
+
+  .font-holder {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  figure.font-container {
+    width: 100%;
+    height: 100%;
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: var(--site-color-3);
+  }
+
+  .font-choices {
+    width: 100%;
+  }
+
+  .colour-palettes {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .pallete-container {
+    width: 45%;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.345);
+    border-radius: 1.25rem;
+    padding: 3rem;
+  }
+
+  .pallete {
+    height: 18.5rem;
+  }
+
+  .design-reference {
+    margin: 2rem 0;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0rem;
+  }
+
+  .design-reference figure figcaption{
+    width: fit-content;
+  } 
+  
+  .design-reference figure{
+    width: 100%;
+  }
+
+  .design-reference figure a{
+    width: fit-content;
+  }
+
+  .reference-site {
+    width: 80%;
+    height: 100%;
+  }
+
+  .final-wireframe {
+    height: 25rem;
+    border-radius: 1.25rem;
+  }
+
+  .numbertext {
+    font-family: var(--secondary-font);
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.4rem;
+    padding: 0.8rem 1.2rem;
+  }
+
+  .web-image {
+    height: 26rem;
+  }
+}
+
+
+
+@media (min-width: 768px) {
+  .design-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    width: 90%;
+    height: 100%;
+    gap: 1.5rem;
+  }
+
+  .initial-wireframe-container {
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    gap: 1rem;
+  }
+
+  .design-elements {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.401);
+    border-radius: 2rem;
+    gap: 1rem;
+  }
   p,
   figcaption,
   .design-list li {
@@ -918,36 +1087,85 @@ figure {
   }
 
   .user-diagrams {
-    height: 40rem;
+    height: 35rem;
+    padding: 1rem 2rem;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease-in 0s;
   }
 
-  .typography .font-container {
-    width: 40%;
+  .font-holder {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  figure.font-container {
+    width: 50%;
     height: 100%;
     margin: 1rem 0;
     padding: 1rem;
     background-color: var(--site-color-3);
-    box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.345);
-    border-radius: 1.25rem;
-    gap: 1rem;
-    left: 0;
-    right: 0;
   }
 
   .font-choices {
-    width: 40rem;
+    width: 100%;
   }
 
   .reference-site {
-    height: 20rem;
+    height: 26rem;
+    margin: 0 0.5rem;
+  }
+
+  .colour-palettes {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .pallete-container {
+    width: 45%;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.345);
+    border-radius: 1.25rem;
+    padding: 3rem;
   }
 
   .pallete {
     height: 18.5rem;
   }
 
+  .design-reference {
+    margin: 2rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0rem;
+  }
+
+  .reference-site {
+    width: 100%;
+    height: 100%;
+  }
+
   .final-wireframe {
-    height: 35rem;
+    height: 33rem;
+    border-radius: 1.25rem;
+  }
+
+  .numbertext {
+    font-family: var(--secondary-font);
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.4rem;
+    padding: 0.8rem 1.2rem;
   }
 
   .web-image {
@@ -956,31 +1174,42 @@ figure {
 }
 
 @media (min-width: 992px) {
-  main {
-    width: 100%;
-    height: 100%;
-  }
-
   .design-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    padding: 0 3rem;
+    width: 90%;
     height: 100%;
-    padding: 0 8rem;
     gap: 1.5rem;
   }
 
-  .design-container {
-    width: 100%;
+  .initial-wireframe-container {
+    align-items: center;
+    width: 90%;
+    height: fit-content;
+    position: relative;
+    gap: 1rem1;
+  }
+
+  .design-elements {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.401);
+    border-radius: 2rem;
+    gap: 1rem;
   }
 
   p,
   figcaption,
   .design-list li {
     font-size: 1.7rem;
-    font-weight: 400;
+    font-weight: 420;
     line-height: 2.2rem;
   }
 
@@ -989,35 +1218,32 @@ figure {
     line-height: 5rem;
   }
 
-  .heading {
-    height: 100%;
-    margin: 0 0 5rem 0;
-  }
-
   .subheading {
     font-size: 1.7rem;
     line-height: 2rem;
   }
 
   h2 {
-    font-size: 2.8rem;
+    font-size: 3rem;
     font-weight: bold;
-    line-height: 2.8rem;
+    line-height: 3rem;
+    scroll-margin-top: 9rem;
   }
 
   h3 {
-    font-size: 1.9rem;
+    font-size: 2.2rem;
     line-height: 2.6rem;
+    font-weight: 500;
   }
 
   h4 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     line-height: 2.4rem;
     font-weight: bold;
   }
 
   h5 {
-    font-size: 2rem;
+    font-size: 1.8;
     line-height: 2.4rem;
     font-weight: 500;
   }
@@ -1057,36 +1283,57 @@ figure {
   }
 
   .font-holder {
-    width: 100%;
+    display: flex;
     justify-content: center;
+    gap: 2rem;
   }
 
-  .font-holder-update {
-    width: 100%;
-    justify-content: center;
-  }
-
-  .font-container {
-    width: 50%;
-    height: 22rem;
+  figure.font-container {
+    width: 40%;
+    height: 100%;
     margin: 1rem 0;
     padding: 1rem;
     background-color: var(--site-color-3);
-    box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.345);
-    border-radius: 1.25rem;
-    gap: 1rem;
-    left: 0;
-    right: 0;
   }
 
   .font-choices {
-    height: 18rem;
+    height: 100%;
     width: 100%;
+    margin: 0 0 1rem 0;
+  }
+
+  .design-reference {
+    margin: 2rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 2rem;
   }
 
   .reference-site {
-    height: 27rem;
+    height: 26rem;
     margin: 0 0.5rem;
+  }
+
+  .colour-palettes {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .pallete-container {
+    width: 30%;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.345);
+    border-radius: 1.25rem;
+    padding: 3rem;
   }
 
   .pallete {
@@ -1097,7 +1344,77 @@ figure {
     height: 50rem;
   }
 
+  .numbertext {
+    font-family: var(--secondary-font);
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    padding: 0.8rem 1.2rem;
+  }
+
   .web-image {
     height: 40rem;
+  }
+
+  .sidebar {
+    position: sticky;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    height: 100%;
+    padding: 3rem 0;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+
+  .sidebar a {
+    position: relative;
+    height: auto;
+    margin: 0 1rem;
+    width: 70%;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: var(--secondary-font);
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+    padding: 1rem 2rem;
+  }
+
+  .sidebar a::after {
+    background-color: var(--site-color-2);
+    height: 0.25rem;
+    width: 0;
+    left: 0;
+  }
+
+  .sidebar .closebtn {
+    margin-top: 1rem;
+    align-self: flex-end;
+    width: auto;
+    text-align: right;
+    top: 0;
+    font-size: 3.6rem;
+  }
+
+  .openbtn {
+    position: fixed;
+    height: 5rem;
+    width: 15rem;
+    top: 12%;
+    left: 1.5%;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2rem;
   }
 }

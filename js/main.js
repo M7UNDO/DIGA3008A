@@ -21,13 +21,16 @@ function topFunction() {
 }
 
 function openNav(){
-    document.getElementsByClassName("nav-menu")[0].style.width = "100%";
+    document.getElementsByClassName("nav-menu")[0].style.width = "65%";
     document.getElementsByClassName("closeBtn")[0].style.display = "block";
+    document.getElementsByClassName("overlay")[0].style.display = "block";
+
 }
 
 function closeNav(){
     document.getElementsByClassName("nav-menu")[0].style.width = "0%";
     document.getElementsByClassName("closeBtn")[0].style.display = "none"
+    document.getElementsByClassName("overlay")[0].style.display = "none";
 
 }
 
@@ -78,6 +81,7 @@ window.addEventListener("load", function(){
 
 window.addEventListener("load", () => {
   document.getElementById("loader").style.display = "none";
+  document.getElementById("load").style.display = "none";
 });
 
 

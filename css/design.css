@@ -2,10 +2,6 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 main {
   margin-top: 3rem;
   margin: 3rem 0 3rem 0;
@@ -438,7 +434,7 @@ figure.font-container {
 }
 
 .pallete-container {
-  width: 30%;
+  width: auto;
   height: 40rem;
   display: flex;
   flex-direction: column;
@@ -450,6 +446,7 @@ figure.font-container {
 
 .pallete {
   height: fit-content;
+  width: auto;
 }
 
 /* Website Examples */
@@ -548,7 +545,7 @@ figure {
   font-weight: 600;
   box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.345);
 }
-
+/*
 @media (min-width: 400px) {
   main {
     display: flex;

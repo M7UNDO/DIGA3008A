@@ -186,10 +186,22 @@ footer p {
   text-align: center;
 }
 
-hr.solid {
-  border-top: 3px solid var(--site-color-2);
+.solid {
+  height: 0.4rem;
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  background: linear-gradient(
+    90deg,
+    var(--site-color-2) 0%,
+    #46fcb3 60%,
+    rgb(0, 217, 255) 100%
+
+  );
   margin: 5rem 0 3rem 0;
 }
+
+
 
 /*
 .nav-btn-container{

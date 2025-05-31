@@ -1,7 +1,6 @@
-
-console.log("main.js loaded");
 let mybutton = document.getElementById("myBtn");
 window.onscroll = function() {scrollFunction()};
+let line = document.querySelector(".solid");
 
 
 
@@ -21,7 +20,7 @@ function topFunction() {
 }
 
 function openNav(){
-    document.getElementsByClassName("nav-menu")[0].style.width = "65%";
+    document.getElementsByClassName("nav-menu")[0].style.width = "75%";
     document.getElementsByClassName("closeBtn")[0].style.display = "block";
     document.getElementsByClassName("overlay")[0].style.display = "block";
 
@@ -37,11 +36,12 @@ function closeNav(){
 
 const subheading = document.querySelector(".subheading");
 const blogssubheading = document.querySelector(".blog-index-subheading");
-const text = subheading.textContent;
+let text = subheading.textContent;
 subheading.textContent = "";
 
 let index = 0;
 function typeWriter() {
+
   if (index < text.length) {
     subheading.textContent += text.charAt(index);
     index++;
@@ -53,14 +53,9 @@ function typeWriter() {
 window.addEventListener("load", typeWriter);
 
 function lineEffect() {
-  let line = document.querySelector(".solid"); //*remeber class selector
-  if (line) {
-    line.style.width = "0";
-    line.style.borderColor = "red";
-    console.log("Line loaded");
-  } else {
-    console.warn("No element with class 'solid' found.");
-  }
+    line.style.width = "80%";
+
+  setTimeout(lineEffect, 20);
 }
 
 window.addEventListener("load", lineEffect);

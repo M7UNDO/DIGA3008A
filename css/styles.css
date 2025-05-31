@@ -2,13 +2,13 @@
 
 :root {
   font-family: var(--primary-font);
-  --site-color-1: rgb(25, 16, 45);
+  --site-color-1: rgb(0, 0, 0);
   --site-color-2: rgba(63, 94, 251, 1);
   --site-color-3: #f5f5f5;
   --site-color-4: rgba(63, 94, 251, 0.519);
   --site-color-5: rgb(63, 154, 251);
   --site-color-6: rgb(24, 49, 83);
-  --site-color-6: rgb(20, 41, 70);
+  --site-color-7: rgb(20, 41, 70);
   --primary-font: "Montserrat", sans-serif;
   --secondary-font: "Satoshi", sans-serif;
 }
@@ -33,14 +33,14 @@ html {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(to bottom, rgb(255, 255, 255),rgb(198, 198, 198),rgb(255, 255, 255));
+  background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(198, 198, 198), rgb(255, 255, 255));
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 100;
 }
 
-#load{
+#load {
   align-self: center;
   position: fixed;
   display: block;
@@ -54,8 +54,12 @@ html {
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 header {
@@ -107,8 +111,8 @@ h1.slide-in {
 }
 
 main {
-  height: calc(100vh - 8rem);
-  margin-top: 8rem;
+  height: 100%;
+  top: 8rem;
 }
 
 .navcontainer {
@@ -246,7 +250,7 @@ main {
 .burgerbutton {
   font-size: 2.8rem;
   color: white;
-  line-height: 2rem;
+  line-height: 2.8rem;
   cursor: pointer;
   display: none;
 }
@@ -257,27 +261,27 @@ main {
   line-height: 3rem;
   cursor: pointer;
   display: none;
-  align-self: flex-end;
-  margin: 1rem;
+  align-self: flex-start;
+  margin: 1rem 2rem;
 }
 
 #myBtn {
-  display: none; /* Hidden by default */
+  display: none;
   width: 4rem;
   height: 5rem;
-  position: fixed; /* Fixed/sticky position */
-  bottom: 2rem; /* Place the button at the bottom of the page */
-  right: 3rem; /* Place the button 30px from the right */
-  z-index: 0; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color: var(--site-color-3); /* Set a background color */
-  color: black; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 0; /* Some padding */
-  border-radius: 50px; /* Rounded corners */
+  position: fixed;
+  bottom: 2rem;
+  right: 3rem;
+  z-index: 0;
+  border: none;
+  outline: none;
+  background-color: var(--site-color-3);
+  color: black;
+  cursor: pointer;
+  padding: 0;
+  border-radius: 50px;
   box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.573);
-  font-size: 18px; /* Increase font size */
+  font-size: 18px;
   transition: all 0.5s ease 0s;
 }
 
@@ -376,6 +380,16 @@ footer p {
   box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.445);
 }
 
+@media only screen and (max-width: 400px) {
+  .burgerbutton {
+    font-size: 2.4rem;
+    color: white;
+    line-height: 2.4rem;
+    cursor: pointer;
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   main {
     width: 100%;
@@ -410,6 +424,12 @@ footer p {
     z-index: 10;
   }
 
+  #myBtn {
+    width: 4rem;
+    height: 5rem;
+    font-size: 18px;
+  }
+
   .nav-menu {
     flex-direction: column;
     position: fixed;
@@ -417,7 +437,7 @@ footer p {
     width: 0%;
     background-color: var(--site-color-1);
     top: 0;
-    left: 0;
+    right: 0;
     overflow: hidden;
     transition: all 0.5s;
     z-index: 99;
@@ -510,43 +530,69 @@ footer p {
   }
 }
 
+/*
 @media (min-width: 400px) {
   header {
-    height: 6rem;
+    height: 6.5rem;
   }
 
   .navcontainer {
-    height: 6rem;
+    height: 6.5rem;
   }
 
   .burgerbutton {
     font-size: 2rem;
     line-height: 2rem;
   }
-}
 
+  #myBtn {
+    width: 4rem;
+    height: 5rem;
+    font-size: 18px;
+  }
+}
+*/
 @media only screen and (min-width: 601px) {
   .burgerbutton {
     font-size: 2.3rem;
     line-height: 2.3rem;
   }
+
+  #myBtn {
+    width: 4rem;
+    height: 5rem;
+    font-size: 18px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
-  header {
-    height: 7rem;
-  }
-
-  .navcontainer {
-    height: 7rem;
-  }
   .burgerbutton {
     font-size: 2.6rem;
     line-height: 2.6rem;
   }
+
+  #myBtn {
+    width: 4rem;
+    height: 5rem;
+    font-size: 18px;
+  }
 }
 
 @media only screen and (min-width: 992px) {
+  header {
+    height: 7rem;
+  }
+
+  #myBtn {
+    width: 4rem;
+    height: 5rem;
+    font-size: 18px;
+  }
+
+  .navcontainer {
+    height: 100%;
+  }
+
   .navlinks li {
     /*display: inline-block;*/
     padding: 0rem 0.5rem;
@@ -565,6 +611,14 @@ footer p {
   }
 
   .burgerbutton {
+    display: none;
+  }
+
+  .burgerbutton {
+    font-size: 2.8rem;
+    color: white;
+    line-height: 2.8rem;
+    cursor: pointer;
     display: none;
   }
 

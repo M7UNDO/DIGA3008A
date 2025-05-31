@@ -21,7 +21,6 @@ main {
   height: 100%;
 }
 
-
 .about-container {
   height: 100%;
   width: 80%;
@@ -49,7 +48,7 @@ main {
   text-align: center;
 }
 
-.about-heading h1{
+.about-heading h1 {
   position: relative;
 }
 
@@ -90,33 +89,13 @@ h2 {
   font-weight: 450;
   line-height: 2.3rem;
   text-transform: uppercase;
-  
 }
 
-h3{
+h3 {
   font-size: 1.8rem;
   font-weight: 500;
   line-height: 2.3rem;
   text-transform: uppercase;
-    background: linear-gradient(
-    to right,
-    #004cff,
-    #8f68ff,
-    #487bff,
-    #8f68ff,
-    #72ffea
-  );
-  background-size: 200%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: animate-gradient 2.5s linear infinite;
-}
-
-@keyframes animate-gradient {
-  to{
-    background-position: 200%;
-  }
 }
 
 .skill-list {
@@ -127,7 +106,7 @@ h3{
   color: var(--site-color-2);
 }
 
-.skill-list li{
+.skill-list li {
   font-family: var(--secondary-font);
   margin-left: 0;
   font-size: 1.6rem;
@@ -142,7 +121,6 @@ h3{
   border-radius: 100%;
   box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.437);
   perspective: 100rem;
-
 }
 
 .aboout-image-container {
@@ -178,7 +156,7 @@ a:hover {
   margin: -0.7rem 0 1rem;
 }
 
-#contact-btn{
+#contact-btn {
   background-color: var(--site-color-2);
   color: white;
   box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.437);
@@ -195,14 +173,84 @@ a:hover {
   text-transform: uppercase;
   padding: 0 2rem;
   margin: 3rem 0 0 0;
-  transition: all 0.4s ease-in-out 0s ;
-
+  transition: all 0.4s ease-in-out 0s;
 }
 
-#contact-btn:hover{
+#contact-btn:hover {
   transform: translateY(-0.4rem);
 }
 
+@media only screen and (max-width: 400px) {
+  .about-container {
+    width: 95%;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+  }
+
+  .profile-photo {
+    width: 25rem;
+    height: 25rem;
+    box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.596);
+    border: 2px solid var(--site-color-3);
+  }
+
+  .about-heading {
+    position: relative;
+    font-size: 2rem;
+    font-weight: 450;
+    line-height: 3rem;
+    text-align: center;
+    align-self: center;
+  }
+
+  .about-content {
+    width: 100%;
+    height: 100%;
+    padding-top: 3rem;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: 650;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 2rem;
+  }
+
+  .about-skills li {
+    font-size: 1.6rem;
+    font-weight: 420;
+    line-height: 1.8rem;
+  }
+
+  .about-background,
+  span,
+  .email {
+    text-align: left;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    font-weight: 420;
+  }
+
+  .contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #contact-btn{
+    right: 0;
+    margin: 2rem 0 1rem 0;
+  }
+}
+/*
 @media only screen and (max-width: 600px) {
   .about-container {
     width: 95%;
@@ -232,6 +280,8 @@ a:hover {
   .about-content {
     width: 100%;
     height: 100%;
+    background-color: red;
+    display: flex;
   }
 
   .about-skills li {
@@ -254,70 +304,14 @@ a:hover {
     line-height: 2.4rem;
   }
 
-  h3{
-  font-size: 1.5rem;
-  line-height: 2rem;
+  h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
+
+  
 }
-
-@media only screen and (min-width: 400px) {
-  .about-container {
-    width: 95%;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-    margin: 3rem 0;
-  }
-
-  .profile-photo {
-    width: 25rem;
-    height: 25rem;
-  }
-
-  .about-headi {
-    position: relative;
-    font-size: 3rem;
-    font-weight: 450;
-    line-height: 3.5rem;
-    text-align: center;
-  }
-
-  .about-heading {
-    align-self: center;
-  }
-
-  .about-content {
-    width: 100%;
-    height: 100%;
-  }
-
-  h2 {
-    font-size: 1.8rem;
-    line-height: 1.8rem;
-  }
-
-  h3{
-  font-size: 1.6rem;
-  font-weight: 500;
-  line-height: 2rem;
-  }
-
-  .about-skills li {
-    font-size: 1.4rem;
-    font-weight: 450;
-    line-height: 1.7rem;
-  }
-
-  .about-background,
-  span,
-  .email {
-    text-align: left;
-    font-size: 1.4rem;
-    line-height: 1.7rem;
-    font-weight: 450;
-  }
-}
-
+*/
 @media only screen and (min-width: 601px) {
   .about-container {
     width: 95%;
@@ -369,10 +363,10 @@ a:hover {
     line-height: 2.4rem;
   }
 
-  h3{
-  font-size: 1.5rem;
-  font-weight: 500;
-  line-height: 2rem;
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2rem;
   }
 }
 
@@ -412,10 +406,10 @@ a:hover {
     line-height: 2.4rem;
   }
 
-  h3{
-  font-size: 1.6rem;
-  font-weight: 500;
-  line-height: 2rem;
+  h3 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2rem;
   }
 
   .about-skills li {
@@ -450,7 +444,6 @@ a:hover {
   .about-info {
     width: 90%;
     height: fit-content;
-
   }
   .about-container {
     height: 100%;
@@ -502,17 +495,17 @@ a:hover {
     margin-right: 2rem;
   }
 
-  h2{
+  h2 {
     font-size: 2rem;
     font-weight: 450;
     line-height: 2.3rem;
     font-weight: 600;
   }
 
-  h3{
-  font-size: 1.8rem;
-  font-weight: 500;
-  line-height: 2.3rem;
+  h3 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 2.3rem;
   }
 
   .skill-list {
@@ -548,7 +541,6 @@ a:hover {
   .about-info {
     width: 90%;
     height: fit-content;
-
   }
   .about-container {
     height: 100%;
@@ -600,17 +592,17 @@ a:hover {
     margin-right: 2rem;
   }
 
-  h2{
+  h2 {
     font-size: 2rem;
     font-weight: 450;
     line-height: 2.3rem;
     font-weight: 600;
   }
 
-  h3{
-  font-size: 1.8rem;
-  font-weight: 500;
-  line-height: 2.3rem;
+  h3 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 2.3rem;
   }
 
   .skill-list {
@@ -636,3 +628,4 @@ a:hover {
   }
   
 }
+*/

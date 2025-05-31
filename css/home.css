@@ -3,11 +3,8 @@
 }
 
 body {
-  background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(70, 252, 179, 1) 100%);
+  background: radial-gradient(circle, rgb(29, 66, 252) 0%, rgb(93, 250, 255) 100%);
 }
-
-
-
 
 
 
@@ -76,10 +73,6 @@ h1.slide-in {
   text-align: center;
 }
 
-.button {
-  margin: 2rem 2rem;
-}
-
 .menuButton {
   font-family: "Satoshi", sans-serif;
   font-size: 1.4rem;
@@ -96,7 +89,7 @@ h1.slide-in {
   border-radius: 5rem;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.281);
   cursor: pointer;
-  /*transition: all 0.5s ease 0s;*/
+  margin: 2rem 2rem;
 }
 
 .menuButton:hover {
@@ -126,14 +119,7 @@ h1.slide-in {
   padding: 0rem 0;
   flex-basis: 100%;
   text-transform: uppercase;
-  background: linear-gradient(
-    to right,
-    #004cff,
-    #8f68ff,
-    #487bff,
-    #8f68ff,
-    #72ffea
-  );
+  background: linear-gradient(to right, #004cff, #8f68ff, #487bff, #8f68ff, #72ffea);
   background-size: 200%;
   background-clip: text;
   -webkit-background-clip: text;
@@ -142,10 +128,9 @@ h1.slide-in {
 }
 
 @keyframes animate-gradient {
-  to{
+  to {
     background-position: 200%;
   }
-  
 }
 
 .index-category a {
@@ -220,16 +205,29 @@ h1.slide-in {
   text-align: center;
 }
 
-
-
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   main {
     flex-wrap: wrap;
+    margin-top: 4rem;
   }
 
-  .home-title h1 {
-    font-weight: bold;
-    text-transform: uppercase;
+  .menuButton {
+    font-family: "Satoshi", sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    height: 7rem;
+    width: 25rem;
+    margin: 0;
+  }
+
+  .main-intro {
+    margin: 0;
+    gap: 2rem;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .index-category {
@@ -248,7 +246,7 @@ h1.slide-in {
     align-content: center;
   }
 
-  .index-category p{
+  .index-category p {
     font-size: 2.8rem;
     line-height: 3rem;
   }
@@ -277,7 +275,7 @@ h1.slide-in {
   }
 }
 
-@media (min-width: 601px) {
+@media only screen and (min-width: 601px) {
   main {
     flex-wrap: wrap;
   }
@@ -293,10 +291,6 @@ h1.slide-in {
     align-content: center;
   }
 
-  main {
-    flex-wrap: wrap;
-  }
-
   .home-title h1 {
     font-weight: bold;
     text-transform: uppercase;
@@ -308,7 +302,7 @@ h1.slide-in {
     align-content: center;
   }
 
-  .index-category p{
+  .index-category p {
     font-size: 3rem;
     line-height: 3rem;
   }
@@ -319,11 +313,10 @@ h1.slide-in {
   }
 }
 
-@media (max-width: 400px) {
+@media only screen and (max-width: 400px) {
   main {
     padding-top: 7rem;
     flex-wrap: wrap;
-    margin: 0 0;
   }
 
   .home-title h1 {
@@ -360,32 +353,30 @@ h1.slide-in {
   }
 
   .button {
-  margin: 0 0 5rem 0;
+    margin: 0 0 5rem 0;
+  }
+
+  .menuButton {
+    font-family: "Satoshi", sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    font-weight: bold;
+    color: var(--site-color-1);
+    text-decoration: none;
+    text-transform: uppercase;
+    height: 7rem;
+    width: 25rem;
+    padding: 0 2rem;
+    background-color: white;
+    border: none;
+    border-radius: 5rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.281);
+    cursor: pointer;
+    /*transition: all 0.5s ease 0s;*/
+  }
 }
 
-.menuButton {
-  font-family: "Satoshi", sans-serif;
-  font-size: 1.4rem;
-  line-height: 1.6rem;
-  font-weight: bold;
-  color: var(--site-color-1);
-  text-decoration: none;
-  text-transform: uppercase;
-  height: 7rem;
-  width: 25rem;
-  padding: 0 2rem;
-  background-color: white;
-  border: none;
-  border-radius: 5rem;
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.281);
-  cursor: pointer;
-  /*transition: all 0.5s ease 0s;*/
-}
-
-
-}
-
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   main {
     flex-wrap: wrap;
   }
@@ -401,7 +392,7 @@ h1.slide-in {
     align-content: center;
   }
 
-  .index-category p{
+  .index-category p {
     font-size: 3rem;
     line-height: 3rem;
   }
@@ -426,11 +417,10 @@ h1.slide-in {
     padding: 0 2rem;
   }
 }
-@media (min-width: 992px) {
+@media only screen and (min-width: 992px) {
   main {
     padding-top: 0;
     flex-wrap: nowrap;
-    margin: 7rem 0 0 0;
   }
 
   .index-category {
@@ -468,31 +458,30 @@ h1.slide-in {
     justify-content: center;
   }
 
-  .home-title h1{
+  .home-title h1 {
     font-weight: 6rem;
     line-height: 6.5rem;
   }
 
   .button {
-  margin: 2rem 2rem;
-}
+    margin: 2rem 2rem;
+  }
 
-.menuButton {
-  font-family: "Satoshi", sans-serif;
-  font-size: 1.4rem;
-  line-height: 1.6rem;
-  font-weight: bold;
-  color: var(--site-color-1);
-  text-decoration: none;
-  text-transform: uppercase;
-  height: 7rem;
-  width: 25rem;
-  padding: 0 2rem;
-  background-color: white;
-  border: none;
-  border-radius: 5rem;
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.281);
-  cursor: pointer;
-  /*transition: all 0.5s ease 0s;*/
-}
+  .menuButton {
+    font-family: "Satoshi", sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    height: 7rem;
+    width: 25rem;
+  }
+
+  .main-intro {
+    margin: 0;
+    gap: 7rem;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }

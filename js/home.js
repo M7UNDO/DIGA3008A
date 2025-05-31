@@ -22,7 +22,7 @@ menuButton.addEventListener("mouseout", function(){
    menuButton.style.color = "";
 
 })
-
+/*
 window.addEventListener("scroll", function(){
     const scrollTop = window.scrollY;
     const maxScroll = document.body.scrollHeight - window.innerHeight;
@@ -42,6 +42,7 @@ window.addEventListener("scroll", function(){
 
    
 })
+*/
 
 window.addEventListener("load", function(){
   document.getElementById("heading-intro").classList.add("slide-in");

@@ -19,20 +19,19 @@ function topFunction() {
   document.documentElement.scrollTop = 0; 
 }
 
-function openNav(){
+function openNav() {
     document.getElementsByClassName("nav-menu")[0].style.width = "75%";
     document.getElementsByClassName("closeBtn")[0].style.display = "block";
     document.getElementsByClassName("overlay")[0].style.display = "block";
-
+    document.body.classList.add("no-scroll"); // 
 }
 
-function closeNav(){
+function closeNav() {
     document.getElementsByClassName("nav-menu")[0].style.width = "0%";
-    document.getElementsByClassName("closeBtn")[0].style.display = "none"
+    document.getElementsByClassName("closeBtn")[0].style.display = "none";
     document.getElementsByClassName("overlay")[0].style.display = "none";
-
+    document.body.classList.remove("no-scroll");
 }
-
 
 const subheading = document.querySelector(".subheading");
 const blogssubheading = document.querySelector(".blog-index-subheading");

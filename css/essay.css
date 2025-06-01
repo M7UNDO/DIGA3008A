@@ -1,4 +1,4 @@
-*{
+* {
   box-sizing: border-box;
 }
 
@@ -11,13 +11,14 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow-x: hidden;
 }
 
-.essay-main{
+.essay-main {
   margin: 7rem 0 4rem 0;
 }
 
-.essay-content-container{
+.essay-content-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,38 +31,38 @@ h1 {
   text-transform: uppercase;
   font-size: 5rem;
   line-height: 5rem;
-
 }
 
-#essay-no{
+#essay-no {
   font-weight: 400;
 }
 
-.publish{
+.publish {
   margin: -3rem 0 3rem 0;
   font-size: 1.6rem;
   font-weight: 500;
 }
 
-.publish a, li a{
+.publish a,
+li a {
   color: var(--site-color-2);
   text-decoration: none;
 }
 
-.publish a:hover, .reference-container ul li a:hover{
+.publish a:hover,
+.reference-container ul li a:hover {
   color: var(--site-color-2);
   text-decoration: underline;
   font-weight: 600;
   transition: all 0.4s ease-in-out 0s;
 }
 
-.heading{
+.heading {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   font-family: var(--secondary-font);
-
 }
 
 .subheading {
@@ -73,7 +74,7 @@ h1 {
   text-align: center;
 }
 
-#essay-heading{
+#essay-heading {
   width: fit-content;
 }
 
@@ -120,7 +121,7 @@ h4 {
   text-decoration: none;
 }
 
-.essay-block:hover{
+.essay-block:hover {
   box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.642);
 }
 
@@ -148,7 +149,7 @@ h4 {
   height: auto;
 }
 
-.essay-content{
+.essay-content {
   font-family: var(--secondary-font);
   width: auto;
   font-size: 1.7rem;
@@ -158,12 +159,11 @@ h4 {
   margin: 1rem 15rem;
 }
 
-.essay-content p{
+.essay-content p {
   font-family: var(--secondary-font);
   font-size: 1.7rem;
   line-height: 2.1rem;
   font-weight: 450;
-
 }
 
 .read-more {
@@ -180,16 +180,20 @@ h4 {
   transform: translateY(-0.7rem);
 }
 
-.reference-container{
+.reference-container {
   margin: 5rem 0 0 0;
 }
 
-
-.reference-container ul li{
+.reference-container ul li {
   line-height: 2.8rem;
 }
-/*
-@media(min-width: 400px) {
+
+@media (min-width: 400px) {
+
+  .essay-content-container, .essay-content{
+    width: 95%;
+    margin: 0;
+  }
   h1 {
     font-size: 3rem;
     line-height: 3rem;
@@ -242,8 +246,8 @@ h4 {
   }
 
   .essay-block p {
-    font-size: 1.3rem;
-    line-height: 1.5rem;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
     height: 100%;
   }
 

@@ -30,6 +30,11 @@ body {
   background-color: var(--site-color-3);
 }
 
+.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
+
 #loader {
   color: white;
   font-weight: 700;
@@ -224,7 +229,9 @@ main {
   margin: 0 0.5rem;
   text-decoration: none;
   font-size: 1.8rem;
+  line-height: 7rem;
   font-weight: bold;
+  background-color: none;
 }
 
 .nav-sm {
@@ -283,9 +290,9 @@ main {
 }
 
 .closeBtn {
-  font-size: 3rem;
-  color: white;
-  line-height: 3rem;
+  font-size: 4rem;
+  color: var(--site-color-1);
+  line-height: 4rem;
   cursor: pointer;
   display: none;
   align-self: flex-start;
@@ -407,28 +414,6 @@ footer p {
   box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.445);
 }
 
-@media only screen and(min-width: 400px) {
-  header {
-    height: 6.5rem;
-  }
-
-  .navcontainer {
-    height: 6.5rem;
-  }
-
-  .burgerbutton {
-    font-size: 2.4rem;
-    line-height: 2.4rem;
-    cursor: pointer;
-    display: none;
-  }
-
-  #myBtn {
-    width: 4rem;
-    height: 5rem;
-    font-size: 18px;
-  }
-}
 
 @media only screen and (max-width: 600px) {
   main {
@@ -448,6 +433,11 @@ footer p {
     width: 100%;
   }
 
+  .logo a{
+    font-size: 1.7rem;
+    line-height: 5rem;
+  }
+
   .nav-logo {
     width: 100%;
     height: 100%;
@@ -457,11 +447,18 @@ footer p {
   }
   .burgerbutton {
     display: block;
+    font-size: 2rem;
+    line-height: 5rem;
   }
 
   header {
+    height: 5rem;
     position: relative;
     z-index: 10;
+  }
+
+  .navcontainer{
+    height: 100%;
   }
 
   #myBtn {
@@ -481,6 +478,7 @@ footer p {
     overflow: hidden;
     transition: all 0.5s;
     z-index: 99;
+    box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.573);
   }
 
   .navlinks {
@@ -582,7 +580,7 @@ footer p {
     font-size: 18px;
   }
 }
-
+/*
 @media only screen and (max-width: 768px) {
   .burgerbutton {
     font-size: 2.6rem;
@@ -730,7 +728,7 @@ footer p {
     font-size: 18px;
   }
 }
-
+*/
 @media only screen and (min-width: 992px) {
   header {
     height: 7rem;

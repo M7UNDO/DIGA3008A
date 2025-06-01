@@ -2,6 +2,8 @@
   box-sizing: border-box;
 }
 
+
+
 main {
   margin-top: 3rem;
   margin: 3rem 0 3rem 0;
@@ -78,17 +80,6 @@ h1 {
   margin-top: -1rem;
   position: relative;
   margin-bottom: 8rem;
-  text-align: center;
-}
-
-.subheading::after {
-  content: "";
-  position: absolute;
-  background-color: var(--site-color-2);
-  height: 0.25rem;
-  width: 100%;
-  left: 0rem;
-  bottom: -3rem;
   text-align: center;
 }
 
@@ -546,6 +537,7 @@ figure {
   box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.345);
 }
 
+/*
 @media (min-width: 400px) {
   main {
     display: flex;

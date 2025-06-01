@@ -8,17 +8,22 @@
     <title>Design Process</title>
     <link rel="stylesheet" href="../css/normalise.css" />
     <link rel="stylesheet" href="../css/styles.css" />
-    <link rel="stylesheet" href="../css/design.css" />
+    <link rel="stylesheet" href="../css/designprocess.css" />
     <link href="https://api.fontshare.com/v2/css?f[]=satoshi@1,2&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/3.0.0/uicons-brands/css/uicons-brands.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/3.0.0/uicons-bold-straight/css/uicons-bold-straight.css"
+    />
     <script src="https://kit.fontawesome.com/a977cb27e6.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <div class="overlay"  onclick="closeNav()"></div>
+    <div class="overlay" onclick="closeNav()"></div>
     <header>
       <nav class="navcontainer">
         <div class="nav-logo">
           <div class="logo"><a class="logo" href="../index.html">M7UNDO</a></div>
-          <label class="burgerbutton" onclick="openNav()"><i class="fa-solid fa-bars"></i></label>
+          <label class="burgerbutton" onclick="openNav()"><i class="fi fi-bs-menu-burger"></i></label>
         </div>
 
         <div class="nav-menu">
@@ -32,25 +37,30 @@
             <li><a href="../about/index.html">About</a></li>
           </ul>
           <div class="nav-sm">
-                  <a href="https://www.linkedin.com/in/mfundo-dhlamini" target="_blank"><img class="icon" src="../images/icons/social_10097160.png" alt="Linkedin logo"></a>
-                  <a href="https://github.com/M7UNDO" target="_blank"><img class="icon" src="../images/icons/GitHub_Invertocat_Light.png" alt="Github logo"></a>
+            <a href="https://www.linkedin.com/in/mfundo-dhlamini" target="_blank"
+              ><i class="fi fi-brands-linkedin"></i
+            ></a>
+            <a href="https://github.com/M7UNDO" target="_blank"><i class="fi fi-brands-github"></i></a>
           </div>
         </div>
       </nav>
     </header>
 
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeTable()">&times;</a>
+      <a href="#IxD">IxD Process</a>
+      <a href="#UserFlow">User Flow</a>
+      <a href="#StyleGuide">Style Guide</a>
+      <a href="#Wireframes">Wireframes</a>
+      <a href="#website-evaluation">Website References</a>
+    </div>
+
+    <button class="openbtn" onclick="openTable()">&#9776; Quick Navigation</button>
+
     <main id="main">
-      <div id="mySidebar" class="sidebar">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeTable()">&times;</a>
-        <a href="#IxD">IxD Process</a>
-        <a href="#UserFlow">User Flow</a>
-        <a href="#StyleGuide">Style Guide</a>
-        <a href="#Wireframes">Wireframes</a>
-        <a href="#website-evaluation">Website References</a>
-      </div>
 
       <article class="design-container">
-        <button class="openbtn" onclick="openTable()">&#9776; Contents</button>
+        
         <div class="heading">
           <h1 id="heading-intro">My Design Process</h1>
           <p class="subheading">Take a look behind-the-scenes of my web developement process</p>
@@ -79,7 +89,7 @@
             the purpose of potential collaborations or networking opportunities. Lastly users who might be visiting my
             website seeking some inspiration into my design process.
           </p>
-          <h3 id="UserFlow">My content:</h3>
+          <h3>My content:</h3>
           <ul class="design-list">
             <li>
               My home page will serve as the landing page, welcoming users and providing them with a brief introduction
@@ -102,7 +112,7 @@
             </li>
           </ul>
 
-          <h3>Information Structure & User Flow</h3>
+          <h3 id="UserFlow">Information Structure & User Flow</h3>
           <div class="flow-diagrams">
             <figure>
               <img class="user-diagrams" src="images/Information Structure.png" alt="Information Structure" />

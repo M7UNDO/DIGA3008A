@@ -73,17 +73,6 @@ h1 {
   text-align: center;
 }
 
-.subheading::after {
-  content: "";
-  position: absolute;
-  background-color: var(--site-color-2);
-  height: 0.2rem;
-  width: 100%;
-  left: 0rem;
-  bottom: -3rem;
-  text-align: center;
-}
-
 #essay-heading{
   width: fit-content;
 }

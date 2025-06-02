@@ -1,7 +1,3 @@
-header {
-  z-index: 1;
-}
-
 main {
   font-family: var(--secondary-font);
   height: 100%;
@@ -259,6 +255,7 @@ footer p {
 }
 */
 
+
 @media (max-width: 600px) {
   main {
     width: 100%;
@@ -267,8 +264,14 @@ footer p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0;
+    margin: 5rem 0 0 0;
     padding: 0;
+  }
+
+  .heading{
+    margin: 0;
+    height: fit-content;
+    flex-wrap: wrap;
   }
 
   .blog-container {
@@ -287,9 +290,10 @@ footer p {
 
   h1 {
     text-align: center;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: bold;
-    line-height: 3.4rem;
+    line-height: 3rem;
+    text-transform: uppercase;
   }
 
   .heading span {

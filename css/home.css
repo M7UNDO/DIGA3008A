@@ -1,7 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
   background: radial-gradient(circle, rgb(29, 66, 252) 0%, rgb(93, 250, 255) 100%);
 }
@@ -212,7 +208,7 @@ h1.slide-in {
   }
 
   .home-title h1 {
-    font-size: 5.5rem;
+    font-size: 5rem;
     line-height: 6rem;
     font-weight: bold;
     text-transform: uppercase;
@@ -226,11 +222,12 @@ h1.slide-in {
   }
 
   .index-category p {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
+    text-decoration: underline;
   }
 
   a.category-box {
-    width: 80%;
+    width: 90%;
     height: 20rem;
     border-radius: 0.5rem;
   }
@@ -240,31 +237,16 @@ h1.slide-in {
   }
 
   .subheading {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     line-height: 2rem;
   }
 
-  .button {
-    margin: 0 0 5rem 0;
-  }
-
   .menuButton {
-    font-family: "Satoshi", sans-serif;
     font-size: 1.4rem;
     line-height: 1.6rem;
-    font-weight: bold;
-    color: var(--site-color-1);
-    text-decoration: none;
-    text-transform: uppercase;
     height: 7rem;
-    width: 25rem;
-    padding: 0 2rem;
-    background-color: white;
-    border: none;
-    border-radius: 5rem;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.281);
-    cursor: pointer;
-    /*transition: all 0.5s ease 0s;*/
+    width: 23rem;
+    margin: 0 0 5rem 0;
   }
 }
 

@@ -86,7 +86,7 @@ header {
 h1 {
   font-family: "Satoshi", sans-serif;
   opacity: 1;
-  transform: translateY(-3rem);
+  /*transform: translateY(-3rem);*/
   transition: all 3s ease;
 }
 
@@ -115,7 +115,7 @@ h1.slide-in {
 .subheading::after {
   content: "";
   position: absolute;
-  background: linear-gradient(to right, #004cff, #6868ff,  #72d5ff, #6868ff, #004cff);
+  background: linear-gradient(to right, #004cff, #6868ff, #72d5ff, #6868ff, #004cff);
   background-size: 300% 100%;
   height: 3px;
   width: 100%;
@@ -256,18 +256,6 @@ main {
   justify-content: center;
   align-items: center;
   text-decoration: none;
-}
-
-.sm-linkedin,
-.sm-github {
-  height: 2.3rem;
-  width: 2.3rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.nav-sm a {
-  width: 2.3rem;
-  height: 2.3rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -414,7 +402,6 @@ footer p {
   box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.445);
 }
 
-
 @media only screen and (max-width: 600px) {
   main {
     width: 100%;
@@ -433,9 +420,9 @@ footer p {
     width: 100%;
   }
 
-  .logo a{
+  .logo a {
     font-size: 1.7rem;
-    line-height: 5rem;
+    line-height: 1.7rem;
   }
 
   .nav-logo {
@@ -445,19 +432,30 @@ footer p {
     justify-content: space-between;
     align-items: center;
   }
+
+  .nav-sm a {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  .closeBtn {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
   .burgerbutton {
     display: block;
     font-size: 2rem;
-    line-height: 5rem;
+    line-height: 2rem;
   }
 
   header {
-    height: 5rem;
+    height: 5.5rem;
     position: relative;
     z-index: 10;
   }
 
-  .navcontainer{
+  .navcontainer {
     height: 100%;
   }
 
@@ -567,26 +565,8 @@ footer p {
 
 /*
 
-*/
+
 @media only screen and (min-width: 601px) {
-  .burgerbutton {
-    font-size: 2.3rem;
-    line-height: 2.3rem;
-  }
-
-  #myBtn {
-    width: 4rem;
-    height: 5rem;
-    font-size: 18px;
-  }
-}
-/*
-@media only screen and (max-width: 768px) {
-  .burgerbutton {
-    font-size: 2.6rem;
-    line-height: 2.6rem;
-  }
-
   main {
     width: 100%;
     height: 100%;
@@ -604,6 +584,11 @@ footer p {
     width: 100%;
   }
 
+  .logo a {
+    font-size: 1.7rem;
+    line-height: 1.7rem;
+  }
+
   .nav-logo {
     width: 100%;
     height: 100%;
@@ -611,13 +596,31 @@ footer p {
     justify-content: space-between;
     align-items: center;
   }
+
+  .nav-sm a {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  .closeBtn {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
   .burgerbutton {
     display: block;
+    font-size: 2rem;
+    line-height: 2rem;
   }
 
   header {
+    height: 5.5rem;
     position: relative;
     z-index: 10;
+  }
+
+  .navcontainer {
+    height: 100%;
   }
 
   #myBtn {
@@ -637,6 +640,7 @@ footer p {
     overflow: hidden;
     transition: all 0.5s;
     z-index: 99;
+    box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.573);
   }
 
   .navlinks {
@@ -688,7 +692,6 @@ footer p {
 
   .navlinks li a:hover {
     transform: translateY(-0.6rem);
-    color: white;
   }
 
   .navlinks a.active {
@@ -720,12 +723,130 @@ footer p {
   .navlinks a.active:after {
     width: 80%;
     margin-left: 10%;
+    background-color: var(--site-color-1);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    height: 7rem;
   }
 
   #myBtn {
     width: 4rem;
     height: 5rem;
     font-size: 18px;
+  }
+
+  .navcontainer {
+    height: 7rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem;
+  }
+
+  .nav-menu {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+  }
+
+  .navlinks {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    padding-inline-start: 0;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navlinks li {
+    /*display: inline-block;
+    padding: 0rem 0.5rem;
+  }
+
+  .navlinks li a {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+    padding: 1rem 1rem;
+    display: block;
+  }
+
+  .navlinks li a:hover {
+    transform: translateY(-0.2rem);
+  }
+
+  .navlinks li a:after {
+    background: none;
+    content: "";
+    position: absolute;
+    background-color: var(--site-color-1);
+    height: 0.2rem;
+    width: 0;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s;
+  }
+
+  .navlinks li a:hover:after {
+    width: 100%;
+  }
+
+  .navlinks a.active {
+    position: relative;
+    font-weight: 900;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .navlinks a.active:after {
+    width: 100%;
+  }
+
+  .navlinks a.active:hover {
+    background-color: rgba(171, 155, 244, 0);
+  }
+
+  .nav-sm {
+    height: 100%;
+    width: 7rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 1rem;
+    gap: 1rem;
+  }
+
+  .nav-sm a {
+    font-size: 2.3rem;
+    line-height: 1.8rem;
+    color: var(--site-color-1);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .icon {
+    width: 100%;
+    height: 100%;
+  }
+
+  .burgerbutton {
+    display: none;
+  }
+
+  .closeBtn {
+    display: none;
   }
 }
 */
@@ -741,8 +862,31 @@ footer p {
   }
 
   .navcontainer {
-    height: 100%;
+    height: 7rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem;
   }
+
+  .nav-menu {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+  }
+
+  .navlinks {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    padding-inline-start: 0;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
 
   .navlinks li {
     /*display: inline-block;*/
@@ -750,25 +894,78 @@ footer p {
   }
 
   .navlinks li a {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: 500;
     padding: 1rem 1rem;
+    display: block;
+  }
+
+  .navlinks li a:hover {
+    transform: translateY(-0.2rem);
   }
 
   .navlinks li a:after {
+    background: none;
+    content: "";
+    position: absolute;
+    background-color: var(--site-color-1);
     height: 0.2rem;
+    width: 0;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s;
+  }
+
+  .navlinks li a:hover:after {
+    width: 100%;
+  }
+
+  .navlinks a.active {
+    position: relative;
+    font-weight: 900;
+    transition: all 0.3s ease-in-out;
   }
 
   .navlinks a.active:after {
     width: 100%;
   }
 
-  .burgerbutton {
-    display: none;
+  .navlinks a.active:hover {
+    background-color: rgba(171, 155, 244, 0);
+  }
+
+  .nav-sm {
+    height: 100%;
+    width: 7rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 1rem;
+    gap: 1rem;
+  }
+
+  .nav-sm a {
+    font-size: 2.3rem;
+    line-height: 1.8rem;
+    color: var(--site-color-1);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .icon {
+    width: 100%;
+    height: 100%;
   }
 
   .burgerbutton {
-    font-size: 2.8rem;
-    line-height: 2.8rem;
-    cursor: pointer;
     display: none;
   }
 
@@ -776,3 +973,4 @@ footer p {
     display: none;
   }
 }
+

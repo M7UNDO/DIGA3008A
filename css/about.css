@@ -1,7 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-
 main {
   top: 7rem;
   height: 100%;
@@ -173,7 +169,6 @@ a:hover {
 #contact-btn {
   background-color: var(--site-color-2);
   color: white;
-  box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.437);
   width: 15rem;
   height: 5rem;
   border: none;
@@ -193,6 +188,7 @@ a:hover {
 #contact-btn:hover {
   transform: translateY(-0.4rem);
   background-color: var(--site-color-02);
+  box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.437);
 }
 
 @media only screen and (min-width: 400px) {

@@ -3,12 +3,12 @@ html {
 }
 
 h1 {
-  font-size: 5rem;
-  line-height: 5rem;
+  font-size: 3.2rem;
+  line-height: 3.5rem;
 }
 h2 {
-  font-size: 3rem;
-  line-height: 3rem;
+  font-size: 2.5rem;
+  line-height: 2.8rem;
   font-weight: 600;
 }
 h3 {
@@ -33,7 +33,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 5rem 3rem;
+  margin: 5rem 0;
   padding: 0;
 }
 
@@ -67,7 +67,7 @@ h5 {
   align-self: flex-start;
   font-family: var(--secondary-font);
   text-align: left;
-  text-transform: capitalize;
+  text-transform: uppercase;
   width: 100%;
   text-align: center;
   margin: 1rem 0;
@@ -106,9 +106,9 @@ p,
 figcaption,
 .design-list li {
   font-family: var(--secondary-font);
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   font-weight: 400;
-  line-height: 2.2rem;
+  line-height: 2rem;
 }
 
 figcaption {
@@ -129,7 +129,7 @@ figcaption {
   background-color: var(--site-color-white);
   border: 2px solid var(--site-color-1);
   align-items: center;
-  width: 75%;
+  width: 100%;
   height: auto;
   position: relative;
   gap: 1rem1;
@@ -161,14 +161,14 @@ figcaption {
 
 .numbertext {
   font-family: var(--secondary-font);
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   font-weight: 500;
-  line-height: 1.6rem;
-  padding: 0.8rem 1.2rem;
+  line-height: 1.2rem;
+  padding: 0;
 }
 
 .first-wireframe {
-  width: 60rem;
+  width: 80%;
   height: auto;
 }
 
@@ -219,9 +219,9 @@ figcaption {
 .dot,
 .dots {
   cursor: pointer;
-  height: 1rem;
-  width: 1rem;
-  margin: 0 0.4rem;
+  height: 0.7rem;
+  width: 0.7rem;
+  margin: 0 0.5rem;
   background-color: #bababa;
   border-radius: 50%;
   display: inline-block;
@@ -252,14 +252,15 @@ figcaption {
 
 /*Final Wireframes Section */
 .final-wireframe {
-  height: 40rem;
+  width: 100%;
   border-radius: 1.25rem;
 }
 
 /*Design Elements Section */
 .design-elements {
   background-color: var(--site-color-white);
-  width: 75%;
+  height: 40rem;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -272,7 +273,7 @@ figcaption {
 
 .design-elements-box {
   margin: 0;
-  padding: 3rem;
+  padding: 1rem;
   display: none;
   flex-direction: column;
   justify-content: center;
@@ -295,15 +296,17 @@ figcaption {
   width: 100%;
   height: auto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 1rem;
 }
 
 figure.font-container {
-  width: 40%;
-  height: 100%;
+  width: 90%;
+  height: 18rem;
   margin: 1rem 0;
-  padding: 1rem;
+  padding: 0.5rem;
   background-color: var(--site-color-white);
   border: 2px solid var(--site-color-1);
   border-radius: 1rem;
@@ -332,10 +335,10 @@ figure.font-container {
 }
 
 .flow-diagrams {
-  margin: 5rem 0;
+  margin: 2rem 0 4rem 0;
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 2rem;
@@ -343,7 +346,7 @@ figure.font-container {
 
 .flow-diagrams figure {
   background-color: var(--site-color-white);
-  width: fit-content;
+  width: 28rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -355,8 +358,8 @@ figure.font-container {
 }
 
 .user-diagrams {
-  height: 40rem;
-  width: auto;
+  height: 100%;
+  width: 100%;
   padding: 1rem 2rem;
   margin-bottom: 1rem;
   transition: all 0.3s ease-in 0s;
@@ -366,25 +369,32 @@ figure.font-container {
 .design-reference {
   margin: 2rem 0;
   width: 100%;
+}
+
+.design-reference figure{
+  width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  flex-direction: row;
+  align-items: center;
   gap: 2rem;
 }
 
+.design-reference figure a{
+  width: 95%;
+}
+
 .design-reference figure figcaption {
-  background-color: red;
-  width: auto;
+  width: fit-content;
   margin: 1rem;
-  left: 0;
-  right: 0;
   text-align: center;
 }
 
 /* Reference Site image */
 .reference-site {
-  width: auto;
-  height: 30rem;
+  align-self: center;
+  width: 100%;
+  height: auto;
   border-radius: 0.5rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -463,7 +473,7 @@ figure.font-container {
 /*individual colour palette container*/
 .pallete-container {
   background-color: var(--site-color-white);
-  width: 32rem;
+  width: 47%;
   height: 45rem;
   display: flex;
   flex-direction: column;
@@ -476,20 +486,17 @@ figure.font-container {
 
 .pallete-container h4 {
   width: 100%;
-  background-color: red;
   text-align: center;
 }
 
 .pallete-container figcaption {
-  height: 30%;
-  background-color: red;
+  height: 20%;
   font-size: 1.4rem;
   line-height: 1.7rem;
 }
 .pallete {
-  height: 20rem;
-  width: 20rem;
-  border: 2px solid var(--site-color-1);
+  height: auto;
+  width: 100%;
 }
 
 /* Website Examples */
@@ -523,7 +530,8 @@ figure.font-container {
 .web-image {
   flex: 1;
   display: block;
-  height: 30rem;
+  height: auto;
+  width: 100%;
   box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.345);
   border-radius: 1.5rem;
   cursor: pointer;
@@ -566,11 +574,13 @@ figure {
 }
 
 .openbtn {
+  height: auto;
+  width: 10rem;
   font-family: var(--secondary-font);
-  top: 8rem;
+  top: 6rem;
   left: 1rem;
   position: fixed;
-  font-size: 20px;
+  font-size: 1.4rem;
   cursor: pointer;
   background-color: var(--site-color-1);
   opacity: 0.5;
@@ -596,7 +606,7 @@ figure {
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
   z-index: 100; /* Stay on top */
-  top: 7rem;
+  top: 5.5rem;
   left: 0;
   background-color: var(--site-color-03); /* Black*/
   box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.573);
@@ -610,9 +620,9 @@ figure {
 .sidebar a {
   font-family: var(--secondary-font);
   width: 100%;
-  padding: 8px 8px 8px 32px;
+  padding: 0.8rem 0.8rem 0.8rem 3.2rem;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 500;
   color: var(--site-color-1);
   display: block;
@@ -631,7 +641,7 @@ figure {
   position: absolute;
   top: 0;
   right: 0;
-  font-size: 36px;
+  font-size: 3rem;
   padding: 1rem;
   width: auto;
   border-bottom: none;

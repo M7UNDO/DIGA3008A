@@ -148,10 +148,12 @@ button p {
 }
 
 .project-title-description span {
-  width: 100%;
+  display: none;
   font-size: 1.4rem;
   font-weight: 400;
+  margin-left: -5rem;
   left: 0;
+  background-color: red;
 }
 .game-dev-container a {
   color: var(--site-color-2);
@@ -183,7 +185,7 @@ button p {
   .game-project {
     height: 15rem;
     width: 100%;
-    height: 1;
+    height: fit-content;
     box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.345);
     border: none;
     display: flex;
@@ -210,7 +212,6 @@ button p {
 
   .project-title-description p {
     width: 100%;
-    font-size: 1.2rem;
     font-weight: 500;
     text-align: left;
   }
@@ -303,7 +304,7 @@ button p {
   .game-dev-container {
     align-self: center;
     justify-self: center;
-    width: 90%;
+    width: 95%;
     padding: 2rem 0;
     display: grid;
     grid-template-rows: repeat(4, 14rem);
@@ -333,6 +334,8 @@ button p {
   }
 
   .project-title-description {
+    display: flex;
+    flex-direction: column;
     width: 65%;
     height: 100%;
     margin-left: 1rem;
@@ -341,10 +344,15 @@ button p {
 
   .project-title-description p {
     width: 100%;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     line-height: 1.5rem;
     font-weight: 500;
     text-align: left;
+  }
+
+  .project-title-description span{
+    width: fit-content;
+    align-self: flex-start
   }
 
   button h2 {

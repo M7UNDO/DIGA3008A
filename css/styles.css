@@ -402,7 +402,14 @@ footer p {
   box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.445);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
+  header {
+    width: 100%;
+    top: 0;
+    height: 5.5rem;
+    position: sticky;
+    z-index: 99;
+  }
   main {
     width: 100%;
     height: 100%;
@@ -447,12 +454,6 @@ footer p {
     display: block;
     font-size: 2rem;
     line-height: 2rem;
-  }
-
-  header {
-    height: 5.5rem;
-    position: relative;
-    z-index: 10;
   }
 
   .navcontainer {
@@ -563,293 +564,6 @@ footer p {
   }
 }
 
-/*
-
-
-@media only screen and (min-width: 601px) {
-  main {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-
-  .navlinks li a {
-    padding: 1rem 0rem;
-    text-align: center;
-  }
-
-  .navlinks a.active:after {
-    width: 100%;
-  }
-
-  .logo a {
-    font-size: 1.7rem;
-    line-height: 1.7rem;
-  }
-
-  .nav-logo {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .nav-sm a {
-    font-size: 3rem;
-    line-height: 3rem;
-  }
-
-  .closeBtn {
-    font-size: 3rem;
-    line-height: 3rem;
-  }
-
-  .burgerbutton {
-    display: block;
-    font-size: 2rem;
-    line-height: 2rem;
-  }
-
-  header {
-    height: 5.5rem;
-    position: relative;
-    z-index: 10;
-  }
-
-  .navcontainer {
-    height: 100%;
-  }
-
-  #myBtn {
-    width: 4rem;
-    height: 5rem;
-    font-size: 18px;
-  }
-
-  .nav-menu {
-    flex-direction: column;
-    position: fixed;
-    height: 100vh;
-    width: 0%;
-    background-color: var(--site-color-3);
-    top: 0;
-    right: 0;
-    overflow: hidden;
-    transition: all 0.5s;
-    z-index: 99;
-    box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.573);
-  }
-
-  .navlinks {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-    margin-top: 0;
-    top: 0;
-    bottom: 0;
-    padding: 1rem;
-  }
-
-  .navlinks li {
-    width: 10rem;
-    display: block;
-    padding: 2rem 0;
-  }
-
-  .navlinks li a {
-    font-family: var(--secondary-font);
-    font-size: 2rem;
-    font-weight: 500;
-    text-decoration: none;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-
-  .navlinks li a:after {
-    background: none;
-    content: "";
-    position: absolute;
-    height: 0.3rem;
-    width: 0;
-    left: 0;
-    bottom: -1.5rem;
-    transition: 0.3s;
-  }
-
-  .navlinks a {
-    position: relative;
-    display: block;
-    background: none;
-    padding: 0;
-    letter-spacing: 0.05rem;
-  }
-
-  .navlinks li a:hover {
-    transform: translateY(-0.6rem);
-  }
-
-  .navlinks a.active {
-    background: none;
-    padding: 0;
-  }
-
-  .navlinks a.active:hover {
-    color: var(--site-color-2);
-  }
-
-  .nav-sm {
-    margin: 2rem 0;
-    display: flex;
-    height: auto;
-    width: 100%;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 1.5rem;
-  }
-
-  .nav-sm a {
-    width: 2.8rem;
-    height: 2.8rem;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-
-  .navlinks a.active:after {
-    width: 80%;
-    margin-left: 10%;
-    background-color: var(--site-color-1);
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  header {
-    height: 7rem;
-  }
-
-  #myBtn {
-    width: 4rem;
-    height: 5rem;
-    font-size: 18px;
-  }
-
-  .navcontainer {
-    height: 7rem;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5rem 2rem;
-  }
-
-  .nav-menu {
-    width: fit-content;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 99;
-  }
-
-  .navlinks {
-    width: 100%;
-    list-style: none;
-    display: flex;
-    padding-inline-start: 0;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .navlinks li {
-    /*display: inline-block;
-    padding: 0rem 0.5rem;
-  }
-
-  .navlinks li a {
-    font-size: 1.4rem;
-    line-height: 1.8rem;
-    font-weight: 500;
-    padding: 1rem 1rem;
-    display: block;
-  }
-
-  .navlinks li a:hover {
-    transform: translateY(-0.2rem);
-  }
-
-  .navlinks li a:after {
-    background: none;
-    content: "";
-    position: absolute;
-    background-color: var(--site-color-1);
-    height: 0.2rem;
-    width: 0;
-    left: 0;
-    bottom: 0;
-    transition: 0.3s;
-  }
-
-  .navlinks li a:hover:after {
-    width: 100%;
-  }
-
-  .navlinks a.active {
-    position: relative;
-    font-weight: 900;
-    transition: all 0.3s ease-in-out;
-  }
-
-  .navlinks a.active:after {
-    width: 100%;
-  }
-
-  .navlinks a.active:hover {
-    background-color: rgba(171, 155, 244, 0);
-  }
-
-  .nav-sm {
-    height: 100%;
-    width: 7rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 0 0 0 1rem;
-    gap: 1rem;
-  }
-
-  .nav-sm a {
-    font-size: 2.3rem;
-    line-height: 1.8rem;
-    color: var(--site-color-1);
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-
-  .icon {
-    width: 100%;
-    height: 100%;
-  }
-
-  .burgerbutton {
-    display: none;
-  }
-
-  .closeBtn {
-    display: none;
-  }
-}
-*/
 @media only screen and (min-width: 992px) {
   header {
     height: 7rem;
@@ -886,7 +600,6 @@ footer p {
     justify-content: space-between;
     align-items: center;
   }
-  
 
   .navlinks li {
     /*display: inline-block;*/
@@ -973,4 +686,3 @@ footer p {
     display: none;
   }
 }
-

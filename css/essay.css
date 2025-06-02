@@ -9,7 +9,6 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow-x: hidden;
 }
 
 .essay-main {
@@ -191,6 +190,11 @@ h4 {
 }
 
 @media (min-width: 400px) {
+  h2 {
+    font-size: 1.9rem;
+    line-height: 2rem;
+    font-weight: 700;
+  }
   .essay-container {
     flex-direction: column;
     margin: 0;
@@ -198,15 +202,33 @@ h4 {
 
   .essay-block {
     width: 90%;
-    height: 50rem;
+    height: 40rem;
+    padding: 1rem 2rem;
+    border: 2px solid rgba(0, 0, 0, 0.512);
+  }
+
+  .essay-text::after {
+    content: "";
+    position: absolute;
+    height: 20rem;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(245, 245, 245, 0.299), rgba(245, 245, 245, 1));
   }
 
   .essay-block p {
     font-family: var(--secondary-font);
-    font-size: 1.4rem;
-    line-height: 2rem;
+    font-size: 1.3rem;
+    line-height: 1.6rem;
     font-weight: 450;
     height: auto;
+  }
+
+  .read-more {
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    margin: 1rem;
   }
 }
 

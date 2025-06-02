@@ -41,10 +41,22 @@ function showSlides(n, no){
 
 }
 
+var mediumScreen = window.matchMedia("(max-width: 600px)")
+
+
 function openTable() {
+
+  if(mediumScreen.matches){
+    document.querySelector(".sidebar").style.width = "30%";
+
+  }
+  else{
+
+    document.querySelector(".sidebar").style.width = "30%";
+  }
   let openbtn = document.getElementsByClassName("openbtn")[0];
   openbtn.style.display = "none";
-  document.querySelector(".sidebar").style.width = "20%";
+  
   //document.getElementById("main").style.marginLeft = "100%";
 }
 

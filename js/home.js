@@ -12,7 +12,7 @@ menuButton.style.transition = "all 0.5s ease 0s";
 menuButton.addEventListener("mouseover", function(){
 
    menuButton.style.backgroundColor = siteColour1;
-   menuButton.style.color = "white";
+   menuButton.style.color = siteColour3;
 
 })
 

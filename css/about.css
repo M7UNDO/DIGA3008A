@@ -1,8 +1,6 @@
 main {
-  top: 7rem;
   height: 100%;
   width: 100%;
-  padding-top: 0rem;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -10,6 +8,7 @@ main {
   align-items: center;
   flex-wrap: wrap;
   font-family: var(--secondary-font);
+  color: var(--site-color-1);
 }
 
 .about-info {
@@ -18,6 +17,7 @@ main {
 }
 
 .about-container {
+  background-color: var(--site-color-white);
   height: 100%;
   width: 80%;
   display: flex;
@@ -25,62 +25,63 @@ main {
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
-  padding: 5rem 2rem;
-  box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.764);
+  padding: 2rem 3rem;
+  box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.456);
   border-radius: 1.5rem;
   margin: 3rem;
 }
 
 .about-heading {
-  position: relative;
-  font-size: 5rem;
-  text-transform: uppercase;
-  line-height: 5rem;
   width: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-bottom: 2rem;
 }
 
-.about-heading h1 {
+h1 {
+  font-size: 4.5rem;
+  line-height: 5rem;
   position: relative;
 }
 
-.about-heading h1::after {
+h1::after {
   content: "";
   position: absolute;
-  background: linear-gradient(to right, #004cff, #6868ff,  #72d5ff, #6868ff, #004cff);
+  background: linear-gradient(to right, #004cff, #6868ff, #72d5ff, #6868ff, #004cff);
   background-size: 300% 100%;
-  height: 3px;
+  height: 3.5px;
   width: 100%;
   left: 0;
-  bottom: -3rem;
+  bottom: -2rem;
   animation: movegradient 10s ease-in-out infinite;
   border-radius: 1rem;
 }
 
-@keyframes movegradient {
-  0% {
-    background-position: 0% 0;
-  }
-  50% {
-    background-position: 100% 0;
-  }
-  100% {
-    background-position: 0% 0;
-  }
+h2 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  line-height: 2.3rem;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1.8rem;
+  font-weight: 550;
+  line-height: 2rem;
+  text-transform: uppercase;
 }
 
 .about-background,
 span,
 .email {
-  font-family: var(--secondary-font);
+  width: 90%;
   text-align: left;
   font-size: 1.6rem;
-  line-height: 1.7rem;
-  font-weight: 400;
+  line-height: 1.8rem;
+  font-weight: 450;
 }
 
 .about-content {
@@ -94,20 +95,6 @@ span,
   margin-right: 2rem;
 }
 
-h2 {
-  font-size: 2rem;
-  font-weight: 450;
-  line-height: 2.3rem;
-  text-transform: uppercase;
-}
-
-h3 {
-  font-size: 1.8rem;
-  font-weight: 500;
-  line-height: 2.3rem;
-  text-transform: uppercase;
-}
-
 .skill-list {
   list-style: square;
 }
@@ -117,68 +104,58 @@ h3 {
 }
 
 .skill-list li {
+  width: 90%;
   font-family: var(--secondary-font);
   margin-left: 0;
   font-size: 1.6rem;
-  font-weight: 400;
-  line-height: 1.7rem;
+  font-weight: 450;
+  line-height: 1.8rem;
 }
 
 .profile-photo {
-  flex: 3;
   width: 40rem;
   height: 40rem;
   border-radius: 100%;
-  box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.437);
+  border: 2px solid var(--site-color-3);
+  box-shadow: 0 0.4rem 1.2rem rgb(0, 0, 0);
   perspective: 100rem;
 }
 
 .aboout-image-container {
+  width: 40rem;
+  height: 40rem;
   border-radius: 50%;
-  box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.437);
-  flex: 3;
-  perspective: 100rem;
+  background-color: #004cff;
+  padding: 1rem;
 }
 
-a {
-  color: black;
-  transition: all 0.3s ease 0s;
+#contact-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--shine-effect);
 }
 
-a:hover {
-  color: var(--site-color-2);
-  font-weight: bold;
-}
-
-#social {
-  width: 6rem;
-  display: flex;
-  gap: 1rem;
-}
-.icons {
-  height: 2rem;
-  width: 2rem;
-}
-
-.solid {
-  width: 80%;
-  border-top: 3px solid var(--site-color-2);
-  margin: -0.7rem 0 1rem;
+#contact-btn::before{
+  left: -100%;
+  transition: var(--shine-transition);
 }
 
 #contact-btn {
-  background-color: var(--site-color-2);
-  color: white;
+  position: relative;
   width: 15rem;
   height: 5rem;
+  background: linear-gradient(to bottom right, var(--site-color-02), var(--site-color-2), white);
+  background-size: 300% 100%;
+  color: white;
   border: none;
   border-radius: 1rem;
   outline: none;
   cursor: pointer;
   font-size: 1.4rem;
-  font-weight: 500;
-  line-height: 1.6rem;
-  font-weight: 500;
+  font-weight: 400;
   text-transform: uppercase;
   padding: 0 2rem;
   margin: 3rem 0 0 0;
@@ -186,12 +163,18 @@ a:hover {
 }
 
 #contact-btn:hover {
-  transform: translateY(-0.4rem);
-  background-color: var(--site-color-02);
   box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.437);
+  transform: translateY(-0.4rem);
+
+}
+#contact-btn:hover::before {
+  left: 100%;
+  
 }
 
-@media only screen and (min-width: 400px) {
+
+
+@media screen and (max-width: 400px) {
   .about-container {
     width: 95%;
     flex-direction: column-reverse;
@@ -323,7 +306,7 @@ a:hover {
   
 }
 */
-@media only screen and (min-width: 601px) {
+@media screen and (max-width: 601px) {
   .about-container {
     width: 95%;
     flex-direction: column-reverse;
@@ -381,7 +364,7 @@ a:hover {
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .about-container {
     width: 95%;
     flex-direction: column-reverse;
@@ -439,216 +422,5 @@ a:hover {
   }
 }
 
-@media only screen and (min-width: 992px) {
-  main {
-    height: 100%;
-    width: 100%;
-    padding-top: 0rem;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-
-  .about-info {
-    width: 90%;
-    height: fit-content;
-  }
-  .about-container {
-    height: 100%;
-    width: 80%;
-    display: flex;
-    flex-direction: column-reverse;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 3rem 0;
-    padding: 5rem 2rem;
-    border-radius: 1.5rem;
-    box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.412);
-  }
-
-  .about-heading {
-    width: fit-content;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    align-self: flex-start;
-  }
-
-  .about-heading h1 {
-    position: relative;
-    font-size: 4rem;
-    line-height: 4.5rem;
-    font-weight: bold;
-    text-transform: capitalize;
-  }
-  .about-background,
-  span,
-  .email {
-    text-align: left;
-    font-size: 1.6rem;
-    line-height: 1.7rem;
-    font-weight: 450;
-  }
-
-  .about-content {
-    width: 62%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    row-gap: 0.3rem;
-    margin-right: 2rem;
-  }
-
-  h2 {
-    font-size: 2rem;
-    font-weight: 450;
-    line-height: 2.3rem;
-    font-weight: 600;
-  }
-
-  h3 {
-    font-size: 1.8rem;
-    font-weight: 500;
-    line-height: 2.3rem;
-  }
-
-  .skill-list {
-    list-style-type: url(../images/icons/life-ring.svg);
-  }
-
-  .about-skills li {
-    font-size: 1.6rem;
-    font-weight: 450;
-    line-height: 1.7rem;
-  }
-
-  .profile-photo {
-    flex: 3;
-    width: 40rem;
-    height: 40rem;
-  }
-
-
+@media screen and (max-width: 992px) {
 }
-
-@media only screen and (min-width: 1240px) {
-  main {
-    height: 100%;
-    width: 100%;
-    padding-top: 0rem;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-
-  .about-info {
-    width: 90%;
-    height: fit-content;
-  }
-  .about-container {
-    height: 100%;
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 3rem 0;
-    padding: 2rem 3rem;
-    border-radius: 1.5rem;
-  }
-
-  .about-heading {
-    width: fit-content;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    align-self: flex-start;
-  }
-
-  .about-heading h1 {
-    position: relative;
-    font-size: 4rem;
-    line-height: 4.5rem;
-    font-weight: bold;
-    text-transform: capitalize;
-  }
-  .about-background,
-  span,
-  .email {
-    text-align: left;
-    font-size: 1.6rem;
-    line-height: 1.7rem;
-    font-weight: 450;
-  }
-
-  .about-content {
-    width: 62%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    row-gap: 0.3rem;
-    margin-right: 2rem;
-  }
-
-  h2 {
-    font-size: 2rem;
-    font-weight: 450;
-    line-height: 2.3rem;
-    font-weight: 600;
-  }
-
-  h3 {
-    font-size: 1.8rem;
-    font-weight: 500;
-    line-height: 2.3rem;
-  }
-
-  .skill-list {
-    list-style-type: url(../images/icons/life-ring.svg);
-  }
-
-  .about-skills li {
-    font-size: 1.6rem;
-    font-weight: 450;
-    line-height: 1.7rem;
-  }
-
-  .profile-photo {
-    flex: 3;
-    width: 40rem;
-    height: 40rem;
-  }
-
-  .contact {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-  }
-
-  #contact-btn {
-    right: 0;
-    margin: 3rem 0 1rem 0;
-  }
-}
-/*
-@media (max-width: 1024px) {
-  .about-container{
-    flex-direction: column-reverse;
-  }
-  
-}
-*/

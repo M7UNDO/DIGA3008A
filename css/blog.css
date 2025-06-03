@@ -7,6 +7,7 @@ main {
   align-items: center;
   margin: 4rem 4rem 2rem 4rem;
   padding: 0 8rem;
+  color: var(--site-color-1);
 }
 
 .heading {
@@ -187,14 +188,10 @@ footer p {
   width: 100%;
   border: none;
   border-radius: 6px;
-  background: linear-gradient(
-    90deg,
-    var(--site-color-2) 0%,
-    #46fcb3 60%,
-    rgb(0, 217, 255) 100%
-
-  );
+  background: linear-gradient(to right, #004cff, #6868ff, #72d5ff, #6868ff, #004cff);
+  background-size: 300% 100%;
   margin: 5rem 0 3rem 0;
+  animation: movegradient 10s ease-in-out infinite;
 }
 
 
@@ -256,7 +253,7 @@ footer p {
 */
 
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   main {
     width: 100%;
     height: 100%;
@@ -358,7 +355,7 @@ footer p {
   }
 }
 
-@media (min-width: 601px) {
+@media screen and (min-width: 601px) {
   main {
     width: 100%;
     height: 100%;
@@ -447,7 +444,7 @@ footer p {
   }
 }
 
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
   main{
     margin: 4rem 0 2rem 0;
   }

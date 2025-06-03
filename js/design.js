@@ -52,7 +52,7 @@ function openTable() {
   }
   else{
 
-    document.querySelector(".sidebar").style.width = "30%";
+    document.querySelector(".sidebar").style.width = "20%";
   }
   let openbtn = document.getElementsByClassName("openbtn")[0];
   openbtn.style.display = "none";

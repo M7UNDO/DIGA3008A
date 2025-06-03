@@ -35,6 +35,7 @@ main {
   align-items: center;
   margin: 5rem 0;
   padding: 0;
+  color: var(--site-color-1);
 }
 
 .design-container {
@@ -371,7 +372,7 @@ figure.font-container {
   width: 100%;
 }
 
-.design-reference figure{
+.design-reference figure {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -380,7 +381,7 @@ figure.font-container {
   gap: 2rem;
 }
 
-.design-reference figure a{
+.design-reference figure a {
   width: 95%;
 }
 
@@ -584,7 +585,7 @@ figure {
   cursor: pointer;
   background-color: var(--site-color-1);
   opacity: 0.5;
-  color: white;
+  color: var(--site-color-white);
   padding: 10px 15px;
   border: none;
   z-index: 99;
@@ -645,4 +646,287 @@ figure {
   padding: 1rem;
   width: auto;
   border-bottom: none;
+}
+
+@media screen and (min-width: 992px) {
+  h1 {
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+  h2 {
+    font-size: 3rem;
+    line-height: 3rem;
+    font-weight: 600;
+  }
+  h3 {
+    font-size: 2.2rem;
+    line-height: 2.5rem;
+    font-weight: 500;
+  }
+  h4 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-weight: 400;
+  }
+  h5 {
+    font-size: 1.8rem;
+    line-height: 2rem;
+    font-weight: 400;
+  }
+
+  main {
+    margin: 5rem 3rem;
+  }
+
+  p,
+  figcaption,
+  .design-list li {
+    font-family: var(--secondary-font);
+    font-size: 1.7rem;
+    font-weight: 400;
+    line-height: 2.2rem;
+  }
+
+  /*Initial Wireframes Carousel */
+  .wireframes-rough-container {
+    width: 100%;
+  }
+
+  .initial-wireframe-container {
+    width: 75%;
+    height: auto;
+  }
+
+  .numbertext {
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    padding: 0.8rem 0;
+  }
+
+  .first-wireframe {
+    width: 70%;
+    height: auto;
+  }
+
+  /* Slideshow Navigation Buttons */
+  .prev,
+  .next,
+  .prev-button,
+  .next-button {
+    padding: 1.6rem;
+    margin-top: -2.2rem;
+    font-size: 1.8rem;
+  }
+
+  .next,
+  .next-button {
+    right: 0;
+    border-radius: 1rem 0 0 1rem;
+  }
+  .three-dots {
+    margin: 3rem 0;
+  }
+
+  .dot,
+  .dots {
+    height: 1rem;
+    width: 1rem;
+    margin: 0 0.4rem;
+  }
+
+  /*Final Wireframes Section */
+  .final-wireframe {
+    width: 70%;
+    height: auto;
+  }
+
+  /*Design Elements Section */
+  .design-elements {
+    width: 75%;
+    height: auto;
+  }
+
+  .design-elements-box {
+    padding: 3rem;
+    height: auto;
+  }
+
+  /* Typography Section */
+  .font-holder{
+    flex-direction: row;
+  }
+
+  figure.font-container {
+    width: 40%;
+    height: 100%;
+    margin: 1rem 0;
+    padding: 1rem;
+    right: 0;
+  }
+
+  .font-choices {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Interaction Design (IXD) and Flow Diagrams */
+
+  .flow-diagrams {
+    margin: 5rem 0;
+    flex-direction: row;
+  }
+
+  .flow-diagrams figure {
+    height: 50rem;
+    width: 40%;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+  }
+
+  .user-diagrams {
+    height: auto;
+    width: 80%;
+    padding: 1rem 2rem;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease-in 0s;
+  }
+
+  /* Design Reference Section*/
+  .design-reference {
+    margin: 2rem 0;
+    width: 100%;
+    flex-direction: row;
+    gap: 0;
+  }
+
+  .design-reference figure {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .design-reference figure a {
+    width: auto;
+    height: 28rem;
+  }
+
+  /* Reference Site image */
+  .reference-site {
+    width: 100%;
+    height: 100%;
+  }
+
+  .reference-site:hover {
+    transform: translateY(-0.4rem);
+  }
+
+  #website-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 30rem;
+    width: 100%;
+    border-radius: 2rem;
+    background-color: var(--site-color-3);
+  }
+
+  .design-list a:hover {
+    text-decoration: underline;
+    font-weight: 800;
+  }
+
+  /*individual colour palette container*/
+  .pallete-container {
+    width: 32rem;
+    height: 45rem;
+    padding: 2rem;
+  }
+
+  .pallete-container h4 {
+    width: 100%;
+  }
+
+  .pallete-container figcaption {
+    height: 30%;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+  }
+  .pallete {
+    height: 20rem;
+    width: 20rem;
+  }
+
+  /* Website Examples */
+  .wireframe-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .web-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .website-example {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+  }
+
+  .website-example a{
+    width: 70%;
+    margin: 1rem;
+  }
+
+  .web-image {
+    flex: 1;
+    display: block;
+    width: 100%;
+  }
+
+  .web-image:hover {
+    transform: translateY(-0.4rem);
+    box-shadow: 0 0 1rem var(--site-color-2);
+  }
+
+  .openbtn {
+    width: 18rem;
+    height: 5rem;
+    top: 8rem;
+    left: 1rem;
+    font-size: 1.6rem;
+    padding: 1.5rem 1.5rem;
+    border-radius: 1rem;
+  }
+  .sidebar {
+    top: 7rem;
+    left: 0;
+    padding-top: 6rem; /* Place content 60px from the top */
+    transition: all 0.5s ease-in-out 0s; /* 0.5 second transition effect to slide in the sidebar */
+    gap: 3.5rem;
+  }
+
+  /* The sidebar links */
+  .sidebar a {
+    font-size: 2rem;
+    display: block;
+    transition: 0.3s;
+  }
+
+  /* Position and style the close button (top right corner) */
+  .sidebar .closebtn {
+    font-size: 3.6rem;
+    padding: 1rem;
+  }
 }

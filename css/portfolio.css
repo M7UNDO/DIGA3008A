@@ -7,6 +7,7 @@ main {
   margin: 5rem 0;
   padding: 0;
   color: var(--site-color-1);
+  overflow: hidden;
 }
 
 .portfolio-section {
@@ -142,7 +143,6 @@ button p {
   line-height: 1.7rem;
   font-weight: 430;
   text-align: center;
-  
 }
 
 .project-title-description span {
@@ -154,9 +154,8 @@ button p {
   transition: all 0.4s ease 0s;
 }
 
-.project-title-description span:hover{
+.project-title-description span:hover {
   text-decoration: underline;
-
 }
 .game-dev-container a {
   color: var(--site-color-2);
@@ -178,78 +177,15 @@ button p {
 
 @media screen and (max-width: 600px) {
   .game-dev-container {
-    padding: 5rem;
+    padding: 1.5rem;
     display: grid;
-    grid-template-rows: repeat(4, 15rem);
+    grid-template-rows: repeat(4, 17rem);
     grid-template-columns: repeat(1, 100%);
     gap: 1rem;
   }
 
   .game-project {
-    height: 15rem;
-    width: 100%;
-    height: fit-content;
-    box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.345);
-    border: none;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 0 1rem;
-  }
-
-  .image-container {
-    width: 14rem;
-    height: 14rem;
-    background-color: var(--site-color-2);
-    border-radius: 1rem;
-    margin-left: 0rem;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  .project-title-description {
-    width: 65%;
-    height: 100%;
-    margin-left: 2.5rem;
-  }
-
-  .project-title-description p {
-    width: 100%;
-    font-weight: 500;
-    text-align: left;
-  }
-
-  button h2 {
-    font-family: "Satoshi", sans-serif;
-    font-size: 1.6rem;
-    line-height: 2.2rem;
-    font-weight: 550;
-  }
-
-  h1 {
-    text-align: center;
-    font-size: 3rem;
-    line-height: 3rem;
-  }
-
-  .subheading {
-    text-align: center;
-    font-size: 1.4rem;
-    line-height: 2.4rem;
-  }
-}
-
-@media screen and (max-width: 601px) {
-  .game-dev-container {
-    padding: 5rem;
-    display: grid;
-    grid-template-rows: repeat(4, 15rem);
-    grid-template-columns: repeat(1, 100%);
-    gap: 1rem;
-  }
-
-  .game-project {
-    height: 15rem;
+    height: 17rem;
     width: 100%;
     height: 1;
     box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.345);
@@ -261,8 +197,8 @@ button p {
   }
 
   .image-container {
-    width: 14rem;
-    height: 14rem;
+    width: auto;
+    height: 90%;
     background-color: var(--site-color-2);
     border-radius: 1rem;
     margin-left: 0rem;
@@ -271,114 +207,39 @@ button p {
   }
 
   .project-title-description {
-    width: 65%;
+    width: 75%;
     height: 100%;
-    margin-left: 2.5rem;
+    margin-left: 2rem;
   }
 
   .project-title-description p {
     width: 100%;
-    font-size: 1.3rem;
-    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    font-weight: 350;
     text-align: left;
   }
 
   button h2 {
     font-family: "Satoshi", sans-serif;
+    font-size: 1.7rem;
+    line-height: 2.2rem;
+    font-weight: 550;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+
+  .subheading {
+    text-align: center;
     font-size: 1.6rem;
-    line-height: 2.2rem;
-    font-weight: 550;
-  }
-
-  h1 {
-    text-align: center;
-    font-size: 3.2rem;
-    line-height: 3.2rem;
-  }
-
-  .subheading {
-    text-align: center;
-    font-size: 1.4rem;
-    line-height: 2.4rem;
+    line-height: 1.7rem;
   }
 }
-
-@media screen and (max-width: 400px) {
-  .game-dev-container {
-    align-self: center;
-    justify-self: center;
-    width: 95%;
-    padding: 2rem 0;
-    display: grid;
-    grid-template-rows: repeat(4, 14rem);
-    grid-template-columns: repeat(1, 100%);
-    gap: 1rem;
-  }
-
-  .game-project {
-    height: 14rem;
-    width: 100%;
-    box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.345);
-    border: none;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 0;
-  }
-
-  .image-container {
-    width: 12rem;
-    height: 12rem;
-    background-color: var(--site-color-2);
-    border-radius: 1rem;
-    margin-left: 0.5rem;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  .project-title-description {
-    display: flex;
-    flex-direction: column;
-    width: 65%;
-    height: 100%;
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-
-  .project-title-description p {
-    width: 100%;
-    font-size: 1.2rem;
-    line-height: 1.5rem;
-    font-weight: 500;
-    text-align: left;
-  }
-
-  .project-title-description span {
-    width: fit-content;
-    align-self: flex-start;
-  }
-
-  button h2 {
-    font-family: "Satoshi", sans-serif;
-    font-size: 1.4rem;
-    line-height: 2.2rem;
-    font-weight: 550;
-    text-transform: uppercase;
-  }
-
-  h1 {
-    text-align: center;
-    font-size: 3rem;
-    line-height: 3rem;
-  }
-
-  .subheading {
-    text-align: center;
-    font-size: 1.4rem;
-    line-height: 2.4rem;
-  }
-}
-
+/*
 @media screen and (max-width: 768px) {
   .game-dev-container {
     padding: 5rem;
@@ -444,3 +305,4 @@ button p {
   }
 }
 
+*/

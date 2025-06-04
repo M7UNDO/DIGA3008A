@@ -18,6 +18,9 @@ function changeTheme() {
 
 window.addEventListener("load", () => {
   const savedTheme = localStorage.getItem("theme");
+
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("load").style.display = "none";
   if (savedTheme === "dark") {
     document.documentElement.classList.add("dark-mode");
     console.log("theme loaded");
@@ -87,9 +90,6 @@ window.addEventListener("load", function () {
   aboutHeader.classList += "slide-in";
 });
 
-window.addEventListener("load", () => {
-  document.getElementById("loader").style.display = "none";
-  document.getElementById("load").style.display = "none";
-});
+
 
 let projectImage = document.getElementsByClassName("project-image");

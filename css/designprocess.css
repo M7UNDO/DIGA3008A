@@ -359,8 +359,9 @@ figure.font-container figcaption {
   width: 28rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 2rem;
   width: fit-content;
   border-radius: 1rem;
   box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.345);
@@ -845,20 +846,21 @@ figure {
   /* Interaction Design (IXD) and Flow Diagrams */
 
   .flow-diagrams {
+    height: 50rem;
     margin: 5rem 0;
     flex-direction: row;
   }
 
   .flow-diagrams figure {
-    height: 50rem;
-    width: 40%;
+    height: 100%;
+    width: 100%;
     border-radius: 1rem;
     padding: 1rem 2rem;
   }
 
   .user-diagrams {
-    height: auto;
-    width: 80%;
+    height: 80%;
+    width: auto;
     padding: 1rem 2rem;
     margin-bottom: 1rem;
     transition: all 0.3s ease-in 0s;

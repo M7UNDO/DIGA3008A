@@ -385,6 +385,7 @@ main {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 5;
+  backdrop-filter: blur(4px);
 }
 
 footer {

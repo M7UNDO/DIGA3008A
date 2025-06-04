@@ -81,7 +81,7 @@ body {
 }
 
 #loader {
-  color: var(--site-color-white);
+  color: var(--site-color-1);
   font-weight: 700;
   font-family: var(--secondary-font);
   position: fixed;
@@ -468,6 +468,9 @@ footer p {
 }
 
 @media screen and (max-width: 768px) {
+  body{
+    overflow-x: hidden;
+  }
   header {
     width: 100%;
     top: 0;
@@ -522,6 +525,7 @@ footer p {
   }
 
   .closeBtn {
+    display: block;
     font-size: 3rem;
     line-height: 3rem;
   }
@@ -551,19 +555,16 @@ footer p {
     background-color: var(--site-color-3);
     top: 0;
     bottom: 0;
-    right: 0;
+    right: -120%;
     overflow-y: auto;
     transition: all 0.5s;
     z-index: 100;
     box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.573);
     opacity: 1;
-    border: 2px solid red;
-    transition: transform 0.7s ease-in-out;
-    transform: translateX(100%);
+    transition: right 0.7s ease-in-out;
   }
 
   .navlinks {
-    background-color: var(--site-color-3);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;

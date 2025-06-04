@@ -40,18 +40,15 @@ function topFunction() {
 }
 
 function openNav() {
-  document.getElementsByClassName("nav-menu")[0].style.transform = "translateX(0)";
-  
-  document.getElementsByClassName("closeBtn")[0].style.display = "block";
+  document.getElementsByClassName("nav-menu")[0].style.right = "0";
   document.getElementsByClassName("overlay")[0].style.display = "block";
-  document.body.style.overflow = "hidden";
+   document.body.style.overflow = "hidden";
 }
 
 function closeNav() {
-  document.getElementsByClassName("nav-menu")[0].style.transform = "translateX(100%)";
-  document.getElementsByClassName("closeBtn")[0].style.display = "none";
+  document.getElementsByClassName("nav-menu")[0].style.right = "-120%";
   document.getElementsByClassName("overlay")[0].style.display = "none";
-  document.body.style.overflow = "";
+   document.body.style.overflow = "";
 }
 
 const subheading = document.querySelector(".subheading");

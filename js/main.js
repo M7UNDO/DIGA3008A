@@ -48,15 +48,19 @@ function topFunction() {
 }
 
 function openNav() {
-  document.getElementsByClassName("nav-menu")[0].style.right = "0";
+  document.getElementsByClassName("nav-menu")[0].style.display = "flex";
   document.getElementsByClassName("overlay")[0].style.display = "block";
    document.body.style.overflow = "hidden";
 }
 
 function closeNav() {
-  document.getElementsByClassName("nav-menu")[0].style.right = "-120%";
+  document.getElementsByClassName("nav-menu")[0].style.display = "none";
   document.getElementsByClassName("overlay")[0].style.display = "none";
-   document.body.style.overflow = "";
+  document.body.style.overflow = "";
+}
+
+function hideOverflow(){
+  document.body.style.overflowY = "hidden";
 }
 
 const subheading = document.querySelector(".subheading");

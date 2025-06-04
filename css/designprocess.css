@@ -127,13 +127,14 @@ figcaption {
 }
 
 .initial-wireframe-container {
-  background-color: var(--site-color-white);
+  background-color: white;
+  color: black;
   border: 2px solid var(--site-color-1);
   align-items: center;
   width: 100%;
   height: auto;
   position: relative;
-  gap: 1rem1;
+  gap: 1rem;
   border-radius: 2rem;
 }
 
@@ -171,6 +172,47 @@ figcaption {
 .first-wireframe {
   width: 80%;
   height: auto;
+}
+
+.final-wireframe {
+  height: auto;
+  width: 100%;
+}
+
+/*Design Elements Section */
+.design-elements {
+  background-color: white;
+  color: black;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 2rem;
+  border: 2px solid var(--site-color-1);
+  gap: 1rem;
+}
+
+.design-elements-box {
+  margin: 0;
+  padding: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+#fin-wireframe-1 {
+  display: flex;
+}
+
+.visual-element-diagram {
+  text-align: left;
+  margin: 0;
+  font-style: italic;
 }
 
 /* Slideshow Navigation Buttons */
@@ -252,44 +294,6 @@ figcaption {
 }
 
 /*Final Wireframes Section */
-.final-wireframe {
-  width: 100%;
-  border-radius: 1.25rem;
-}
-
-/*Design Elements Section */
-.design-elements {
-  background-color: var(--site-color-white);
-  height: 40rem;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  border-radius: 2rem;
-  border: 2px solid var(--site-color-1);
-  gap: 1rem;
-}
-
-.design-elements-box {
-  margin: 0;
-  padding: 1rem;
-  display: none;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-#fin-wireframe-1 {
-  display: flex;
-}
-
-.visual-element-diagram {
-  text-align: left;
-  margin: 0;
-  font-style: italic;
-}
 
 /* Typography Section */
 
@@ -305,7 +309,7 @@ figcaption {
 
 figure.font-container {
   width: 90%;
-  height: 18rem;
+  height: 100%;
   margin: 1rem 0;
   padding: 0.5rem;
   background-color: var(--site-color-white);
@@ -314,6 +318,10 @@ figure.font-container {
   gap: 1rem;
   left: 0;
   right: 0;
+}
+
+figure.font-container figcaption {
+  margin: 1rem 1rem;
 }
 
 .font-choices {
@@ -337,7 +345,7 @@ figure.font-container {
 
 .flow-diagrams {
   margin: 2rem 0 4rem 0;
-  width: 100%;
+  width: 70%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -346,7 +354,8 @@ figure.font-container {
 }
 
 .flow-diagrams figure {
-  background-color: var(--site-color-white);
+  background-color: white;
+  color: black;
   width: 28rem;
   display: flex;
   flex-direction: column;
@@ -473,9 +482,10 @@ figure.font-container {
 
 /*individual colour palette container*/
 .pallete-container {
-  background-color: var(--site-color-white);
+  background-color: white;
+  color: black;
   width: 47%;
-  height: 45rem;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -491,10 +501,17 @@ figure.font-container {
 }
 
 .pallete-container figcaption {
+  color: black;
   height: 20%;
   font-size: 1.4rem;
   line-height: 1.7rem;
+  margin: 1rem 0;
 }
+
+.pallete-container figcaption p{
+  color: black;
+}
+
 .pallete {
   height: auto;
   width: 100%;
@@ -588,6 +605,7 @@ figure {
   color: var(--site-color-white);
   padding: 10px 15px;
   border: none;
+  border-radius: 1rem;
   z-index: 99;
   transition: all 0.3s ease 0s;
 }
@@ -648,10 +666,64 @@ figure {
   border-bottom: none;
 }
 
+@media only screen and (min-width: 768px) {
+  /*Design Elements Section */
+  .design-elements {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    gap: 1rem;
+  }
+
+  .design-elements-box {
+    margin: 0;
+    padding: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  p,
+  figcaption,
+  .design-list li {
+    font-family: var(--secondary-font);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2rem;
+  }
+
+  .openbtn {
+    height: auto;
+    width: 13rem;
+    top: 8rem;
+    font-size: 1.4rem;
+  }
+
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 100; /* Stay on top */
+    top: 7rem;
+    left: 0;
+    background-color: var(--site-color-03); /* Black*/
+    box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.573);
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+    gap: 3.5rem;
+  }
+}
+
 @media screen and (min-width: 992px) {
   h1 {
     font-size: 5rem;
-    line-height: 5rem;
+    line-height: 5.5rem;
   }
   h2 {
     font-size: 3rem;
@@ -723,6 +795,7 @@ figure {
     right: 0;
     border-radius: 1rem 0 0 1rem;
   }
+
   .three-dots {
     margin: 3rem 0;
   }
@@ -752,7 +825,7 @@ figure {
   }
 
   /* Typography Section */
-  .font-holder{
+  .font-holder {
     flex-direction: row;
   }
 
@@ -884,7 +957,7 @@ figure {
     padding: 2rem 0;
   }
 
-  .website-example a{
+  .website-example a {
     width: 70%;
     margin: 1rem;
   }

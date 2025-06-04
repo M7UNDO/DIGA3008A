@@ -548,6 +548,7 @@ footer p {
   }
 
   .nav-menu {
+    display: none;
     position: fixed;
     flex-direction: column;
     height: 100vh;
@@ -556,13 +557,14 @@ footer p {
     background-color: var(--site-color-3);
     top: 0;
     bottom: 0;
-    right: -120%;
+    right: 0;
     overflow-y: auto;
     transition: all 0.5s;
     z-index: 100;
     box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.573);
     opacity: 1;
-    transition: right 0.7s ease-in-out;
+    transition: display
+     0.7s ease-in-out;
   }
 
   .navlinks {

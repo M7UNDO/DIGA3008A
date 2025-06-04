@@ -17,15 +17,20 @@ function changeTheme() {
 }
 
 window.addEventListener("load", () => {
-  const savedTheme = localStorage.getItem("theme");
-
+  let savedTheme = localStorage.getItem("theme");
+  let i;
   document.getElementById("loader").style.display = "none";
   document.getElementById("load").style.display = "none";
   if (savedTheme === "dark") {
     document.documentElement.classList.add("dark-mode");
     console.log("theme loaded");
   }
+
+  
+  document.getElementById("heading-intro").classList.add("slide-in");
+  
 });
+
 
 console.log("main js loaded");
 
@@ -78,17 +83,7 @@ function lineEffect() {
 
 window.addEventListener("load", lineEffect);
 
-window.addEventListener("load", function () {
-  let i;
-  document.getElementById("heading-intro").classList.add("slide-in");
-  let aboutHeader = document.getElementsByClassName("p-name");
 
-  for (i = 0; i < aboutHeader.length; i++) {
-    aboutHeader[i].classList = aboutHeader[i].classList.replace("slide-in", "");
-  }
-
-  aboutHeader.classList += "slide-in";
-});
 
 
 

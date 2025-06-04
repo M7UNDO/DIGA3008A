@@ -30,11 +30,9 @@ h1 {
   font-size: 5rem;
   font-weight: bold;
   line-height: 5rem;
-  text-transform: uppercase;
   background: linear-gradient(to right, var(--site-color-2), #727eff, #72d5ff, #727eff, var(--site-color-2));
   background-size: 300% 100%;
   background-clip: text;
-  transition: color 1000ms ease;
   animation: animate-gradient 10s linear infinite forwards;
 }
 

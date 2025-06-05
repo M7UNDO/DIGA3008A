@@ -185,13 +185,14 @@ footer p {
 
 .solid {
   height: 0.4rem;
-  width: 100%;
+  width: 0;
   border: none;
   border-radius: 6px;
   background: linear-gradient(to right, #004cff, #6868ff, #72d5ff, #6868ff, #004cff);
   background-size: 300% 100%;
   margin: 5rem 0 3rem 0;
   animation: movegradient 10s ease-in-out infinite;
+  transition: width 2s ease-in-out;
 }
 
 

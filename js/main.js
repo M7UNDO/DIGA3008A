@@ -1,22 +1,30 @@
+const line = document.querySelector(".solid");
 var mybutton = document.getElementById("myBtn");
-let line = document.querySelector(".solid");
 let openbtn = document.querySelector(".openbtn");
 let sidebar = document.querySelector(".sidebar");
 
 window.addEventListener("load", () => {
+  
   let savedTheme = localStorage.getItem("theme");
   let i;
   document.getElementById("loader").style.display = "none";
 
   document.getElementById("load").style.display = "none";
+
+  
+  line.style.width = "100%";
   if (savedTheme === "dark") {
     document.documentElement.classList.add("dark-mode");
     console.log("theme loaded");
   }
   document.getElementById("heading-intro").classList.add("slide-in");
   typeWriter();
-  lineEffect();
+
+ 
+
 });
+
+
 
 window.onscroll = function () {
   scrollFunction();
@@ -75,9 +83,4 @@ function typeWriter() {
     index++;
     setTimeout(typeWriter, duration);
   }
-}
-
-function lineEffect() {
-  line.style.width = "100%";
-  setTimeout(lineEffect, duration);
 }

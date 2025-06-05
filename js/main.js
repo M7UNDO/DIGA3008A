@@ -1,4 +1,4 @@
-const line = document.querySelector(".solid");
+
 var mybutton = document.getElementById("myBtn");
 let openbtn = document.querySelector(".openbtn");
 let sidebar = document.querySelector(".sidebar");
@@ -10,9 +10,6 @@ window.addEventListener("load", () => {
   document.getElementById("loader").style.display = "none";
 
   document.getElementById("load").style.display = "none";
-
-  
-  line.style.width = "100%";
   if (savedTheme === "dark") {
     document.documentElement.classList.add("dark-mode");
     console.log("theme loaded");
@@ -21,6 +18,12 @@ window.addEventListener("load", () => {
   typeWriter();
 
  
+
+});
+
+window.addEventListener("load", () => {
+  let line = document.querySelector(".solid");
+  line.style.width = "100%";
 
 });
 

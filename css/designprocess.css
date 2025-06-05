@@ -622,17 +622,17 @@ figure {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
+  height: 100%;
+  width: 0;
   position: fixed; /* Stay in place */
-  z-index: 100; /* Stay on top */
+  z-index: 100;
   top: 5.5rem;
   left: 0;
-  background-color: var(--site-color-03); /* Black*/
+  background-color: var(--site-color-03); 
   box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.573);
   overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  padding-top: 6rem;
+  transition: 0.5s; 
   gap: 3.5rem;
 }
 
@@ -648,15 +648,18 @@ figure {
   display: block;
   transition: 0.3s;
   text-transform: uppercase;
-  border-bottom: 2px solid var(--site-color-1);
+  border-bottom: 2px solid var(--site-color-border);
 }
 
-/* When you mouse over the navigation links, change their color */
 .sidebar a:hover {
   color: var(--site-color-2);
 }
 
-/* Position and style the close button (top right corner) */
+#mySidebar a.active {
+  font-weight: bold;
+  color: var(--site-color-2);
+}
+
 .sidebar .closebtn {
   position: absolute;
   top: 0;
@@ -706,17 +709,17 @@ figure {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 100; /* Stay on top */
+    height: 100%;
+    width: 0; 
+    position: fixed;
+    z-index: 100;
     top: 7rem;
     left: 0;
-    background-color: var(--site-color-03); /* Black*/
+    background-color: var(--site-color-03);
     box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.573);
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s; 
     gap: 3.5rem;
   }
 }

@@ -138,7 +138,7 @@ span,
   background: var(--shine-effect);
 }
 
-#contact-btn::before{
+#contact-btn::before {
   left: -100%;
   transition: var(--shine-transition);
 }
@@ -165,14 +165,300 @@ span,
 #contact-btn:hover {
   box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.437);
   transform: translateY(-0.4rem);
-
 }
 #contact-btn:hover::before {
   left: 100%;
-  
 }
 
+/*
+@media only screen and (max-width: 600px) {
+  .about-container {
+    width: 95%;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0;
+  }
 
+  .profile-photo {
+    width: 30rem;
+    height: 30rem;
+  }
+
+  .about-headi {
+    position: relative;
+    font-size: 4rem;
+    font-weight: 450;
+    line-height: 4rem;
+    text-align: center;
+  }
+
+  .about-heading {
+    align-self: center;
+  }
+
+  .about-content {
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    display: flex;
+  }
+
+  .about-skills li {
+    font-size: 1.6rem;
+    font-weight: 450;
+    line-height: 1.7rem;
+  }
+
+  .about-background,
+  span,
+  .email {
+    text-align: left;
+    font-size: 1.6rem;
+    line-height: 1.7rem;
+    font-weight: 450;
+  }
+
+  h2 {
+    font-size: 2rem;
+    line-height: 2.4rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  
+}
+*/
+@media screen and (max-width: 1530px) {
+  .about-container {
+    width: 95%;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0;
+  }
+
+  .profile-photo {
+    width: 40rem;
+    height: 40rem;
+  }
+
+  .about-heading h1 {
+    font-weight: 450;
+  }
+
+  .about-heading {
+    align-self: center;
+  }
+
+  .about-content {
+    width: 100%;
+
+  }
+
+  h2 {
+    font-size: 2.2rem;
+    line-height: 2.4rem;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2rem;
+  }
+
+  .about-skills li {
+    font-size: 1.6rem;
+    font-weight: 450;
+    line-height: 1.9rem;
+  }
+
+  .about-background,
+  span,
+  .email {
+    text-align: left;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    font-weight: 450;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .about-container {
+    width: 95%;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0;
+  }
+
+  .profile-photo {
+    width: 35rem;
+    height: 35rem;
+  }
+
+  .about-heading h1 {
+    position: relative;
+    font-size: 4rem;
+    font-weight: 450;
+    line-height: 4.4rem;
+    text-align: center;
+  }
+
+  .about-heading {
+    align-self: center;
+  }
+
+  .about-content {
+    width: 100%;
+    height: 100%;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+    line-height: 2.4rem;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2rem;
+  }
+
+  .about-skills li {
+    font-size: 1.6rem;
+    font-weight: 450;
+    line-height: 1.9rem;
+  }
+
+  .about-background,
+  span,
+  .email {
+    text-align: left;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    font-weight: 450;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-container {
+    width: 95%;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0;
+  }
+
+  .profile-photo {
+    width: 35rem;
+    height: 35rem;
+  }
+
+  .about-heading h1 {
+    position: relative;
+    font-size: 3.4rem;
+    font-weight: 450;
+    line-height: 3.7rem;
+    text-align: center;
+  }
+
+  .about-heading {
+    align-self: center;
+  }
+
+  .about-content {
+    width: 100%;
+    height: 100%;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+    line-height: 2.4rem;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2rem;
+  }
+
+  .about-skills li {
+    font-size: 1.4rem;
+    font-weight: 450;
+    line-height: 1.7rem;
+  }
+
+  .about-background,
+  span,
+  .email {
+    text-align: left;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    font-weight: 450;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about-container {
+    width: 95%;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0;
+  }
+
+  .profile-photo {
+    width: 35rem;
+    height: 35rem;
+  }
+
+  .about-heading {
+    position: relative;
+    font-size: 3rem;
+    font-weight: 450;
+    line-height: 4rem;
+    text-align: center;
+  }
+
+  .about-heading {
+    align-self: center;
+  }
+
+  .about-content {
+    width: 100%;
+    height: 100%;
+  }
+
+  .about-skills li {
+    font-size: 1.4rem;
+    font-weight: 450;
+    line-height: 1.6rem;
+  }
+
+  .about-background,
+  span,
+  .email {
+    text-align: left;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    font-weight: 450;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2rem;
+  }
+}
 
 @media screen and (max-width: 400px) {
   .about-container {
@@ -243,184 +529,4 @@ span,
     right: 0;
     margin: 2rem 0 1rem 0;
   }
-}
-/*
-@media only screen and (max-width: 600px) {
-  .about-container {
-    width: 95%;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-    margin: 3rem 0;
-  }
-
-  .profile-photo {
-    width: 30rem;
-    height: 30rem;
-  }
-
-  .about-headi {
-    position: relative;
-    font-size: 4rem;
-    font-weight: 450;
-    line-height: 4rem;
-    text-align: center;
-  }
-
-  .about-heading {
-    align-self: center;
-  }
-
-  .about-content {
-    width: 100%;
-    height: 100%;
-    background-color: red;
-    display: flex;
-  }
-
-  .about-skills li {
-    font-size: 1.6rem;
-    font-weight: 450;
-    line-height: 1.7rem;
-  }
-
-  .about-background,
-  span,
-  .email {
-    text-align: left;
-    font-size: 1.6rem;
-    line-height: 1.7rem;
-    font-weight: 450;
-  }
-
-  h2 {
-    font-size: 2rem;
-    line-height: 2.4rem;
-  }
-
-  h3 {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
-  
-}
-*/
-@media screen and (max-width: 601px) {
-  .about-container {
-    width: 95%;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-    margin: 3rem 0;
-  }
-
-  .profile-photo {
-    width: 35rem;
-    height: 35rem;
-  }
-
-  .about-heading {
-    position: relative;
-    font-size: 3rem;
-    font-weight: 450;
-    line-height: 4rem;
-    text-align: center;
-  }
-
-  .about-heading {
-    align-self: center;
-  }
-
-  .about-content {
-    width: 100%;
-    height: 100%;
-  }
-
-  .about-skills li {
-    font-size: 1.4rem;
-    font-weight: 450;
-    line-height: 1.6rem;
-  }
-
-  .about-background,
-  span,
-  .email {
-    text-align: left;
-    font-size: 1.4rem;
-    line-height: 1.6rem;
-    font-weight: 450;
-  }
-
-  h2 {
-    font-size: 1.8rem;
-    line-height: 2.4rem;
-  }
-
-  h3 {
-    font-size: 1.5rem;
-    font-weight: 500;
-    line-height: 2rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .about-container {
-    width: 95%;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-    margin: 3rem 0;
-  }
-
-  .profile-photo {
-    width: 35rem;
-    height: 35rem;
-  }
-
-  .about-heading h1 {
-    position: relative;
-    font-size: 3.4rem;
-    font-weight: 450;
-    line-height: 3.7rem;
-    text-align: center;
-  }
-
-  .about-heading {
-    align-self: center;
-  }
-
-  .about-content {
-    width: 100%;
-    height: 100%;
-  }
-
-  h2 {
-    font-size: 2.2rem;
-    line-height: 2.4rem;
-  }
-
-  h3 {
-    font-size: 1.6rem;
-    font-weight: 500;
-    line-height: 2rem;
-  }
-
-  .about-skills li {
-    font-size: 1.4rem;
-    font-weight: 450;
-    line-height: 1.7rem;
-  }
-
-  .about-background,
-  span,
-  .email {
-    text-align: left;
-    font-size: 1.4rem;
-    line-height: 1.7rem;
-    font-weight: 450;
-  }
-}
-
-@media screen and (max-width: 992px) {
 }

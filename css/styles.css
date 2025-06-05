@@ -14,6 +14,7 @@
   --site-color-white: rgb(255, 255, 255);
   --site-color-light: rgb(237, 181, 0);
   --site-color-gradient: rgba(245, 245, 245, 0.238);
+  --site-color-border: rgba(0, 0, 0, 0.227);
   --site-color-track: rgb(201, 201, 201);
   --primary-font: "Montserrat", sans-serif;
   --secondary-font: "Satoshi", sans-serif;
@@ -49,6 +50,7 @@ body {
   --site-color-light: rgb(255, 255, 255);
   --site-color-track: rgb(44, 48, 57);
   --site-color-gradient: rgba(32, 35, 41, 0.238);
+  --site-color-border: rgba(255, 255, 255, 0.103);
   --shine-color: rgba(44, 48, 57, 0);
 }
 

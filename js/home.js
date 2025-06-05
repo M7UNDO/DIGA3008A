@@ -3,11 +3,17 @@ const root = document.documentElement
 const siteColour1 = getComputedStyle(root).getPropertyValue('--site-color-1');
 const siteColour2 = getComputedStyle(root).getPropertyValue('--site-color-2');
 const siteColour3 = getComputedStyle(root).getPropertyValue('--site-color-3');
-
 let menuButton = document.querySelector(".menuButton");
-
-//menuButton.style.transition = "background-color 0.3s ease, color 0.3s ease";
+const quote = document.getElementById("quote")
+const author = document.getElementById("author")
+const authorImage = document.getElementById("author-image")
+const api_url = "https://api.quotable.io/random"
 menuButton.style.transition = "all 0.5s ease 0s";
+
+window.addEventListener("load", function(){
+  document.getElementById("heading-intro").classList.add("slide-in");
+});
+
 
 menuButton.addEventListener("mouseover", function(){
 
@@ -22,17 +28,6 @@ menuButton.addEventListener("mouseout", function(){
    menuButton.style.color = "";
 
 })
-
-
-window.addEventListener("load", function(){
-  document.getElementById("heading-intro").classList.add("slide-in");
-});
-
-
-const quote = document.getElementById("quote")
-const author = document.getElementById("author")
-const authorImage = document.getElementById("author-image")
-const api_url = "https://api.quotable.io/random"
 
 async function getQuote(url){
 

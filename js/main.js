@@ -2,9 +2,6 @@ var mybutton = document.getElementById("myBtn");
 let line = document.querySelector(".solid");
 let openbtn = document.querySelector(".openbtn");
 let sidebar = document.querySelector(".sidebar");
-var subheading = document.querySelector(".subheading");
-var index = 0;
-var duration = 20;
 
 window.addEventListener("load", () => {
   let savedTheme = localStorage.getItem("theme");
@@ -66,8 +63,12 @@ function closeNav() {
   sidebar.style.display = "flex"
 }
 
-subheading.textContent = "";
+var subheading = document.querySelector(".subheading");
+var index = 0;
+var duration = 20;
 var text = subheading.textContent;
+subheading.textContent = "";
+
 function typeWriter() {
   if (index < text.length) {
     subheading.textContent += text.charAt(index);

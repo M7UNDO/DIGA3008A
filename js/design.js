@@ -44,7 +44,7 @@ var laptopScreen = window.matchMedia("(max-width: 992px)");
 
 function openTable() {
   if (phoneScreen.matches) {
-    document.querySelector(".sidebar").style.width = "30%";
+    document.querySelector(".sidebar").style.width = "40%";
   } 
   else if(tabletScreen.matches){
     document.querySelector(".sidebar").style.width = "30%";

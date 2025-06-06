@@ -21,6 +21,7 @@ window.addEventListener("load", () => {
 
 });
 
+//Intentionally adding another load method due to errors that break the code when I try to put everything in one function
 window.addEventListener("load", () => {
   let line = document.querySelector(".solid");
   line.style.width = "100%";

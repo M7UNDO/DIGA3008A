@@ -61,6 +61,7 @@ h1 {
 }
 
 .game-project {
+  font-family: var(--secondary-font);
   width: 100%;
   height: 22rem;
   box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.484);
@@ -122,7 +123,7 @@ h2 {
 
 .project-title-description p {
   width: 100%;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.7rem;
   font-weight: 430;
@@ -177,10 +178,10 @@ h2 {
 /* MEDIA QUERIES */
 @media screen and (max-width: 992px) {
   .game-dev-container {
-    padding: 1rem;
+    padding: 2rem;
     grid-template-rows: repeat(4, 20rem);
     grid-template-columns: repeat(1, 100%);
-    gap: 1rem;
+    gap: 3rem;
   }
 
   .game-project {
@@ -193,12 +194,12 @@ h2 {
   }
 
   .image-container {
-    width: 24rem;
+    width: 30rem;
     height: 100%;
   }
 
   .project-title-description {
-    width: 75%;
+    width: 100%;
     height: 100%;
     margin-left: 2rem;
   }
@@ -238,6 +239,24 @@ h2 {
     height: 100%;
     grid-template-rows: repeat(6, 40rem);
     grid-template-columns: repeat(2, 40rem);
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .model {
+    width: 35rem;
+    height: 35rem;
+    background-color: rgba(0, 0, 0, 0.225);
+    border: 2px solid rgba(0, 0, 0, 0.11);
+  }
+
+  .model-gallery {
+    height: 100%;
+    grid-template-rows: repeat(6, 35rem);
+    grid-template-columns: repeat(2, 35rem);
+    gap: 3rem;
+    justify-items: stretch;
+    align-items: stretch;
   }
 }
 
@@ -298,19 +317,13 @@ h2 {
   }
 
   .model {
-    width: 35rem;
-    height: 35rem;
-    background-color: rgba(0, 0, 0, 0.225);
-    border: 2px solid rgba(0, 0, 0, 0.11);
+    width: 40rem;
+    height: 40rem;
   }
 
   .model-gallery {
-    height: 100%;
-    grid-template-rows: repeat(6, 35rem);
-    grid-template-columns: repeat(2, 35rem);
-    gap: 3rem;
-    justify-items: stretch;
-    align-items: stretch;
+    grid-template-rows: repeat(12, 40rem);
+    grid-template-columns: repeat(1, 40rem);
   }
 }
 
@@ -374,17 +387,11 @@ h2 {
   .model {
     width: 40rem;
     height: 40rem;
-    background-color: rgba(0, 0, 0, 0.225);
-    border: 2px solid rgba(0, 0, 0, 0.11);
   }
 
   .model-gallery {
-    height: 100%;
     grid-template-rows: repeat(12, 40rem);
     grid-template-columns: repeat(1, 40rem);
-    gap: 3rem;
-    justify-items: stretch;
-    align-items: stretch;
   }
 }
 
@@ -405,15 +412,18 @@ h2 {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 0 1rem 0 0;
   }
   .image-container {
-    width: 22rem;
-    height: 100%;
+    width: 20rem;
+    height: 90%;
+    margin-left: 1rem;
   }
 
   .project-title-description {
     margin-left: 1rem;
+    padding: 0.5rem;
+    justify-content: flex-start;
+    gap: 1rem;
   }
 
   .project-title-description p {
@@ -425,9 +435,7 @@ h2 {
   }
 
   .project-title-description span {
-    font-size: 1.2rem;
-    line-height: 1.4rem;
-    margin: 1rem 0;
+    display: none;
   }
 }
 /*

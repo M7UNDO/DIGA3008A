@@ -51,9 +51,11 @@ function openTable() {
   }
   else if(laptopScreen.matches){
     document.querySelector(".sidebar").style.width = "20%";
+    document.querySelector("#main").style.marginLeft = "20%";
   }
   else{
     document.querySelector(".sidebar").style.width = "20%";
+    document.querySelector("#main").style.marginLeft = "20%";
   }
   let openbtn = document.getElementsByClassName("openbtn")[0];
   openbtn.style.display = "none";
@@ -64,6 +66,7 @@ function closeTable() {
   let openbtn = document.getElementsByClassName("openbtn")[0];
   openbtn.style.display = "block";
   document.querySelector(".sidebar").style.width = "0";
+  document.querySelector("#main").style.marginLeft = "";
 }
 
 const headings = document.querySelectorAll("h2[id]"); // Tracks only <h2> with IDs

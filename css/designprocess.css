@@ -36,6 +36,7 @@ main {
   margin: 5rem 0;
   padding: 0;
   color: var(--site-color-1);
+  transition: margin 0.3s ease-in-out 0s;
 }
 
 .design-container {
@@ -638,7 +639,7 @@ figure {
 /* The sidebar links */
 .sidebar a {
   font-family: var(--secondary-font);
-  width: 100%;
+  width: 60%;
   padding: 0.8rem 0.8rem 0.8rem 3.2rem;
   text-decoration: none;
   font-size: 1.6rem;
@@ -647,6 +648,7 @@ figure {
   display: block;
   transition: 0.3s;
   text-transform: uppercase;
+  text-align: center;
   border-bottom: 2px solid var(--site-color-border);
 }
 
@@ -878,7 +880,7 @@ figure {
 
   .design-reference figure {
     width: 100%;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
   }
 

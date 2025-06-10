@@ -13,6 +13,7 @@ main {
 .portfolio-section {
   width: 100%;
   height: 100%;
+  margin-bottom: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -46,49 +47,34 @@ h1 {
   margin-bottom: 8rem;
   text-align: center;
 }
+
 .game-dev-container {
   width: 100%;
   height: 100%;
-  padding: 5rem;
+  padding: 4rem;
   display: grid;
   grid-template-rows: repeat(2, 50%);
   grid-template-columns: repeat(2, 50%);
   gap: 1rem;
-  justify-items: center;
-  align-items: center;
-}
-
-.game-dev-container a {
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-items: stretch;
+  align-items: stretch;
 }
 
 .game-project {
-  height: 20rem;
   width: 100%;
-  box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.345);
+  height: 22rem;
+  box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.484);
   border: none;
   border-radius: 0.5rem;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
-  padding: 0 1rem 0 0;
-}
-
-button {
-  color: var(--site-color-1);
-  text-decoration: none;
-  background-color: var(--site-color-white);
-  cursor: pointer;
   transition: all 0.3s ease 0s;
+  text-decoration: none;
 }
 
-button:hover {
-  box-shadow: 0 0 1rem var(--site-color-2);
+.game-project:hover {
+  box-shadow: 0 0 2rem var(--site-color-2);
 }
 
 h2 {
@@ -97,13 +83,13 @@ h2 {
   line-height: 2.2rem;
   font-weight: 550;
   text-transform: uppercase;
+  color: var(--site-color-1);
 }
 
-button p {
-  font-family: "Satoshi", sans-serif;
-  font-size: 0.9rem;
-  font-weight: 470;
-  width: 40rem;
+.section-titles {
+  font-size: 2.8rem;
+  line-height: 3.5rem;
+  font-weight: 650;
 }
 
 .image-container {
@@ -116,13 +102,12 @@ button p {
   background-size: cover;
 }
 
-.image-container .project-image {
+.project-image {
   width: 100%;
-  border-radius: 0.3rem 0 0 0.3rem;
   height: 100%;
-}
-.project-image:hover {
+  border-radius: 0.5rem 0 0 0.5rem;
   object-fit: cover;
+  transition: all 0.3s ease-in-out 0s;
 }
 
 .project-title-description {
@@ -132,12 +117,12 @@ button p {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  margin-left: 1rem;
+  padding: 1rem 2rem;
 }
 
 .project-title-description p {
   width: 100%;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 400;
   line-height: 1.7rem;
   font-weight: 430;
@@ -148,7 +133,6 @@ button p {
   margin: 1rem 0;
   font-size: 1.4rem;
   font-weight: 600;
-  margin-left: -5rem;
   color: var(--site-color-2);
   transition: all 0.4s ease 0s;
 }
@@ -156,35 +140,50 @@ button p {
 .project-title-description span:hover {
   text-decoration: underline;
 }
-.game-dev-container a {
-  color: var(--site-color-2);
-  text-decoration: none;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+.model-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.model {
+  width: 40rem;
+  height: 40rem;
+  background-color: rgba(0, 0, 0, 0.225);
+  border: 2px solid rgba(0, 0, 0, 0.11);
 }
 
-.game-dev-container a:hover {
-  color: var(--site-color-2);
-  transform: translateY(-0.3rem);
+.model-gallery {
+  height: 100%;
+  width: fit-content;
+  padding: 1rem;
+  display: grid;
+  grid-template-rows: repeat(4, 40rem);
+  grid-template-columns: repeat(3, 40rem);
+  gap: 3rem;
+  justify-items: stretch;
+  align-items: stretch;
 }
 
-.game-dev-container a:hover .project-image {
-  object-fit: cover;
-  transition: all 0.3s ease-in-out 0s;
+.model-caption {
+  font-family: var(--secondary-font);
+  font-size: 1.4rem;
+  line-height: 2rem;
+  margin: 1rem 0;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
 /* MEDIA QUERIES */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 992px) {
   .game-dev-container {
     padding: 1rem;
-    display: grid;
     grid-template-rows: repeat(4, 20rem);
     grid-template-columns: repeat(1, 100%);
     gap: 1rem;
   }
 
   .game-project {
-    height: 10rem;
-    width: 100%;
     box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.345);
     border: none;
     display: flex;
@@ -229,12 +228,22 @@ button p {
     font-size: 1.6rem;
     line-height: 1.7rem;
   }
+
+  .model {
+    width: 40rem;
+    height: 40rem;
+  }
+
+  .model-gallery {
+    height: 100%;
+    grid-template-rows: repeat(6, 40rem);
+    grid-template-columns: repeat(2, 40rem);
+  }
 }
 
 @media screen and (max-width: 768px) {
   .game-dev-container {
     padding: 2rem;
-    display: grid;
     grid-template-rows: repeat(4, 20rem);
     grid-template-columns: repeat(1, 100%);
     gap: 1rem;
@@ -287,12 +296,27 @@ button p {
     font-size: 1.6rem;
     line-height: 1.7rem;
   }
+
+  .model {
+    width: 35rem;
+    height: 35rem;
+    background-color: rgba(0, 0, 0, 0.225);
+    border: 2px solid rgba(0, 0, 0, 0.11);
+  }
+
+  .model-gallery {
+    height: 100%;
+    grid-template-rows: repeat(6, 35rem);
+    grid-template-columns: repeat(2, 35rem);
+    gap: 3rem;
+    justify-items: stretch;
+    align-items: stretch;
+  }
 }
 
 @media screen and (max-width: 600px) {
   .game-dev-container {
     padding: 1.5rem;
-    display: grid;
     grid-template-rows: repeat(4, 18rem);
     grid-template-columns: repeat(1, 100%);
     gap: 1rem;
@@ -346,12 +370,27 @@ button p {
     font-size: 1.6rem;
     line-height: 1.7rem;
   }
+
+  .model {
+    width: 40rem;
+    height: 40rem;
+    background-color: rgba(0, 0, 0, 0.225);
+    border: 2px solid rgba(0, 0, 0, 0.11);
+  }
+
+  .model-gallery {
+    height: 100%;
+    grid-template-rows: repeat(12, 40rem);
+    grid-template-columns: repeat(1, 40rem);
+    gap: 3rem;
+    justify-items: stretch;
+    align-items: stretch;
+  }
 }
 
 @media screen and (max-width: 500px) {
   .game-dev-container {
     padding: 1.5rem;
-    display: grid;
     grid-template-rows: repeat(4, 18rem);
     grid-template-columns: repeat(1, 100%);
     gap: 2rem;
@@ -395,7 +434,6 @@ button p {
 @media screen and (max-width: 768px) {
   .game-dev-container {
     padding: 5rem;
-    display: grid;
     grid-template-rows: repeat(4, 17rem);
     grid-template-columns: repeat(1, 100%);
     gap: 1rem;

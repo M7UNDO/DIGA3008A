@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
   ];
 
   projects.forEach((project, index) => {
-    const img = project.querySelector("img");
+    const img = project.querySelector(".project-image");
     const originalSrc = imageSources[index].original;
     const hoverSrc = imageSources[index].hover;
 

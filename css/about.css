@@ -112,23 +112,6 @@ span,
   line-height: 1.8rem;
 }
 
-.profile-photo {
-  width: 40rem;
-  height: 40rem;
-  border-radius: 100%;
-  border: 2px solid var(--site-color-3);
-  box-shadow: 0 0.4rem 1.2rem rgb(0, 0, 0);
-  perspective: 100rem;
-}
-
-.aboout-image-container {
-  width: 40rem;
-  height: 40rem;
-  border-radius: 50%;
-  background-color: #004cff;
-  padding: 1rem;
-}
-
 #contact-btn::before {
   content: "";
   position: absolute;
@@ -147,8 +130,7 @@ span,
   position: relative;
   width: 15rem;
   height: 5rem;
-  background: linear-gradient(to bottom right, var(--site-color-02), var(--site-color-2), white);
-  background-size: 300% 100%;
+  background: linear-gradient(to bottom right, var(--site-color-02), var(--site-color-2), var(--site-color-5));
   color: white;
   border: none;
   border-radius: 1rem;
@@ -170,68 +152,60 @@ span,
   left: 100%;
 }
 
-/*
-@media only screen and (max-width: 600px) {
-  .about-container {
-    width: 95%;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-    margin: 3rem 0;
-  }
-
-  .profile-photo {
-    width: 30rem;
-    height: 30rem;
-  }
-
-  .about-headi {
-    position: relative;
-    font-size: 4rem;
-    font-weight: 450;
-    line-height: 4rem;
-    text-align: center;
-  }
-
-  .about-heading {
-    align-self: center;
-  }
-
-  .about-content {
-    width: 100%;
-    height: 100%;
-    background-color: red;
-    display: flex;
-  }
-
-  .about-skills li {
-    font-size: 1.6rem;
-    font-weight: 450;
-    line-height: 1.7rem;
-  }
-
-  .about-background,
-  span,
-  .email {
-    text-align: left;
-    font-size: 1.6rem;
-    line-height: 1.7rem;
-    font-weight: 450;
-  }
-
-  h2 {
-    font-size: 2rem;
-    line-height: 2.4rem;
-  }
-
-  h3 {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
-  
+.flip-card {
+  background-color: transparent;
+  width: 40rem;
+  height: 40rem;
+  border: 1px solid #f1f1f1;
+  border-radius: 50%;
+  perspective: 1000px; /*3D effect */
 }
-*/
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  border-radius: 50%;
+  border: 2px solid var(--site-color-3);
+  box-shadow: 0 0.4rem 1.2rem rgb(0, 0, 0);
+}
+
+.flip-card-front img, .flip-card-back img{
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+
+/* back side */
+.flip-card-back {
+  background-color: #fea500;
+  color: white;
+  transform: rotateY(180deg);
+  border-radius: 50%;
+}
+
 @media screen and (max-width: 1530px) {
   .about-container {
     width: 95%;
@@ -241,7 +215,7 @@ span,
     margin: 3rem 0;
   }
 
-  .profile-photo {
+  .flip-card {
     width: 40rem;
     height: 40rem;
   }
@@ -295,7 +269,7 @@ span,
     margin: 3rem 0;
   }
 
-  .profile-photo {
+  .flip-card {
     width: 35rem;
     height: 35rem;
   }
@@ -353,7 +327,7 @@ span,
     margin: 3rem 0;
   }
 
-  .profile-photo {
+  .flip-card {
     width: 35rem;
     height: 35rem;
   }
@@ -411,7 +385,7 @@ span,
     margin: 3rem 0;
   }
 
-  .profile-photo {
+  .flip-card {
     width: 35rem;
     height: 35rem;
   }
@@ -469,7 +443,7 @@ span,
     margin: 1rem 0;
   }
 
-  .profile-photo {
+  .flip-card {
     width: 25rem;
     height: 25rem;
     box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.596);

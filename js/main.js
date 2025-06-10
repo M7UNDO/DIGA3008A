@@ -46,6 +46,35 @@ function changeTheme() {
   }
 }
 
+// Get the modal
+var modal = document.getElementById("ModalScreen");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+const images = document.querySelectorAll(".user-diagrams, .first-wireframe, .final-wireframe");
+
+images.forEach(img => {
+  img.onclick = function () {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    modalImg.alt = this.alt;
+    captionText.innerHTML = this.alt;
+    if (openbtn) openbtn.style.display = "none";
+  };
+});
+
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+function closeModal() {
+  modal.style.display = "none";
+  openbtn.style.display = "block"
+}
+
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     mybutton.style.display = "block";

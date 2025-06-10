@@ -6,6 +6,7 @@
     <meta name="author" content="Mfundo Dhlamini" />
     <meta property="og:description" content="Take a look behind-the-scenes of my web developement process" />
     <title>Design Process</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../css/normalise.css" />
     <link rel="stylesheet" href="../css/styles.css" />
     <link rel="stylesheet" href="../css/designprocess.css" />
@@ -62,9 +63,16 @@
     <button class="openbtn" onclick="openTable()">&#9776; Quick Navigation</button>
 
     <main id="main">
+      <div id="ModalScreen" class="modal" onclick="closeModal()">
+
+        <span class="close" onclick="closeModal()"><i class="fi fi-bs-cross-small"></i></span>
+
+        <img class="modal-content" id="img01"/>
+
+        <div id="caption"></div>
+      </div>
 
       <article class="design-container">
-        
         <div class="heading">
           <h1 id="heading-intro">My Design Process</h1>
           <p class="subheading">Take a look behind-the-scenes of my web developement process</p>
@@ -119,12 +127,12 @@
           <h2 id="UserFlow">Information Structure & User Flow</h2>
           <div class="flow-diagrams">
             <figure>
-              <img class="user-diagrams" src="images/Information Structure.png" alt="Information Structure" />
+              <img id="infoImg" class="user-diagrams" src="images/Information Structure.png" alt="Diagram of the website's Information Structure"/>
               <figcaption>A diagram of the information structure</figcaption>
             </figure>
 
             <figure>
-              <img class="user-diagrams" src="images/USER FLOW DIAGRAM.png" alt="User Flow Diagram" />
+              <img id="flowImg" class="user-diagrams" src="images/userflow diagram.png" alt="Flow Diagram of the website's envisoned User Flow"/>
               <figcaption>A diagram of my user flow</figcaption>
             </figure>
           </div>

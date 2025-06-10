@@ -170,9 +170,11 @@ h1.slide-in {
 }
 
 .subheading {
+  font-family: var(--secondary-font);
   color: var(--site-color-1);
   width: fit-content;
   font-size: 1.6rem;
+  font-weight: 420;
   line-height: 1.6rem;
   margin-top: -1rem;
   position: relative;

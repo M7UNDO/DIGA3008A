@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Mfundo Dhlamini" />
+    <meta name="description" content="Check out my blog post, Thinking About Justice and Ethics" />
+    <title>Blog 8</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
+    <link rel="stylesheet" href="../css/normalise.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/blog.css" />
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@1,2&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/3.0.0/uicons-brands/css/uicons-brands.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/3.0.0/uicons-bold-straight/css/uicons-bold-straight.css"
+    />
+    <script src="https://kit.fontawesome.com/a977cb27e6.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="overlay" onclick="closeNav()"></div>
+    <div id="loader">
+      Loading...
+      <div id="load"></div>
+    </div>
+    <header>
+      <nav class="navcontainer">
+        <div class="nav-logo">
+          <div class="logo"><a href="../index.html">M7UNDO</a></div>
+          <label class="burgerbutton" onclick="openNav()"><i class="fi fi-bs-menu-burger"></i></label>
+        </div>
+
+        <div class="nav-menu">
+          <a class="closeBtn" onclick="closeNav()"><i class="fi fi-bs-cross-small"></i></a>
+          <ul class="navlinks">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="index.html">Blogs</a></li>
+            <li><a href="../essays/index.html">Essays</a></li>
+            <li><a href="../portfolio/index.html">Portfolio</a></li>
+            <li><a href="../blogs/index.html">Blogs</a></li>
+            <li><a href="../about/index.html">About</a></li>
+          </ul>
+          <div class="nav-sm">
+            <a href="https://www.linkedin.com/in/mfundo-dhlamini" target="_blank"
+              ><i class="fi fi-brands-linkedin"></i
+            ></a>
+            <a href="https://github.com/M7UNDO" target="_blank"><i class="fi fi-brands-github"></i></a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <article class="blog-container h-entry">
+        <div class="heading">
+          <h1 class="blog-title p-name" id="heading-intro">
+            <span>Blog Post 10:</span>Thinking About Justice and Ethics
+          </h1>
+          <p class="publish">
+            Published on:
+            <time class="dt-published" datetime="2025-05-26">26 May 2025,</time>
+            by
+            <a class="p-author h-card" href="../about/index.html">Mfundo Dhlamini</a>
+          </p>
+        </div>
+        <div class="solid"></div>
+        <div class="content">
+          <div class="blog-content">
+            <h2>How can I approach justice and ethics in my artistic and programming practice?</h2>
+            <p>
+              When thinking about how I can approach justice and ethics in both my artistic and programming practice, I
+              believe it's essential to be intentional about embedding values throughout the entire design process.
+              Drawing inspiration from Values at Play: Design Tradeoffs in Socially Oriented Game Design (2005) by
+              Flanagan et al., I've come to understand that justice and ethics are not just design goals, they're core
+              considerations that shape how and why we create.
+            </p>
+            <p>
+              In both web development and game design I follow an iterative process constantly updating, testing, and
+              reflecting on each iteration. In terms of game design, playtesting sessions help understand how players
+              interact with my game, mechanics, and characters. I use these sessions to ask important questions, like is
+              the experience inclusive for all kinds of players with different kinds of playstyles? Does the game
+              effectively introduce players to the mechanics? Does the game encourage healthy or too much competition?
+              Theses reflections allow me to stay aligned with the values like fairness, accessibility and diversity
+              within my games.
+            </p>
+            <p>
+              In web development the iteration process feels different, but it is just as active. I experiment with
+              different layouts and interaction styles and committing the versions I want users to engage with. I rely
+              on these tests to ensure that my website supports values like trust, accessibly and clarity. The ethical
+              challenges are different but just as important. One of the most practical ways I apply justice is by
+              making sure all my pages on my website are accessible. This means applying semantic HTML wherever I can so
+              screen readers can navigate through my content efficiently, I also make sure I use high contrast colour
+              schemes for visibility and use relative units like rem for more responsive design in order to respect user
+              preferences. These are not just technical best practices. They are intentional ethical choices that
+              attempt to acknowledge the fact that not everyone use the web the same way, so my design choices can
+              either include or exclude people .
+            </p>
+
+            <p>
+              I also try to make a point of avoiding dark patterns, that manipulate my users into doing things, like
+              accidentally signing up for emails or making purchases they didn't mean to. In current and future design,
+              I want to remain committed to staying away from these patterns in order to create websites that are honest
+              and give user control of what they want to with their experience.
+            </p>
+          </div>
+
+          <div class="blog-content">
+            <h2>References</h2>
+            <ul class="reference-list">
+              <li>
+                Flanagan, M., Howe, D.C. and Nissenbaum, H. (2005)<cite>Values at play: Tradeoffs in socially-oriented game design,' Human Factors in Computing Systems</cite>, 4(1),pp. 751-760.
+                <a href="https://nyuscholars.nyu.edu/en/publications/values-at-play-tradeoffs-in-socially-oriented-game-design" target="_blank"
+                  >https://nyuscholars.nyu.edu/en/publications/values-at-play-tradeoffs-in-socially-oriented-game-design</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </article>
+      <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+      <div class="nav-btn-container">
+        <a href="blog8.html"
+          ><button class="previous-btn"><i class="fa-solid fa-arrow-left"></i></button
+        ></a>
+        <a href="blog1.html"
+          ><button class="next-btn"><i class="fa-solid fa-arrow-right"></i></button
+        ></a>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Mfundo Dhlamini. All Rights Reserved</p>
+    </footer>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

@@ -1,138 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Mfundo Dhlamini">
-    <meta name="description" content="Discover Mfundo Dhlamini's portfolio of digital games, 3D projects, and interactive experiences">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Mfundo Dhlamini" />
+    <meta
+      name="description"
+      content="Discover Mfundo Dhlamini's portfolio of digital games, 3D projects, and interactive experiences"
+    />
+    <meta property="og:image" content="../images/potrait.png" />
     <title>Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
-    <link rel="stylesheet" href="../css/normalise.css">
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/portfolio.css">
-    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@1,2&display=swap" rel="stylesheet">
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-brands/css/uicons-brands.css'>
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-bold-straight/css/uicons-bold-straight.css'>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
+    <link rel="stylesheet" href="../css/normalise.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/portfolio.css" />
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@1,2&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/3.0.0/uicons-brands/css/uicons-brands.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/3.0.0/uicons-bold-straight/css/uicons-bold-straight.css"
+    />
     <script src="https://kit.fontawesome.com/a977cb27e6.js" crossorigin="anonymous"></script>
-    
-</head>
-<body>
-  <div class="overlay"  onclick="closeNav()"></div>
-  <div id="loader">
+  </head>
+  <body>
+    <div class="overlay" onclick="closeNav()"></div>
+    <div id="loader">
       Loading...
       <div id="load"></div>
-  </div>
-  <header>
-    <nav class="navcontainer">
-      <div class="nav-logo">
-        <div class="logo"><a href="../index.html">M7UNDO</a></div>
-        <label class="burgerbutton" onclick="openNav()"><i class="fi fi-bs-menu-burger"></i></label>
-      </div>
-      <div class="nav-menu">
-        <a class="closeBtn" onclick="closeNav()"><i class="fi fi-bs-cross-small"></i></a>
-        <ul class="navlinks">
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="../blogs/index.html">Blogs</a></li>
-          <li><a href="../essays/index.html">Essays</a></li>
-          <li><a href="index.html" class="active">Portfolio</a></li>
-          <li><a href="../designs/index.html">Design</a></li>
-          <li><a href="../about/index.html">About</a></li>
-        </ul>
-        <div class="nav-sm">
-            <a href="https://www.linkedin.com/in/mfundo-dhlamini" target="_blank"
-              ><i class="fi fi-brands-linkedin"></i></a>
-            <a href="https://github.com/M7UNDO" target="_blank"
-              ><i class="fi fi-brands-github"></i></a>
+    </div>
+    <header>
+      <nav class="navcontainer">
+        <div class="nav-logo">
+          <div class="logo"><a href="../index.html">M7UNDO</a></div>
+          <label class="burgerbutton" aria-label="burger button" onclick="openNav()"
+            ><i class="fi fi-bs-menu-burger"></i
+          ></label>
         </div>
-      </div>
-    </nav>
-    
-  </header>
-  <main>
-      <div class="heading">
-            <h1 id="heading-intro">Portfolio</h1>
-            <p class="subheading">Explore some my latest games and 3D projects</p>
-      </div>
-      <section class="portfolio-section">
-
-          <h2 class="section-titles">Game Development</h2>
-        
-          <div class="game-dev-container">
-             <a href="https://m7und0.itch.io/mini-golf" target="_blank" class="game-project">
-                  <div class="image-container" id="game-1"><img class="project-image" src="images/Mini-Golf cover.png" alt=""></div>
-                  <div class="project-title-description">
-                    <h2>Mini-Golf</h2>
-                    <p class="game-description">
-                      A casual mini-golf game that combines cool aiming and shooting mechanics with stylish trickshots
-                    </p>
-                    <span class="download-link">Download on itch.io</span>
-                  </div>
-             </a>
-            
-             <a href="https://m7und0.itch.io/the-staff-of-elysium" target="_blank" class="game-project">
-                  <div class="image-container"><img class="project-image" src="images/Staff of Elysium.png" alt="The Staff of Elysium game cover showing a dimly lit wizard's study with bookshelves, a desk with a glowing blue orb, wizard hat, and the game title in a fantasy-style font."></div>
-                     <div class="project-title-description">
-                       <h2>The Staff of Elysium</h2>
-                       <p class="game-description">
-                          An immersive first-person mystery game. Explore the lair and uncover the truth behind the disappearance of the Wizards.
-                       </p>
-                       <span class="download-link">Download on itch.io</span>
-                     </div>
-              </a>
-
-              <a href="https://m7und0.itch.io/lost-days" target="_blank" class="game-project">
-                    <div class="image-container"><img class="project-image" src="images/LostDays.png" alt="Lost Days game cover with stylised brushstroke text reading 'Lost Days' over a dark red to purple gradient background."></div>
-                    <div class="project-title-description">
-                      <h2>Lost Days</h2>
-                       <p class="game-description">
-                          Explore a 2D platformer set in the mysterious world of Akra.
-                       </p>
-                       <span class="download-link">Download on itch.io</span>
-                    </div>
-               </a>
-
-               <a href="https://m7und0.itch.io/air-hockey-2d" target="_blank" class="game-project">
-                     <div class="image-container"><img class="project-image" src="images/AirHockey.png" alt="Air Hockey game cover featuring a top-down view of a red and blue air hockey table, with bold text 'Air Hockey' centered on the screen."></div>
-                     <div class="project-title-description">
-                        <h2>Air Hockey</h2>
-                        <p class="game-description">
-                           A cool air-hockey game, with up to four levels of difficulty. Can you beat them all and become an air-hockey 
-                          champ?
-                        </p>
-                        <span class="download-link">Download on itch.io</span>
-                     </div>
-                 
-               </a>
-      </section>
-
-      <section class="portfolio-section">
-          <h2 class="section-titles">3D Models</h2> 
-          <div class="model-gallery">
-
-            <div class="model-container"><model-viewer class="model" src="images/Medival Door.glb" camera-controls touch-action="pan-y"></model-viewer><span class="model-caption">Medival</span></div>
-            <div class="model-container"><model-viewer class="model" src="images/WizardHat.glb" camera-controls touch-action="pan-y"></model-viewer><span class="model-caption">Wizard Hat</span></div>
-            <div class="model-container"><model-viewer class="model" src="images/WizardFinal.glb" camera-controls touch-action="pan-y"></model-viewer><span class="model-caption">Wizard Character</span></div>
-            <div class="model-container"><model-viewer class="model" src="images/Magic Orb.glb" camera-controls touch-action="pan-y"></model-viewer><span class="model-caption">Magical Orb</span></div>
-            <div class="model-container"><model-viewer class="model" src="images/WizardBroom.glb" camera-controls touch-action="pan-y"></model-viewer><span class="model-caption">Wizard WizardBroom</span></div>
-            <div class="model-container"><model-viewer class="model" src="images/Wizard Staff.glb" camera-controls touch-action="pan-y"></model-viewer><span class="model-caption">Magical Staff</span></div>
-            <div class="model-container"><model-viewer class="model" src="images/Board.glb" camera-controls touch-action="pan-y"></model-viewer><span class="model-caption">Board</span></div>
-            <div class="model-container"><model-viewer class="model" src="images/Cupboard.glb" camera-controls touch-action="pan-y"></model-viewer><span class="model-caption">Cupboard</span></div>
-            <div class="model-container"><model-viewer class="model" src="images/Desk.glb" camera-controls touch-action="pan-y"></model-viewer><span class="model-caption">Desk</span></div>
-            <div class="model-container"><model-viewer class="model" src="images/DrawerCabinet.glb" camera-controls touch-action="pan-y"></model-viewer><span class="model-caption">Drawer Cabinet</span></div>
-            <div class="model-container"><model-viewer class="model" src="images/potion bottle1.glb" camera-controls touch-action="pan-y"></model-viewer><span class="model-caption">Potion Bottle</span></div>
-            <div class="model-container"><model-viewer class="model" src="images/Fireplace.glb" camera-controls touch-action="pan-y"></model-viewer><span class="model-caption">Stone Fireplace</span></div>
+        <div class="nav-menu">
+          <a class="closeBtn" aria-label="close" onclick="closeNav()"><i class="fi fi-bs-cross-small"></i></a>
+          <ul class="navlinks">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../blogs/index.html">Blogs</a></li>
+            <li><a href="../essays/index.html">Essays</a></li>
+            <li><a href="index.html" class="active">Portfolio</a></li>
+            <li><a href="../designs/index.html">Design</a></li>
+            <li><a href="../about/index.html">About</a></li>
+          </ul>
+          <div class="nav-sm">
+            <a href="https://www.linkedin.com/in/mfundo-dhlamini" target="_blank"
+              ><i class="fi fi-brands-linkedin"></i
+            ></a>
+            <a href="https://github.com/M7UNDO" target="_blank"><i class="fi fi-brands-github"></i></a>
           </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="heading">
+        <h1 id="heading-intro">Portfolio</h1>
+        <p class="subheading">Explore some my latest games and 3D projects</p>
+      </div>
 
+      <section class="portfolio-section">
+        <h2 class="section-titles">Game Development</h2>
+
+        <div class="game-dev-container">
+          <a href="https://m7und0.itch.io/mini-golf" target="_blank" class="game-project">
+            <div class="image-container" id="game-1">
+              <img class="project-image" src="images/Mini-Golf cover.png" alt="" />
+            </div>
+            <div class="project-title-description">
+              <h2>Mini-Golf</h2>
+              <p class="game-description">
+                A casual mini-golf game that combines cool aiming and shooting mechanics with stylish trickshots
+              </p>
+              <span class="download-link">Download on itch.io</span>
+            </div>
+          </a>
+
+          <a href="https://m7und0.itch.io/the-staff-of-elysium" target="_blank" class="game-project">
+            <div class="image-container">
+              <img
+                class="project-image"
+                src="images/Staff of Elysium.png"
+                alt="The Staff of Elysium game cover showing a dimly lit wizard's study with bookshelves, a desk with a glowing blue orb, wizard hat, and the game title in a fantasy-style font."
+              />
+            </div>
+            <div class="project-title-description">
+              <h2>The Staff of Elysium</h2>
+              <p class="game-description">
+                An immersive first-person mystery game. Explore the lair and uncover the truth behind the disappearance
+                of the Wizards.
+              </p>
+              <span class="download-link">Download on itch.io</span>
+            </div>
+          </a>
+
+          <a href="https://m7und0.itch.io/lost-days" target="_blank" class="game-project">
+            <div class="image-container">
+              <img
+                class="project-image"
+                src="images/LostDays.png"
+                alt="Lost Days game cover with stylised brushstroke text reading 'Lost Days' over a dark red to purple gradient background."
+              />
+            </div>
+            <div class="project-title-description">
+              <h2>Lost Days</h2>
+              <p class="game-description">Explore a 2D platformer set in the mysterious world of Akra.</p>
+              <span class="download-link">Download on itch.io</span>
+            </div>
+          </a>
+
+          <a href="https://m7und0.itch.io/air-hockey-2d" target="_blank" class="game-project">
+            <div class="image-container">
+              <img
+                class="project-image"
+                src="images/AirHockey.png"
+                alt="Air Hockey game cover featuring a top-down view of a red and blue air hockey table, with bold text 'Air Hockey' centered on the screen."
+              />
+            </div>
+            <div class="project-title-description">
+              <h2>Air Hockey</h2>
+              <p class="game-description">
+                A cool air-hockey game, with up to four levels of difficulty. Can you beat them all and become an
+                air-hockey champ?
+              </p>
+              <span class="download-link">Download on itch.io</span>
+            </div>
+          </a>
+        </div>
       </section>
 
-     <script src="../js/main.js"></script>
-     <script src="../js/portfolio.js"></script>
-     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
-  </main>
+      <section class="portfolio-section">
+        <h2 class="section-titles">3D Models</h2>
+        <div class="model-gallery">
+          <div class="model-container">
+            <model-viewer
+              class="model"
+              src="images/Medival Door.glb"
+              camera-controls
+              touch-action="pan-y"
+            ></model-viewer
+            ><span class="model-caption">Medival</span>
+          </div>
+          <div class="model-container">
+            <model-viewer class="model" src="images/WizardHat.glb" camera-controls touch-action="pan-y"></model-viewer
+            ><span class="model-caption">Wizard Hat</span>
+          </div>
+          <div class="model-container">
+            <model-viewer class="model" src="images/WizardFinal.glb" camera-controls touch-action="pan-y"></model-viewer
+            ><span class="model-caption">Wizard Character</span>
+          </div>
+          <div class="model-container">
+            <model-viewer class="model" src="images/Magic Orb.glb" camera-controls touch-action="pan-y"></model-viewer
+            ><span class="model-caption">Magical Orb</span>
+          </div>
+          <div class="model-container">
+            <model-viewer class="model" src="images/WizardBroom.glb" camera-controls touch-action="pan-y"></model-viewer
+            ><span class="model-caption">Wizard WizardBroom</span>
+          </div>
+          <div class="model-container">
+            <model-viewer
+              class="model"
+              src="images/Wizard Staff.glb"
+              camera-controls
+              touch-action="pan-y"
+            ></model-viewer
+            ><span class="model-caption">Magical Staff</span>
+          </div>
+          <div class="model-container">
+            <model-viewer class="model" src="images/Board.glb" camera-controls touch-action="pan-y"></model-viewer
+            ><span class="model-caption">Board</span>
+          </div>
+          <div class="model-container">
+            <model-viewer class="model" src="images/Cupboard.glb" camera-controls touch-action="pan-y"></model-viewer
+            ><span class="model-caption">Cupboard</span>
+          </div>
+          <div class="model-container">
+            <model-viewer class="model" src="images/Desk.glb" camera-controls touch-action="pan-y"></model-viewer
+            ><span class="model-caption">Desk</span>
+          </div>
+          <div class="model-container">
+            <model-viewer
+              class="model"
+              src="images/DrawerCabinet.glb"
+              camera-controls
+              touch-action="pan-y"
+            ></model-viewer
+            ><span class="model-caption">Drawer Cabinet</span>
+          </div>
+          <div class="model-container">
+            <model-viewer
+              class="model"
+              src="images/potion bottle1.glb"
+              camera-controls
+              touch-action="pan-y"
+            ></model-viewer
+            ><span class="model-caption">Potion Bottle</span>
+          </div>
+          <div class="model-container">
+            <model-viewer class="model" src="images/Fireplace.glb" camera-controls touch-action="pan-y"></model-viewer
+            ><span class="model-caption">Stone Fireplace</span>
+          </div>
+        </div>
+      </section>
+    </main>
 
-  <footer>
+    <footer>
       <p>&copy; 2025 Mfundo Dhlamini. All Rights Reserved</p>
-  </footer>
-  
-</body>
+    </footer>
+    <script src="../js/main.js"></script>
+    <script src="../js/portfolio.js"></script>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+  </body>
 </html>

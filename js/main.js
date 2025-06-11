@@ -21,7 +21,7 @@ window.addEventListener("load", () => {
 
 });
 
-//Intentionally adding another load method due to errors that break the code when I try to put everything in one function
+//Intentionally adding another load method due to errors that break the code when I try to put everything in one load function
 window.addEventListener("load", () => {
   let line = document.querySelector(".solid");
   line.style.width = "100%";
@@ -46,10 +46,10 @@ function changeTheme() {
   }
 }
 
-// Get the modal
+
 var modal = document.getElementById("ModalScreen");
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
+
 var img = document.getElementById("myImg");
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");

@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Mfundo Dhlamini" />
     <meta name="description" content="Explore A collection of Mfundo Dhlamini's projects" />
+    <meta property="og:title" content="Mfundo's Workshop - Game Dev, Design & Code" />
     <meta
       property="og:description"
       content="Welcome to the island of relevancy explore the work of Mfundo, a digital artist, game developer, web developer and creative thinker."
     />
+    <meta property="og:image" content="images/potrait.png" />
     <title>Home</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link href="https://api.fontshare.com/v2/css?f[]=satoshi@1,2&display=swap" rel="stylesheet" />
@@ -39,10 +41,10 @@
       <nav class="navcontainer">
         <div class="nav-logo">
           <div class="logo"><a href="index.html">M7UNDO</a></div>
-          <label class="burgerbutton" onclick="openNav()"><i class="fi fi-bs-menu-burger"></i></label>
+          <label class="burgerbutton" aria-label="burgerbutton" onclick="openNav()"><i class="fi fi-bs-menu-burger"></i></label>
         </div>
         <div class="nav-menu">
-          <a class="closeBtn" onclick="closeNav()"><i class="fi fi-bs-cross-small"></i></a>
+          <a class="closeBtn" aria-label="close" onclick="closeNav()"><i class="fi fi-bs-cross-small"></i></a>
           <ul class="navlinks">
             <li><a href="index.html" class="active">Home</a></li>
             <li><a href="blogs/index.html">Blogs</a></li>
@@ -73,7 +75,7 @@
     </main>
 
     <section class="index-category">
-      <p>Collections</p>
+      <p>Collection</p>
 
       <a href="blogs/index.html" class="category-box">
         <div class="dark-overlay"></div>
@@ -100,7 +102,7 @@
           consectetur quis maxime corporis suscipit expedita.
         </p>
         <p id="author">Author</p>
-        <button class="generate-quote-btn" onclick="getQuote(api_url)">Reveal Wisdom</button>
+        <button class="generate-quote-btn"  onclick="getQuote(api_url)">Reveal Wisdom</button>
       </section>
     </section>
 

@@ -17,7 +17,7 @@
     <script src="https://kit.fontawesome.com/a977cb27e6.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <div class="overlay"  onclick="closeNav()"></div>
+    <div class="overlay" onclick="closeNav()"></div>
     <div id="loader">
       Loading...
       <div id="load"></div>
@@ -26,11 +26,11 @@
       <nav class="navcontainer">
         <div class="nav-logo">
           <div class="logo"><a href="../index.html">M7UNDO</a></div>
-          <label class="burgerbutton" onclick="openNav()"><i class="fi fi-bs-menu-burger"></i></label>
+          <label class="burgerbutton" aria-label="burger button" onclick="openNav()"><i class="fi fi-bs-menu-burger"></i></label>
         </div>
 
         <div class="nav-menu">
-          <a class="closeBtn" onclick="closeNav()"><i class="fi fi-bs-cross-small"></i></a>
+          <a class="closeBtn" aria-label="close" onclick="closeNav()"><i class="fi fi-bs-cross-small"></i></a>
           <ul class="navlinks">
             <li><a href="../index.html">Home</a></li>
             <li><a href="index.html">Blogs</a></li>

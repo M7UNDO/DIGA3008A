@@ -126,11 +126,10 @@ figcaption {
   align-items: center;
   gap: 2rem;
 }
-
 .initial-wireframe-container {
   background-color: white;
   color: black;
-  border: 2px solid var(--site-color-1);
+  box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.356);
   align-items: center;
   width: 100%;
   height: auto;
@@ -171,11 +170,16 @@ figcaption {
 }
 
 .first-wireframe {
-  width: 80%;
+  width: 100%;
   height: auto;
 }
 
 .final-wireframe {
+  height: auto;
+  width: 100%;
+}
+
+.updated-wireframe {
   height: auto;
   width: 100%;
 }
@@ -192,7 +196,7 @@ figcaption {
   align-items: center;
   position: relative;
   border-radius: 2rem;
-  border: 2px solid var(--site-color-1);
+  box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.356);
   gap: 1rem;
 }
 
@@ -210,6 +214,34 @@ figcaption {
   display: flex;
 }
 
+.updated-wireframe-holder {
+  background-color: white;
+  color: black;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 2rem;
+  box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.356);
+  gap: 1rem;
+}
+
+.updated-wireframe-container {
+  margin: 0;
+  padding: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+#updated-wireframe-1 {
+  display: flex;
+}
 .visual-element-diagram {
   text-align: left;
   margin: 0;
@@ -220,7 +252,9 @@ figcaption {
 .prev,
 .next,
 .prev-button,
-.next-button {
+.next-button,
+.nxt,
+.prv {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -236,13 +270,15 @@ figcaption {
 }
 
 .next,
-.next-button {
+.next-button,
+.nxt {
   right: 0;
   border-radius: 1rem 0 0 1rem;
 }
 
 .prev,
-.prev-button {
+.prev-button,
+.prv {
   left: 0;
   border-radius: 0 1rem 1rem 0;
 }
@@ -250,7 +286,9 @@ figcaption {
 .prev:hover,
 .prev-button:hover,
 .next:hover,
-.next-button:hover {
+.next-button:hover,
+.prv:hover,
+.nxt:hover {
   background-color: var(--site-color-2);
 }
 
@@ -261,7 +299,8 @@ figcaption {
 }
 
 .dot,
-.dots {
+.dots,
+.dott {
   cursor: pointer;
   height: 0.7rem;
   width: 0.7rem;
@@ -509,7 +548,7 @@ figure.font-container figcaption {
   margin: 1rem 0;
 }
 
-.pallete-container figcaption p{
+.pallete-container figcaption p {
   color: black;
 }
 
@@ -628,11 +667,11 @@ figure {
   z-index: 100;
   top: 5.5rem;
   left: 0;
-  background-color: var(--site-color-03); 
+  background-color: var(--site-color-03);
   box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.573);
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 6rem;
-  transition: 0.5s; 
+  transition: 0.5s;
   gap: 3.5rem;
 }
 
@@ -673,14 +712,16 @@ figure {
 
 @media only screen and (min-width: 768px) {
   /*Design Elements Section */
-  .design-elements {
+  .design-elements,
+  .updated-wireframe-holder {
     height: 100%;
     width: 100%;
     border-radius: 2rem;
     gap: 1rem;
   }
 
-  .design-elements-box {
+  .design-elements-box,
+  .updated-wireframe-container {
     margin: 0;
     padding: 1rem;
     display: none;
@@ -707,16 +748,16 @@ figure {
 
   .sidebar {
     height: 100%;
-    width: 0; 
+    width: 0;
     position: fixed;
     z-index: 100;
     top: 7rem;
     left: 0;
     background-color: var(--site-color-03);
     box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.573);
-    overflow-x: hidden; 
-    padding-top: 60px; 
-    transition: 0.5s; 
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
     gap: 3.5rem;
   }
 }
@@ -781,18 +822,26 @@ figure {
     height: auto;
   }
 
+  .updated-wireframe {
+    width: 90%;
+    height: auto;
+  }
+
   /* Slideshow Navigation Buttons */
   .prev,
   .next,
   .prev-button,
-  .next-button {
+  .next-button,
+  .prv,
+  .nxt {
     padding: 1.6rem;
     margin-top: -2.2rem;
     font-size: 1.8rem;
   }
 
   .next,
-  .next-button {
+  .next-button,
+  .nxt {
     right: 0;
     border-radius: 1rem 0 0 1rem;
   }
@@ -802,7 +851,8 @@ figure {
   }
 
   .dot,
-  .dots {
+  .dots,
+  .dott {
     height: 1rem;
     width: 1rem;
     margin: 0 0.4rem;
@@ -810,17 +860,19 @@ figure {
 
   /*Final Wireframes Section */
   .final-wireframe {
-    width: 70%;
+    width: 90%;
     height: auto;
   }
 
   /*Design Elements Section */
-  .design-elements {
+  .design-elements,
+  .updated-wireframe-holder {
     width: 75%;
     height: auto;
   }
 
-  .design-elements-box {
+  .design-elements-box,
+  .updated-wireframe-container {
     padding: 3rem;
     height: auto;
   }

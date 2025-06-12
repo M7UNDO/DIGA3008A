@@ -1,8 +1,9 @@
-let wireFrameIndex = [1, 1];
-let wireFrameId = ["initial-wireframe", "design-elements-box"];
-let dotId = ["dot", "dots"];
+let wireFrameIndex = [1, 1, 1];
+let wireFrameId = ["initial-wireframe", "design-elements-box", "updated-wireframe-container"];
+let dotId = ["dot", "dots", "dott"];
 showSlides(1, 0);
 showSlides(1, 1);
+showSlides(1, 2);
 
 function plusSlides(n, no) {
   showSlides((wireFrameIndex[no] += n), no);

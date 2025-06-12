@@ -53,7 +53,7 @@ var modal = document.getElementById("ModalScreen");
 var img = document.getElementById("myImg");
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
-const images = document.querySelectorAll(".user-diagrams, .first-wireframe, .final-wireframe");
+const images = document.querySelectorAll(".user-diagrams, .first-wireframe, .final-wireframe, .updated-wireframe");
 
 images.forEach(img => {
   img.onclick = function () {
@@ -69,7 +69,6 @@ images.forEach(img => {
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks on <span> (x), close the modal
 function closeModal() {
   modal.style.display = "none";
   openbtn.style.display = "block"

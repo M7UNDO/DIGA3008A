@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Mfundo Dhlamini" />
+    <meta name="description" content="Final reflection on the implementation of the website" />
+    <meta property="og:description" content="Final reflection on the implementation of the website" />
+    <meta property="og:image" content="../images/potrait.png" />
+    <meta property="og:title" content="Mfundo Dhlamini | Digital Portfolio" />
+    <title>Reflection</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
+    <link rel="stylesheet" href="../css/normalise.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/essay.css" />
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@1,2&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/3.0.0/uicons-brands/css/uicons-brands.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/3.0.0/uicons-bold-straight/css/uicons-bold-straight.css"
+    />
+    <script src="https://kit.fontawesome.com/a977cb27e6.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="overlay" onclick="closeNav()"></div>
+    <div id="loader">
+      Loading...
+      <div id="load"></div>
+    </div>
+    <header>
+      <nav class="navcontainer">
+        <div class="nav-logo">
+          <div class="logo"><a href="../index.html">M7UNDO</a></div>
+          <label class="burgerbutton" onclick="openNav()"><i class="fi fi-bs-menu-burger"></i></label>
+        </div>
+        <div class="nav-menu">
+          <a class="closeBtn" aria-label="close" onclick="closeNav()"><i class="fi fi-bs-cross-small"></i></a>
+          <ul class="navlinks">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../blogs/index.html">Blogs</a></li>
+            <li><a href="index.html">Essays</a></li>
+            <li><a href="../portfolio/index.html">Portfolio</a></li>
+            <li><a href="../designs/index.html">Design</a></li>
+            <li><a href="../about/index.html">About</a></li>
+          </ul>
+          <div class="nav-sm">
+            <a href="https://www.linkedin.com/in/mfundo-dhlamini" target="_blank"
+              ><i class="fi fi-brands-linkedin"></i
+            ></a>
+            <a href="https://github.com/M7UNDO" target="_blank"><i class="fi fi-brands-github"></i></a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="essay-main">
+      <div class="essay-container">
+        <article class="essay-content-container h-entry">
+          <div class="heading">
+            <h1 class="p-name" id="heading-intro">
+              <span id="essay-no">Final Reflection:</span> Implementation of the Website
+            </h1>
+            <p class="publish">
+              Published on:
+              <time class="dt-published" datetime="2025-06-12">12 June 2025,</time>
+              by <a class="p-author h-card" href="../about/index.html">Mfundo Dhlamini</a>
+            </p>
+            <div class="solid"></div>
+          </div>
+
+          <div class="essay-content">
+            <div id="essay-header"></div>
+
+            <p>
+              Reflecting on the development of my website over the past few weeks, I feel that I have made significant
+              progress and achieved most of the goals I set out at the beginning of the process. I've established a good
+              base for future websites.
+            </p>
+            <p>
+              One of the most notable improvements I made was expanding on my portfolio by including and showcasing my
+              3D models. I felt this was a necessary step to level up my portfolio page. While my game development
+              projects demonstrated many of my skills, they didn't fully represent the range of my abilities. I also
+              recognised that not every user who is viewing my portfolio would want to download and play a game so
+              including interactive 3D models which users can pan, move, rotate and zoom enhances the user experience by
+              making the viewing process more engaging and memorable. Although I have expanded my portfolio page, I do
+              see room to develop it furthering by adding my logo designs and digital art projects
+            </p>
+            <p>
+              Another key enhancement was implementing a light and dark mode toggle that persists across pages. This
+              enhances both my user interface and overall user experience by offering visual comfort to users and also
+              maintains consistency and personalisation throughout their experience on my website. I also focused on
+              accessibility by adding a modal box for opening and viewing images, allowing users to click on images and
+              view larger versions, improving readability. Additionally, I improved the descriptive quality of alt text
+              and used aria labels for elements with no visible text but needs a description for screen readers to pick
+              up.
+            </p>
+
+            <p>
+              My folder structure is consistent across my HTML, CSS, and JavaScript. Each of my file and folder names
+              begin with a lowercase letter, to promote clean organisation. I also made sure to use my semantic mark-up
+              correctly, paying special attention to the context and meaning of each tag. Each of my pages are divided
+              into &lt;header&gt;, &lt;main&gt, &lt;footer&gt; My header contains my &lt;nav&gt; and navigation bar, my
+              main contains the content divided into &lt;sections&gt; and &lt;articles&gt; were appropriate (e.g inside
+              the &lt;main&gt; tag of my blog posts the content is wrapped in an &lt;article&gt;).
+            </p>
+
+            <p>
+              In terms of meta data, I have implemented it and applied it across my pages. This includes meta data such
+              as such as the author, page description, and Open Graph tags for an enhance look on when shared on social
+              media platforms. This improves SEO and also supports accessibility tools and usability.
+            </p>
+
+            <p>
+              I also converted all my CSS units to rem, based on a root font size of 62.5% (1rem =10px), to enhanced
+              scalability and make my styles easier to manage. All of my pages have responsive layouts that adjust well
+              to different types of screen sizes such as laptops, tablets and phones. I've also resolved the overflow
+              problems that affected smaller screens.
+            </p>
+
+            <p>
+              To optimise my code, I cleaned up unnecessary repetition and applied more global code where it was
+              necessary. I removed duplicate styling in my CSS and also moved away from redundant functions in my
+              JavaScript, for example, I had previously created multiple versions of a load() function in my earlier
+              versions. I also complied with good practices like separating concerns, as there is no inline styling or
+              JavaScript logic in my HTML. Any dynamic styling in my JavaScript is limited to user triggered
+              interaction.
+            </p>
+
+            <p>
+              One highlight for me was using an asynchronous function to fetch data from an API integrated into my
+              website. This API generates inspirational quotes and wisdom, adding an engaging element to the site that
+              personalises the user's experience and could potentially encourage more visits
+            </p>
+
+            <p>
+              Interactive elements on my website further showcase my growing JavaScript skillset. For example, the event
+              handling game containers when the user hover over the project (mouseover), a short gameplay clip
+              dynamically replaces the image src. I also make use of window events like load and use DOM to manipulate
+              and to control the visibility and stylling of certain elements. Additionally, I implemented an
+              IntersectionObserver to track section visibility and highlight the corresponding navigation links,
+              enhancing user navigation.
+            </p>
+
+            <p>
+              Reflecting on the development process, I'm proud of my website and how it is in alignment with my design
+              process and intentions. It does a good job at communicating who I am as a designer, showcasing my work,
+              and providing a platform. The process of developing of my website has deepened my understanding of web
+              design and given me a good base in user-centred design that I can continue to build on.
+            </p>
+
+          </div>
+        </article>
+      </div>
+      <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+      <div class="nav-btn-container">
+        <a href="essay1.html"
+          ><button class="previous-btn"><i class="fa-solid fa-arrow-left"></i></button
+        ></a>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Mfundo Dhlamini. All Rights Reserved</p>
+    </footer>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

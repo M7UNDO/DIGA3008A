@@ -18,7 +18,7 @@
     <script src="https://kit.fontawesome.com/a977cb27e6.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <div class="overlay"  onclick="closeNav()"></div>
+    <div class="overlay" onclick="closeNav()"></div>
     <div id="loader">
       Loading...
       <div id="load"></div>
@@ -27,11 +27,11 @@
       <nav class="navcontainer">
         <div class="nav-logo">
           <div class="logo"><a href="../index.html">M7UNDO</a></div>
-          <label class="burgerbutton" onclick="openNav()"><i class="fi fi-bs-menu-burger"></i></label>
+          <label class="burgerbutton" aria-label="burger button" onclick="openNav()"><i class="fi fi-bs-menu-burger"></i></label>
         </div>
 
         <div class="nav-menu">
-          <a class="closeBtn" onclick="closeNav()"><i class="fi fi-bs-cross-small"></i></a>
+          <a class="closeBtn" aria-label="close" onclick="closeNav()"><i class="fi fi-bs-cross-small"></i></a>
           <ul class="navlinks">
             <li><a href="../index.html">Home</a></li>
             <li><a href="index.html">Blogs</a></li>
@@ -158,10 +158,10 @@
       <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
       <div class="nav-btn-container">
         <a href="blog4.html"
-          ><button class="previous-btn"><i class="fa-solid fa-arrow-left"></i></button
+          ><button class="previous-btn" aria-label="previous button"><i class="fa-solid fa-arrow-left"></i></button
         ></a>
         <a href="blog6.html"
-          ><button class="next-btn"><i class="fa-solid fa-arrow-right"></i></button
+          ><button class="next-btn" aria-label="next button"><i class="fa-solid fa-arrow-right"></i></button
         ></a>
         <!--<a href=""><button class="next-btn"><i class="fa-solid fa-arrow-right"></i></button></a>-->
       </div>

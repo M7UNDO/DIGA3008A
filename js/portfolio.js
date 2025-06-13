@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     {
       original: "images/Staff of Elysium.png",
-      hover: "images/Staff_of_Elysium_Clip.gif"
+      hover: "images/thestaff_clip.gif"
     },
     {
       original: "images/LostDays.png",
